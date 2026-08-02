@@ -3,7 +3,6 @@ import PromoBanner from "@/components/landing/PromoBanner";
 import CategoryGrid from "@/components/landing/CategoryGrid";
 import ProductSection from "@/components/landing/ProductSection";
 import WholesaleBanner from "@/components/landing/WholesaleBanner";
-import Testimonials from "@/components/landing/Testimonials";
 import Footer from "@/components/landing/Footer";
 
 const ofertas = [
@@ -56,7 +55,6 @@ export default function Home() {
           ctaLabel="Ver novedades"
           ctaHref="/novedades"
         />
-        <Testimonials />
       </main>
       <Footer />
     </div>
