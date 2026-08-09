@@ -2,12 +2,22 @@ import HeroSlider from "@/components/landing/HeroSlider";
 import PromoBanner from "@/components/landing/PromoBanner";
 import TodosLosProductos from "@/components/landing/TodosLosProductos";
 import Footer from "@/components/landing/Footer";
+import { reader } from "@/lib/keystatic";
 
-export default function Home() {
+export default async function Home() {
+
+  const categoriasRaw = await reader.collections.categorias.all();
+  const categorias = categoriasRaw.map((c) => ({
+    slug: c.slug,
+    label: c.entry.label,
+    image: c.entry.image ?? "/categorias/placeholder.png",
+  }));
+
+
   return (
     <div className="flex flex-1 flex-col bg-white">
       <main className="flex flex-1 flex-col">
-        <HeroSlider />
+        <HeroSlider categories={categorias} />
         <PromoBanner />
         <TodosLosProductos />
       </main>
