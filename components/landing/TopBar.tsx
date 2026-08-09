@@ -11,7 +11,7 @@ const items = [
 
 export default function TopBar() {
   return (
-    <div className="w-full overflow-hidden bg-[#FF3412] pt-8">
+    <div className="w-full overflow-hidden ">
       <motion.div
         className="flex w-max whitespace-nowrap bg-white py-4"
         animate={{ x: ["0%", "-16.66%", "-16.66%", "-33.33%", "-33.33%", "-50%"] }}

@@ -3,11 +3,8 @@
 import { useRef } from "react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+
 
 const categories = [
   {
