@@ -67,7 +67,7 @@ export default function TodosLosProductos() {
   return (
     <section id="productos" className="bg-white">
       <div className="mx-auto max-w-[1500px] px-4 py-10 sm:px-6">
-        <h2 className="mb-6 border-b border-black/10 pb-4 text-2xl font-extrabold tracking-tight text-[#FF3412] sm:text-3xl">
+        <h2 className="mb-6 inline-block border-2 border-black bg-[#F4C845] px-4 py-2 text-2xl font-extrabold uppercase tracking-tight text-black sm:text-3xl">
           Todos los productos
         </h2>
 

@@ -1,12 +1,11 @@
 "use client";
 
 import { motion } from "motion/react";
-import { FaBagShopping, FaTruckFast, FaDisplay } from "react-icons/fa6";
+import { FaBagShopping, FaTruckFast } from "react-icons/fa6";
 
 const items = [
   { icon: FaBagShopping, label: "COMPRA MÍNIMA $50.000" },
   { icon: FaTruckFast, label: "ENVÍOS A TODO EL PAÍS" },
-  { icon: FaDisplay, label: "VENTA 100% ONLINE" },
 ];
 
 export default function TopBar() {

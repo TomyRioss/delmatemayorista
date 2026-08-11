@@ -1,6 +1,7 @@
 import TopBar from "@/components/landing/TopBar";
 import Navbar from "@/components/landing/Navbar";
 import WhatsappButton from "@/components/landing/WhatsappButton";
+import Footer from "@/components/landing/Footer";
 
 export default function SiteLayout({
   children,
@@ -12,6 +13,7 @@ export default function SiteLayout({
       <TopBar />
       <Navbar />
       {children}
+      <Footer />
       <WhatsappButton />
     </>
   );

@@ -3,19 +3,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Search, Users, Mail, Menu, X } from "lucide-react";
+import { Search, Users, Mail, Menu, X, LayoutGrid, Tag, Sparkles, ShoppingBag, Percent } from "lucide-react";
 
 const secondaryLinks = [
-  { href: "#productos", label: "Todos los productos" },
-  { href: "#categorias", label: "Categorias" },
-  { href: "/personalizados", label: "Productos personalizados", bold: true },
-  { href: "/como-comprar", label: "Como hacer tu compra" },
-  { href: "/personalizados", label: "Ofertas" },
+  { href: "#productos", label: "Todos los productos", icon: LayoutGrid },
+  { href: "#categorias", label: "Categorias", icon: Tag },
+  { href: "/personalizados", label: "Productos personalizados", icon: Sparkles, bold: true },
+  { href: "/como-comprar", label: "Como hacer tu compra", icon: ShoppingBag },
+  { href: "/personalizados", label: "Ofertas", icon: Percent },
 ];
 
 const iconLinks = [
-  { href: "#quienes-somos", label: "Quienes somos", icon: Users },
-  { href: "#contacto", label: "Contacto", icon: Mail },
+  { href: "/quienes-somos", label: "Quienes somos", icon: Users },
+  { href: "/contacto", label: "Contacto", icon: Mail },
 ];
 
 export default function Navbar() {
@@ -27,10 +27,10 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-4 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
           {/* Logo */}
           <Link href="/" className="flex shrink-0 flex-col items-center justify-center">
-            <span className="font-serif text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
+            <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
               Mayorista
             </span>
-            <div className="-mt-4 flex h-16 w-16 items-center justify-center sm:-mt-6 sm:h-28 sm:w-28">
+            <div className="-mt-2 flex h-16 w-16 items-center justify-center sm:-mt-3 sm:h-28 sm:w-28">
               <Image
                 src="/logo.png"
                 alt="Del Mate"
@@ -82,14 +82,15 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="border-b border-black/10 bg-white shadow-lg md:hidden">
           <nav className="mx-auto flex max-w-[1500px] flex-col px-4 py-4">
-            {secondaryLinks.map((link) => (
+            {secondaryLinks.map(({ href, label, icon: Icon }) => (
               <a
-                key={link.label}
-                href={link.href}
+                key={label}
+                href={href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`border-b border-black/5 py-3 text-sm font-bold uppercase tracking-wide text-black transition-colors last:border-b-0 hover:text-[#FF3412] ${link.bold ? "font-black" : ""}`}
+                className="mb-2 flex items-center gap-2 rounded-md border-2 border-black bg-[#F4C845] px-4 py-3 text-sm font-bold uppercase tracking-wide text-[#FF3412] transition-colors last:mb-0 hover:bg-black hover:text-[#F4C845]"
               >
-                {link.label}
+                <Icon className="h-4 w-4 shrink-0" strokeWidth={2.5} />
+                {label}
               </a>
             ))}
 
@@ -121,14 +122,15 @@ export default function Navbar() {
 
       {/* Nav desktop */}
       <nav className="hidden w-full border-b border-black/10 bg-white md:block">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-y-2 px-4 py-6 text-xs font-bold uppercase tracking-wide text-black sm:px-6 sm:text-sm">
-          {secondaryLinks.map((link) => (
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-4 py-6 text-xs font-bold uppercase tracking-wide sm:px-6 sm:text-sm">
+          {secondaryLinks.map(({ href, label, icon: Icon }) => (
             <a
-              key={link.label}
-              href={link.href}
-              className={`transition-colors hover:text-[#FF3412] ${link.bold ? "font-black" : ""}`}
+              key={label}
+              href={href}
+              className="flex items-center gap-2 rounded-md border-2 border-black bg-[#F4C845] px-4 py-2 text-[#FF3412] transition-colors hover:bg-black hover:text-[#F4C845]"
             >
-              {link.label}
+              <Icon className="h-4 w-4 shrink-0" strokeWidth={2.5} />
+              {label}
             </a>
           ))}
         </div>

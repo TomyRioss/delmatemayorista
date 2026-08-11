@@ -1,7 +1,6 @@
 import HeroSlider from "@/components/landing/HeroSlider";
 import PromoBanner from "@/components/landing/PromoBanner";
 import TodosLosProductos from "@/components/landing/TodosLosProductos";
-import Footer from "@/components/landing/Footer";
 import { reader } from "@/lib/keystatic";
 
 export default async function Home() {
@@ -21,7 +20,6 @@ export default async function Home() {
         <PromoBanner />
         <TodosLosProductos />
       </main>
-      <Footer />
     </div>
   );
 }
