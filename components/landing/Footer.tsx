@@ -12,21 +12,6 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#FF3412]">
       <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-10 px-6 py-10 sm:px-10">
-        <Link href="/" className="flex shrink-0 flex-col items-center justify-center">
-          <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
-            Mayorista
-          </span>
-          <div className="-mt-2 flex h-24 w-24 items-center justify-center sm:-mt-3 sm:h-32 sm:w-32">
-            <Image
-              src="/logo.png"
-              alt="Del Mate"
-              width={128}
-              height={128}
-              className="h-full w-full object-contain"
-            />
-          </div>
-        </Link>
-
         <div className="flex flex-col gap-4">
           <h3 className="text-xl font-bold uppercase text-white sm:text-2xl">
             Visitá nuestras redes sociales
@@ -67,6 +52,21 @@ export default function Footer() {
             <span className="text-sm font-medium sm:text-base">(011) 1565358444</span>
           </a>
         </div>
+
+        <Link href="/" className="flex shrink-0 flex-col items-center justify-center">
+          <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
+            Mayorista
+          </span>
+          <div className="-mt-2 flex h-24 w-24 items-center justify-center sm:-mt-3 sm:h-32 sm:w-32">
+            <Image
+              src="/logo.png"
+              alt="Del Mate"
+              width={128}
+              height={128}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        </Link>
       </div>
     </footer>
   );

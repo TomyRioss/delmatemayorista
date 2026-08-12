@@ -3,14 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Search, Users, Mail, Menu, X, LayoutGrid, Tag, Sparkles, ShoppingBag, Percent } from "lucide-react";
+import { Search, Users, Mail, Menu, X } from "lucide-react";
 
 const secondaryLinks = [
-  { href: "#productos", label: "Todos los productos", icon: LayoutGrid },
-  { href: "#categorias", label: "Categorias", icon: Tag },
-  { href: "/personalizados", label: "Productos personalizados", icon: Sparkles, bold: true },
-  { href: "/como-comprar", label: "Como hacer tu compra", icon: ShoppingBag },
-  { href: "/personalizados", label: "Ofertas", icon: Percent },
+  { href: "#productos", label: "Todos los productos" },
+  { href: "#categorias", label: "Categorias" },
+  { href: "/personalizados", label: "Productos personalizados" },
+  { href: "/ofertas", label: "Ofertas y novedades" },
 ];
 
 const iconLinks = [
@@ -25,25 +24,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full">
       <div className="w-full bg-[#FF3412]">
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-4 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
-          {/* Logo */}
-          <Link href="/" className="flex shrink-0 flex-col items-center justify-center">
-            <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
-              Mayorista
-            </span>
-            <div className="-mt-2 flex h-16 w-16 items-center justify-center sm:-mt-3 sm:h-28 sm:w-28">
-              <Image
-                src="/logo.png"
-                alt="Del Mate"
-                width={112}
-                height={112}
-                className="h-full w-full object-contain"
-                priority
-              />
-            </div>
-          </Link>
-
           {/* Buscador */}
-          <div className="order-3 flex min-w-[280px] flex-1 basis-full items-center gap-3 rounded-full bg-white px-5 py-3 sm:order-none sm:basis-auto sm:px-6 sm:py-4">
+          <div className="order-1 flex min-w-[280px] flex-1 basis-full items-center gap-3 rounded-full bg-white px-5 py-3 sm:basis-auto sm:px-6 sm:py-4">
             <input
               type="text"
               placeholder="QUE ESTAS BUSCANDO ?"
@@ -53,7 +35,7 @@ export default function Navbar() {
           </div>
 
           {/* Iconos desktop */}
-          <div className="hidden items-center gap-6 text-white sm:gap-10 md:flex">
+          <div className="order-2 hidden items-center gap-6 text-white sm:gap-10 md:flex">
             {iconLinks.map(({ href, label, icon: Icon }) => (
               <a key={label} href={href} className="flex flex-col items-center gap-1.5 hover:opacity-80">
                 <Icon className="h-7 w-7 sm:h-8 sm:w-8" strokeWidth={2} />
@@ -69,12 +51,29 @@ export default function Navbar() {
           {/* Botón hamburguesa móvil */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="ml-auto flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30 md:hidden"
+            className="order-3 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30 md:hidden"
             aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X className="h-7 w-7" strokeWidth={2.5} /> : <Menu className="h-7 w-7" strokeWidth={2.5} />}
           </button>
+
+          {/* Logo */}
+          <Link href="/" className="order-0 flex shrink-0 flex-col items-center justify-center">
+            <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
+              Mayorista
+            </span>
+            <div className="-mt-2 flex h-16 w-16 items-center justify-center sm:-mt-3 sm:h-28 sm:w-28">
+              <Image
+                src="/logo.png"
+                alt="Del Mate"
+                width={112}
+                height={112}
+                className="h-full w-full object-contain"
+                priority
+              />
+            </div>
+          </Link>
         </div>
       </div>
 
@@ -82,14 +81,13 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="border-b border-black/10 bg-white shadow-lg md:hidden">
           <nav className="mx-auto flex max-w-[1500px] flex-col px-4 py-4">
-            {secondaryLinks.map(({ href, label, icon: Icon }) => (
+            {secondaryLinks.map(({ href, label }) => (
               <a
                 key={label}
                 href={href}
                 onClick={() => setIsMenuOpen(false)}
-                className="mb-2 flex items-center gap-2 rounded-md border-2 border-black bg-[#F4C845] px-4 py-3 text-sm font-bold uppercase tracking-wide text-[#FF3412] transition-colors last:mb-0 hover:bg-black hover:text-[#F4C845]"
+                className="mb-2 flex items-center justify-center rounded-md border-2 border-black bg-[#F4C845] px-4 py-3 text-sm font-bold uppercase tracking-wide text-black transition-colors last:mb-0 hover:bg-black hover:text-[#F4C845]"
               >
-                <Icon className="h-4 w-4 shrink-0" strokeWidth={2.5} />
                 {label}
               </a>
             ))}
@@ -122,14 +120,13 @@ export default function Navbar() {
 
       {/* Nav desktop */}
       <nav className="hidden w-full border-b border-black/10 bg-white md:block">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-4 py-6 text-xs font-bold uppercase tracking-wide sm:px-6 sm:text-sm">
-          {secondaryLinks.map(({ href, label, icon: Icon }) => (
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-4 py-6 text-sm font-bold uppercase tracking-wide sm:px-6 sm:text-base">
+          {secondaryLinks.map(({ href, label }) => (
             <a
               key={label}
               href={href}
-              className="flex items-center gap-2 rounded-md border-2 border-black bg-[#F4C845] px-4 py-2 text-[#FF3412] transition-colors hover:bg-black hover:text-[#F4C845]"
+              className="flex items-center rounded-md border-2 border-black bg-[#F4C845] px-5 py-3 text-black transition-colors hover:bg-black hover:text-[#F4C845]"
             >
-              <Icon className="h-4 w-4 shrink-0" strokeWidth={2.5} />
               {label}
             </a>
           ))}
