@@ -1,0 +1,13 @@
+{
+  "nombre": "Termo 1 litro con manija",
+  "precio": 16900,
+  "categoria": "termos",
+  "imagenes": [
+    "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg"
+  ],
+  "descripcion": "Termo con manija reforzada, pico cebador y tapón hermético.",
+  "cantidadMinima": 3,
+  "destacado": false,
+  "enOferta": true,
+  "precioOferta": 13500
+}

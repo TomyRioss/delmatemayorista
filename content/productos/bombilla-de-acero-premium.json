@@ -1,0 +1,13 @@
+{
+  "nombre": "Bombilla de acero premium",
+  "precio": 3200,
+  "categoria": "accesorios",
+  "imagenes": [
+    "https://images.pexels.com/photos/7041902/pexels-photo-7041902.jpeg"
+  ],
+  "descripcion": "Bombilla de acero inoxidable con filtro pico loro, apta para lavavajillas.",
+  "cantidadMinima": 6,
+  "destacado": false,
+  "enOferta": false,
+  "precioOferta": 0
+}

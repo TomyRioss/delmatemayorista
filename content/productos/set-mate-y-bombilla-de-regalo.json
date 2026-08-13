@@ -1,0 +1,14 @@
+{
+  "nombre": "Set mate y bombilla de regalo",
+  "precio": 12500,
+  "categoria": "bazar",
+  "imagenes": [
+    "https://images.pexels.com/photos/8279921/pexels-photo-8279921.jpeg",
+    "https://images.pexels.com/photos/7041902/pexels-photo-7041902.jpeg"
+  ],
+  "descripcion": "Set de regalo con mate, bombilla y caja de presentación. Ideal para eventos empresariales.",
+  "cantidadMinima": 3,
+  "destacado": true,
+  "enOferta": false,
+  "precioOferta": 0
+}

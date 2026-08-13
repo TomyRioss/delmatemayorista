@@ -1,0 +1,13 @@
+{
+  "nombre": "Yerba mate paquete 1kg",
+  "precio": 3400,
+  "categoria": "yerbas",
+  "imagenes": [
+    "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg"
+  ],
+  "descripcion": "Yerba mate tradicional, paquete de 1kg. Compra mínima: 10 unidades.",
+  "cantidadMinima": 10,
+  "destacado": false,
+  "enOferta": false,
+  "precioOferta": 0
+}

@@ -1,0 +1,19 @@
+{
+  "codigo": "ord-1786659022699",
+  "fecha": "2026-08-13T22:10:22.699Z",
+  "estado": "nuevo",
+  "comprador": {
+    "nombre": "ghgfhgf",
+    "apellido": "hgfhf",
+    "email": "khjkjhkh@gmail.com",
+    "telefono": "+54 3525 549999"
+  },
+  "items": [
+    {
+      "nombre": "Termo 1L acero",
+      "cantidad": 4,
+      "precio": 15900
+    }
+  ],
+  "total": 63600
+}

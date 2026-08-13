@@ -1,0 +1,14 @@
+{
+  "nombre": "Mate de vidrio forrado en cuero",
+  "precio": 8500,
+  "categoria": "mates",
+  "imagenes": [
+    "https://images.pexels.com/photos/13526973/pexels-photo-13526973.jpeg",
+    "https://images.pexels.com/photos/8279921/pexels-photo-8279921.jpeg"
+  ],
+  "descripcion": "Mate de vidrio templado forrado en cuero genuino. Compra mínima mayorista: 3 unidades. Consultar disponibilidad de caja cerrada antes de confirmar el pedido.",
+  "cantidadMinima": 3,
+  "destacado": true,
+  "enOferta": false,
+  "precioOferta": 0
+}

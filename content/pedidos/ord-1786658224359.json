@@ -1,0 +1,19 @@
+{
+  "codigo": "ord-1786658224359",
+  "fecha": "2026-08-13T21:57:04.359Z",
+  "estado": "nuevo",
+  "comprador": {
+    "nombre": "Manuel Santujo",
+    "apellido": "fdsf",
+    "email": "supermami@correo.com",
+    "telefono": "+54 3525 999999"
+  },
+  "items": [
+    {
+      "nombre": "Yerbera y azucarera de acero",
+      "cantidad": 5,
+      "precio": 11200
+    }
+  ],
+  "total": 56000
+}

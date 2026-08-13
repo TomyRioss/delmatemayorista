@@ -1,0 +1,13 @@
+{
+  "nombre": "Yerbera y azucarera de acero",
+  "precio": 11200,
+  "categoria": "accesorios",
+  "imagenes": [
+    "https://images.pexels.com/photos/13526973/pexels-photo-13526973.jpeg"
+  ],
+  "descripcion": "Set de yerbera y azucarera en acero inoxidable con tapa hermética.",
+  "cantidadMinima": 3,
+  "destacado": false,
+  "enOferta": false,
+  "precioOferta": 0
+}

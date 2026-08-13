@@ -1,0 +1,13 @@
+{
+  "nombre": "Mochila térmica porta mate",
+  "precio": 21500,
+  "categoria": "mochilas",
+  "imagenes": [
+    "https://images.pexels.com/photos/1004897/pexels-photo-1004897.jpeg"
+  ],
+  "descripcion": "Mochila térmica con compartimento para termo, mate y yerbera. Resistente al agua.",
+  "cantidadMinima": 2,
+  "destacado": false,
+  "enOferta": true,
+  "precioOferta": 17900
+}

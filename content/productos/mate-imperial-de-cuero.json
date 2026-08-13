@@ -1,0 +1,13 @@
+{
+  "nombre": "Mate imperial de cuero",
+  "precio": 9800,
+  "categoria": "mates",
+  "imagenes": [
+    "https://images.pexels.com/photos/8279921/pexels-photo-8279921.jpeg"
+  ],
+  "descripcion": "Mate imperial forrado íntegramente en cuero, terminación premium. Ideal para regalo empresarial.",
+  "cantidadMinima": 3,
+  "destacado": false,
+  "enOferta": true,
+  "precioOferta": 7900
+}

@@ -1,0 +1,14 @@
+{
+  "nombre": "Termo 1 litro acero inoxidable",
+  "precio": 15400,
+  "categoria": "termos",
+  "imagenes": [
+    "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg",
+    "https://images.pexels.com/photos/1004897/pexels-photo-1004897.jpeg"
+  ],
+  "descripcion": "Termo de acero inoxidable de 1 litro, mantiene la temperatura hasta 12 horas. Compra mínima: 3 unidades.",
+  "cantidadMinima": 3,
+  "destacado": true,
+  "enOferta": false,
+  "precioOferta": 0
+}

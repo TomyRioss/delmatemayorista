@@ -1,0 +1,13 @@
+{
+  "nombre": "Mate camionero torpedo",
+  "precio": 6200,
+  "categoria": "mates",
+  "imagenes": [
+    "https://images.pexels.com/photos/7041902/pexels-photo-7041902.jpeg"
+  ],
+  "descripcion": "Mate camionero clásico, resistente y de gran tamaño. Compra mínima: 5 unidades.",
+  "cantidadMinima": 5,
+  "destacado": false,
+  "enOferta": false,
+  "precioOferta": 0
+}

@@ -1,0 +1,13 @@
+{
+  "nombre": "Billetera de cuero",
+  "precio": 9500,
+  "categoria": "marroquineria",
+  "imagenes": [
+    "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg"
+  ],
+  "descripcion": "Billetera de cuero genuino con múltiples compartimentos.",
+  "cantidadMinima": 5,
+  "destacado": false,
+  "enOferta": false,
+  "precioOferta": 0
+}
