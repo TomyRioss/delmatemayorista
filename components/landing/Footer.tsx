@@ -11,7 +11,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="w-full bg-[#FF3412]">
-      <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-10 px-6 py-10 sm:px-10">
+      <div className="mx-auto flex max-w-[1500px] flex-col items-start gap-10 px-6 py-10 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:px-10">
         <div className="flex flex-col gap-4">
           <h3 className="text-xl font-bold uppercase text-white sm:text-2xl">
             Visitá nuestras redes sociales
@@ -66,6 +66,12 @@ export default function Footer() {
               className="h-full w-full object-contain"
             />
           </div>
+        </Link>
+      </div>
+
+      <div className="border-t border-white/20 px-6 py-3 text-center sm:px-10">
+        <Link href="/admin/login" className="text-xs font-medium text-white/70 hover:text-white hover:underline">
+          Admin
         </Link>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { FaBagShopping, FaTruckFast } from "react-icons/fa6";
 
 const items = [
@@ -9,11 +9,17 @@ const items = [
 ];
 
 export default function TopBar() {
+  const reduceMotion = useReducedMotion();
+
   return (
     <div className="w-full overflow-hidden ">
       <motion.div
         className="flex w-max whitespace-nowrap bg-white py-4"
-        animate={{ x: ["0%", "-16.66%", "-16.66%", "-33.33%", "-33.33%", "-50%"] }}
+        animate={
+          reduceMotion
+            ? { x: "0%" }
+            : { x: ["0%", "-16.66%", "-16.66%", "-33.33%", "-33.33%", "-50%"] }
+        }
         transition={{
           duration: 120,
           times: [0, 0.3, 0.4, 0.7, 0.8, 1],

@@ -1,0 +1,21 @@
+{
+  "codigo": "PED-1786582736386",
+  "fecha": "2026-08-13",
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "email": "juan@example.com",
+  "telefono": "1165358444",
+  "items": [
+    {
+      "producto": "Mate imperial cuero test",
+      "cantidad": 2,
+      "precioUnitario": 8500
+    },
+    {
+      "producto": "Termo 1L acero test",
+      "cantidad": 1,
+      "precioUnitario": 15000
+    }
+  ],
+  "total": 32000
+}

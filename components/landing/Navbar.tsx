@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Search, Users, Mail, Menu, X } from "lucide-react";
+import { useCart } from "@/lib/cart-context";
 
 const secondaryLinks = [
-  { href: "#productos", label: "Todos los productos" },
-  { href: "#categorias", label: "Categorias" },
+  { href: "/#productos", label: "Todos los productos" },
+  { href: "/tienda", label: "Categorias" },
   { href: "/personalizados", label: "Productos personalizados" },
   { href: "/ofertas", label: "Ofertas y novedades" },
 ];
@@ -19,20 +21,54 @@ const iconLinks = [
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalCount, openCart } = useCart();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    document.body.style.overflow = "hidden";
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isMenuOpen]);
+
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const query = new FormData(e.currentTarget).get("q");
+    router.push(`/buscar?q=${encodeURIComponent(String(query || ""))}`);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full">
       <div className="w-full bg-[#FF3412]">
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-4 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
           {/* Buscador */}
-          <div className="order-1 flex min-w-[280px] flex-1 basis-full items-center gap-3 rounded-full bg-white px-5 py-3 sm:basis-auto sm:px-6 sm:py-4">
+          <form
+            onSubmit={handleSearch}
+            role="search"
+            className="order-1 flex min-w-[280px] flex-1 basis-full items-center gap-3 rounded-full bg-white px-5 py-3 sm:basis-auto sm:px-6 sm:py-4"
+          >
+            <label htmlFor="navbar-search" className="sr-only">
+              Buscar productos
+            </label>
             <input
-              type="text"
+              id="navbar-search"
+              name="q"
+              type="search"
               placeholder="QUE ESTAS BUSCANDO ?"
               className="w-full bg-transparent text-sm font-semibold uppercase tracking-wide text-black placeholder:text-black/50 focus:outline-none sm:text-base"
             />
-            <Search className="h-6 w-6 shrink-0 text-black" strokeWidth={2} />
-          </div>
+            <button type="submit" aria-label="Buscar" className="shrink-0">
+              <Search className="h-6 w-6 text-black" strokeWidth={2} />
+            </button>
+          </form>
 
           {/* Iconos desktop */}
           <div className="order-2 hidden items-center gap-6 text-white sm:gap-10 md:flex">
@@ -42,10 +78,19 @@ export default function Navbar() {
                 <span className="text-[10px] font-bold uppercase tracking-wide sm:text-xs">{label}</span>
               </a>
             ))}
-            <a href="#carrito" className="flex flex-col items-center gap-1.5 hover:opacity-80">
+            <button
+              type="button"
+              onClick={openCart}
+              className="relative flex flex-col items-center gap-1.5 hover:opacity-80"
+            >
               <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-24 w-24 object-contain sm:h-28 sm:w-28" />
+              {totalCount > 0 && (
+                <span className="absolute top-0 right-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F4C845] px-1 text-[11px] font-black text-black">
+                  {totalCount}
+                </span>
+              )}
               <span className="text-[10px] font-bold uppercase tracking-wide sm:text-xs">Mi carrito</span>
-            </a>
+            </button>
           </div>
 
           {/* Botón hamburguesa móvil */}
@@ -86,7 +131,7 @@ export default function Navbar() {
                 key={label}
                 href={href}
                 onClick={() => setIsMenuOpen(false)}
-                className="mb-2 flex items-center justify-center rounded-md border-2 border-black bg-[#F4C845] px-4 py-3 text-sm font-bold uppercase tracking-wide text-black transition-colors last:mb-0 hover:bg-black hover:text-[#F4C845]"
+                className="mb-2 flex items-center justify-center rounded-md border-2 border-black bg-[#F4C845] px-4 py-3 text-sm font-bold uppercase tracking-wide text-black transition-colors last:mb-0 hover:bg-[#E0B23A]"
               >
                 {label}
               </a>
@@ -105,14 +150,22 @@ export default function Navbar() {
                   <span className="text-[10px] font-bold uppercase tracking-wide">{label}</span>
                 </a>
               ))}
-              <a
-                href="#carrito"
-                onClick={() => setIsMenuOpen(false)}
-                className="flex flex-col items-center gap-1.5 text-black hover:text-[#FF3412]"
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  openCart();
+                }}
+                className="relative flex flex-col items-center gap-1.5 text-black hover:text-[#FF3412]"
               >
                 <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-16 w-16 object-contain" />
+                {totalCount > 0 && (
+                  <span className="absolute top-0 right-0 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F4C845] px-1 text-[11px] font-black text-black">
+                    {totalCount}
+                  </span>
+                )}
                 <span className="text-[10px] font-bold uppercase tracking-wide">Mi carrito</span>
-              </a>
+              </button>
             </div>
           </nav>
         </div>
@@ -125,7 +178,7 @@ export default function Navbar() {
             <a
               key={label}
               href={href}
-              className="flex items-center rounded-md border-2 border-black bg-[#F4C845] px-5 py-3 text-black transition-colors hover:bg-black hover:text-[#F4C845]"
+              className="flex items-center rounded-md border-2 border-black bg-[#F4C845] px-5 py-3 text-black transition-colors hover:bg-[#E0B23A]"
             >
               {label}
             </a>

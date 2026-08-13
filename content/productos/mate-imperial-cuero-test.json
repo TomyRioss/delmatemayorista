@@ -1,0 +1,15 @@
+{
+  "name": "Mate imperial cuero test",
+  "price": 8500,
+  "images": [
+    "/productos/mate-imperial-cuero-test/images/0.jpg"
+  ],
+  "description": "Producto de prueba para test end to end.",
+  "category": "mates",
+  "variantGroup": "mate-imperial-cuero",
+  "variantLabel": "Rojo",
+  "minPurchase": {
+    "discriminant": "price",
+    "value": 15000
+  }
+}

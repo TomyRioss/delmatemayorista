@@ -75,7 +75,7 @@ export default function ComoComprarPage() {
   return (
     <div className="flex flex-1 flex-col bg-white">
       <main className="mx-auto flex w-full max-w-[1500px] flex-1 flex-col gap-8 px-4 py-8 sm:px-6 lg:flex-row">
-        <aside className="flex w-full shrink-0 flex-col gap-4 lg:sticky lg:top-[260px] lg:h-fit lg:w-72">
+        <aside className="flex w-full shrink-0 flex-col gap-4 lg:sticky lg:top-[320px] lg:h-fit lg:w-72">
           <a
             href="https://wa.me/5491100000000"
             className="flex items-center gap-2 rounded-sm border border-black/10 bg-zinc-50 px-4 py-3 font-bold text-[#FF3412] hover:bg-zinc-100"
@@ -124,7 +124,7 @@ export default function ComoComprarPage() {
 
           <div className="mt-10 flex flex-col gap-10">
             {secciones.map((seccion) => (
-              <section key={seccion.id} id={seccion.id} className="scroll-mt-24">
+              <section key={seccion.id} id={seccion.id} className="scroll-mt-40">
                 <h2 className="mb-3 text-xl font-black uppercase text-black sm:text-2xl">{seccion.titulo}</h2>
                 {seccion.parrafos.map((p, i) => (
                   <p key={i} className="mb-3 text-sm leading-relaxed text-black/70 sm:text-base">
