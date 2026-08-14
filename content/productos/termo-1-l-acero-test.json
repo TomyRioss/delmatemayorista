@@ -1,7 +1,9 @@
 {
   "name": "Termo 1L acero test",
   "price": 15000,
-  "images": [],
+  "images": [
+    "/productos/termo-1-l-acero-test/images/0.jpg"
+  ],
   "description": "Producto de prueba 2, compra minima por precio.",
   "category": "termos",
   "minPurchase": {

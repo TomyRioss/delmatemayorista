@@ -22,14 +22,10 @@ export default async function ProductoPage({
     .filter((p) => p.category === categoria && p.slug !== producto)
     .slice(0, 8);
 
-  const variants = product.variantGroup
-    ? products.filter((p) => p.variantGroup === product.variantGroup)
-    : [];
-
   return (
     <div className="flex flex-1 flex-col bg-white">
       <main className="mx-auto w-full max-w-[1500px] flex-1 px-4 py-10 sm:px-6">
-        <ProductDetail product={product} variants={variants} />
+        <ProductDetail product={product} />
       </main>
 
       {recommended.length > 0 && (

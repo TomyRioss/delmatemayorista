@@ -1,0 +1,20 @@
+{
+  "name": "mate de cuero test",
+  "price": 15000,
+  "images": [
+    "/productos/mate-de-cuero-test/images/0.jpg"
+  ],
+  "category": "mates",
+  "variantes": [
+    {
+      "nombre": "Eco Cuero",
+      "imagenes": [
+        "/productos/mate-de-cuero-test/variantes/0/imagenes/0.jpg"
+      ]
+    }
+  ],
+  "minPurchase": {
+    "discriminant": "price",
+    "value": 10000
+  }
+}

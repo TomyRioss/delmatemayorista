@@ -88,15 +88,42 @@ export default config({
         ),
         description: fields.text({ label: 'Descripción', multiline: true }),
         category: fields.relationship({ label: 'Categoría', collection: 'categorias' }),
-        variantGroup: fields.text({
-          label: 'Grupo de variantes',
-          description:
-            'Opcional. Productos con el mismo valor acá (ej: "mate-imperial-cuero") se muestran como variantes entre sí en la página de producto.',
-        }),
-        variantLabel: fields.text({
-          label: 'Nombre de esta variante',
-          description: 'Opcional. Ej: "Rojo", "Blanco", "Negro". Se muestra como opción para elegir.',
-        }),
+        variantes: fields.array(
+          fields.object({
+            nombre: fields.text({
+              label: 'Nombre de la variante',
+              description: 'Ej: "Eco cuero", "Cuero rojo", "Cuero Torino"',
+            }),
+            precio: fields.number({
+              label: 'Precio (opcional)',
+              description: 'Si lo dejás vacío, usa el precio del producto.',
+              validation: { min: 0 },
+            }),
+            imagenes: fields.array(
+              fields.image({
+                label: 'Imagen',
+                directory: 'public/productos',
+                publicPath: '/productos/',
+              }),
+              {
+                label: 'Imágenes (opcional)',
+                description: 'Si no cargás ninguna, usa las imágenes del producto.',
+                itemLabel: () => 'Imagen',
+              }
+            ),
+            descripcion: fields.text({
+              label: 'Descripción (opcional)',
+              description: 'Si la dejás vacía, usa la descripción del producto.',
+              multiline: true,
+            }),
+          }),
+          {
+            label: 'Variantes de este producto',
+            description:
+              'Opcional. Otros colores o modelos del mismo producto (ej: cuero rojo, cuero Torino). El cliente elige entre la opción estándar (arriba) y estas variantes sin salir de la página del producto.',
+            itemLabel: (props) => props.fields.nombre.value || 'Variante',
+          }
+        ),
         minPurchase: fields.conditional(
           fields.select({
             label: 'Compra mínima',
