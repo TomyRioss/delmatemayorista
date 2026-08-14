@@ -2,12 +2,11 @@ import { config, fields, collection, singleton } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'local', // Cambiar esto a 'github' para produccion y configurar la authenticacion para el admin
-    // Ademas agregar esto para produccion
-    // repo: {
-    // owner: 'TomyRioss',
-    // name: 'delmatemayorista',
-    // }
+    kind: 'github',
+    repo: {
+      owner: 'TomyRioss',
+      name: 'delmatemayorista',
+    },
   },
   singletons: {
     bannerPersonalizado: singleton({
