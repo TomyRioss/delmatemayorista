@@ -5,6 +5,8 @@ import ProductGrid from "@/components/landing/ProductGrid";
 import { reader } from "@/lib/keystatic";
 import { getProducts } from "@/lib/products";
 
+export const revalidate = 60;
+
 export default async function Home() {
 
   const categoriasRaw = await reader.collections.categorias.all();

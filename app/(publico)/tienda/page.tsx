@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { reader } from "@/lib/keystatic";
 
+export const revalidate = 60;
+
 export default async function TiendaPage() {
   const categoriasRaw = await reader.collections.categorias.all();
   const categorias = categoriasRaw.map((c) => ({

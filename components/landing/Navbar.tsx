@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Search, Users, Mail, Menu, X } from "lucide-react";
+import { Search, Users, Mail } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 
 const secondaryLinks = [
@@ -20,24 +19,8 @@ const iconLinks = [
 ];
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { totalCount, openCart } = useCart();
   const router = useRouter();
-
-  useEffect(() => {
-    if (!isMenuOpen) return;
-
-    document.body.style.overflow = "hidden";
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsMenuOpen(false);
-    };
-    window.addEventListener("keydown", onKeyDown);
-
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", onKeyDown);
-    };
-  }, [isMenuOpen]);
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -48,12 +31,29 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full">
       <div className="w-full bg-[#FF3412]">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-4 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-3 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
+          {/* Logo */}
+          <Link href="/" className="order-1 flex w-full shrink-0 flex-col items-center justify-center sm:order-0 sm:w-auto">
+            <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
+              Mayorista
+            </span>
+            <div className="-mt-2 flex h-20 w-20 items-center justify-center sm:-mt-3 sm:h-28 sm:w-28">
+              <Image
+                src="/logo.png"
+                alt="Del Mate"
+                width={112}
+                height={112}
+                className="h-full w-full object-contain"
+                priority
+              />
+            </div>
+          </Link>
+
           {/* Buscador */}
           <form
             onSubmit={handleSearch}
             role="search"
-            className="order-1 flex min-w-[280px] flex-1 basis-full items-center gap-3 rounded-full bg-white px-5 py-3 sm:basis-auto sm:px-6 sm:py-4"
+            className="order-2 flex min-w-[280px] flex-1 basis-full items-center gap-3 rounded-full bg-white px-5 py-3 sm:basis-auto sm:px-6 sm:py-4"
           >
             <label htmlFor="navbar-search" className="sr-only">
               Buscar productos
@@ -70,11 +70,24 @@ export default function Navbar() {
             </button>
           </form>
 
-          {/* Iconos desktop */}
-          <div className="order-2 hidden items-center gap-6 text-white sm:gap-10 md:flex">
+          {/* Botones secundarios móvil */}
+          <div className="order-3 flex w-full basis-full flex-wrap justify-center gap-1.5 sm:hidden">
+            {secondaryLinks.map(({ href, label }) => (
+              <a
+                key={label}
+                href={href}
+                className="rounded-md border-2 border-black bg-[#F4C845] px-2.5 py-1.5 text-[11px] font-bold uppercase leading-tight tracking-wide text-black transition-colors hover:bg-[#E0B23A]"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+
+          {/* Iconos */}
+          <div className="order-4 flex w-full basis-full items-center justify-center gap-6 text-white sm:order-2 sm:w-auto sm:basis-auto sm:gap-10">
             {iconLinks.map(({ href, label, icon: Icon }) => (
               <a key={label} href={href} className="flex flex-col items-center gap-1.5 hover:opacity-80">
-                <Icon className="h-7 w-7 sm:h-8 sm:w-8" strokeWidth={2} />
+                <Icon className="h-6 w-6 sm:h-8 sm:w-8" strokeWidth={2} />
                 <span className="text-[10px] font-bold uppercase tracking-wide sm:text-xs">{label}</span>
               </a>
             ))}
@@ -83,7 +96,7 @@ export default function Navbar() {
               onClick={openCart}
               className="relative flex flex-col items-center gap-1.5 hover:opacity-80"
             >
-              <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-24 w-24 object-contain sm:h-28 sm:w-28" />
+              <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-16 w-16 object-contain sm:h-28 sm:w-28" />
               {totalCount > 0 && (
                 <span className="absolute top-0 right-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F4C845] px-1 text-[11px] font-black text-black">
                   {totalCount}
@@ -92,84 +105,8 @@ export default function Navbar() {
               <span className="text-[10px] font-bold uppercase tracking-wide sm:text-xs">Mi carrito</span>
             </button>
           </div>
-
-          {/* Botón hamburguesa móvil */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="order-3 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30 md:hidden"
-            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X className="h-7 w-7" strokeWidth={2.5} /> : <Menu className="h-7 w-7" strokeWidth={2.5} />}
-          </button>
-
-          {/* Logo */}
-          <Link href="/" className="order-0 flex shrink-0 flex-col items-center justify-center">
-            <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
-              Mayorista
-            </span>
-            <div className="-mt-2 flex h-16 w-16 items-center justify-center sm:-mt-3 sm:h-28 sm:w-28">
-              <Image
-                src="/logo.png"
-                alt="Del Mate"
-                width={112}
-                height={112}
-                className="h-full w-full object-contain"
-                priority
-              />
-            </div>
-          </Link>
         </div>
       </div>
-
-      {/* Menú móvil desplegable */}
-      {isMenuOpen && (
-        <div className="border-b border-black/10 bg-white shadow-lg md:hidden">
-          <nav className="mx-auto flex max-w-[1500px] flex-col px-4 py-4">
-            {secondaryLinks.map(({ href, label }) => (
-              <a
-                key={label}
-                href={href}
-                onClick={() => setIsMenuOpen(false)}
-                className="mb-2 flex items-center justify-center rounded-md border-2 border-black bg-[#F4C845] px-4 py-3 text-sm font-bold uppercase tracking-wide text-black transition-colors last:mb-0 hover:bg-[#E0B23A]"
-              >
-                {label}
-              </a>
-            ))}
-
-            {/* Iconos móvil */}
-            <div className="mt-4 flex items-center justify-around border-t border-black/10 pt-4">
-              {iconLinks.map(({ href, label, icon: Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex flex-col items-center gap-1.5 text-black hover:text-[#FF3412]"
-                >
-                  <Icon className="h-6 w-6" strokeWidth={2} />
-                  <span className="text-[10px] font-bold uppercase tracking-wide">{label}</span>
-                </a>
-              ))}
-              <button
-                type="button"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  openCart();
-                }}
-                className="relative flex flex-col items-center gap-1.5 text-black hover:text-[#FF3412]"
-              >
-                <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-16 w-16 object-contain" />
-                {totalCount > 0 && (
-                  <span className="absolute top-0 right-0 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F4C845] px-1 text-[11px] font-black text-black">
-                    {totalCount}
-                  </span>
-                )}
-                <span className="text-[10px] font-bold uppercase tracking-wide">Mi carrito</span>
-              </button>
-            </div>
-          </nav>
-        </div>
-      )}
 
       {/* Nav desktop */}
       <nav className="hidden w-full border-b border-black/10 bg-white md:block">

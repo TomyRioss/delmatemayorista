@@ -4,6 +4,8 @@ import { getProducts } from "@/lib/products";
 import ProductDetail from "@/components/landing/ProductDetail";
 import ProductGrid from "@/components/landing/ProductGrid";
 
+export const revalidate = 60;
+
 export default async function ProductoPage({
   params,
 }: {
