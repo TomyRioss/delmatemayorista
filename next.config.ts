@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [{ hostname: "images.pexels.com" }],
   },
-  allowedDevOrigins: ['TU-IP-QUE-TE-MOSTRÓ-EL-ERROR'],
+  allowedDevOrigins: ["127.0.0.1", "localhost"],
 };
 
 export default nextConfig;

@@ -14,7 +14,11 @@ export async function middleware(request: NextRequest) {
     return NextResponse.json({ error: "No autorizado." }, { status: 401 });
   }
 
-  const loginUrl = new URL("/admin/login", request.url);
+  const loginUrl = request.nextUrl.clone();
+  loginUrl.pathname = "/admin/login";
+  loginUrl.search = "";
+  const host = request.headers.get("host");
+  if (host) loginUrl.host = host;
   return NextResponse.redirect(loginUrl);
 }
 
