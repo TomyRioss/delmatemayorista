@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { mkdir, writeFile } from "fs/promises";
-import path from "path";
+import { getInstallationToken } from "@/lib/github-app";
 
 type PedidoItem = {
   producto: string;
@@ -70,10 +69,6 @@ export async function POST(request: Request) {
   const codigo = `PED-${timestamp}`;
   const fecha = new Date(timestamp).toISOString().slice(0, 10);
 
-  const pedidosDir = path.join(process.cwd(), "content", "pedidos");
-  await mkdir(pedidosDir, { recursive: true });
-
-  const filePath = path.join(pedidosDir, `${codigo.toLowerCase()}.json`);
   const data = {
     codigo,
     fecha,
@@ -85,7 +80,47 @@ export async function POST(request: Request) {
     total: body.total,
   };
 
-  await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8");
+  let token: string;
+  try {
+    token = await getInstallationToken();
+  } catch (err) {
+    console.error("Error al obtener installation token de GitHub App:", err);
+    return NextResponse.json(
+      { error: "No se pudo registrar el pedido. Contactanos por WhatsApp." },
+      { status: 500 }
+    );
+  }
+
+  const owner = "TomyRioss";
+  const repo = "delmatemayorista";
+  const filePath = `content/pedidos/${codigo.toLowerCase()}.json`;
+  const content = Buffer.from(JSON.stringify(data, null, 2), "utf-8").toString("base64");
+
+  const ghResponse = await fetch(
+    `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
+    {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+      body: JSON.stringify({
+        message: `Nuevo pedido ${codigo}`,
+        content,
+        branch: "main",
+      }),
+    }
+  );
+
+  if (!ghResponse.ok) {
+    const errorBody = await ghResponse.text();
+    console.error("Error al commitear pedido en GitHub:", ghResponse.status, errorBody);
+    return NextResponse.json(
+      { error: "No se pudo registrar el pedido. Contactanos por WhatsApp." },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({ ok: true, codigo });
 }
