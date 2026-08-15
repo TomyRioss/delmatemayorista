@@ -71,12 +71,12 @@ export default function Navbar() {
           </form>
 
           {/* Botones secundarios móvil */}
-          <div className="order-3 flex w-full basis-full flex-wrap justify-center gap-1.5 sm:hidden">
+          <div className="order-3 flex w-full basis-full gap-1.5 overflow-x-auto sm:hidden">
             {secondaryLinks.map(({ href, label }) => (
               <a
                 key={label}
                 href={href}
-                className="rounded-md border-2 border-black bg-[#F4C845] px-2.5 py-1.5 text-[11px] font-bold uppercase leading-tight tracking-wide text-black transition-colors hover:bg-[#E0B23A]"
+                className="shrink-0 whitespace-nowrap rounded-md border-2 border-black bg-[#F4C845] px-2.5 py-1.5 text-[11px] font-bold uppercase leading-tight tracking-wide text-black transition-colors hover:bg-[#E0B23A]"
               >
                 {label}
               </a>
