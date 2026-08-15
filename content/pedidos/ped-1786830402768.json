@@ -1,0 +1,16 @@
+{
+  "codigo": "PED-1786830402768",
+  "fecha": "2026-08-15",
+  "nombre": "Tomas",
+  "apellido": "Rios",
+  "email": "tomyrios2006@gmail.com",
+  "telefono": "01134083140",
+  "items": [
+    {
+      "producto": "Producto Prueba",
+      "cantidad": 4,
+      "precioUnitario": 15000
+    }
+  ],
+  "total": 60000
+}
