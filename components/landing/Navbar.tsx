@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Search, Users, Mail } from "lucide-react";
+import { Search, Users, Mail, ChevronRight } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 
 const secondaryLinks = [
@@ -71,16 +72,26 @@ export default function Navbar() {
           </form>
 
           {/* Botones secundarios móvil */}
-          <div className="order-3 flex w-full basis-full gap-1.5 overflow-x-auto sm:hidden">
-            {secondaryLinks.map(({ href, label }) => (
-              <a
-                key={label}
-                href={href}
-                className="shrink-0 whitespace-nowrap rounded-md border-2 border-black bg-[#F4C845] px-2.5 py-1.5 text-[11px] font-bold uppercase leading-tight tracking-wide text-black transition-colors hover:bg-[#E0B23A]"
+          <div className="relative order-3 w-full basis-full sm:hidden">
+            <div className="flex w-full gap-1.5 overflow-x-auto pr-8">
+              {secondaryLinks.map(({ href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  className="shrink-0 whitespace-nowrap rounded-md border-2 border-black bg-[#F4C845] px-2.5 py-1.5 text-[11px] font-bold uppercase leading-tight tracking-wide text-black transition-colors hover:bg-[#E0B23A]"
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center bg-gradient-to-l from-[#FF3412] via-[#FF3412]/80 to-transparent pl-4">
+              <motion.div
+                animate={{ x: [0, 4, 0] }}
+                transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
               >
-                {label}
-              </a>
-            ))}
+                <ChevronRight className="h-4 w-4 text-white" strokeWidth={3} />
+              </motion.div>
+            </div>
           </div>
 
           {/* Iconos */}
