@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [{ hostname: "images.pexels.com" }],
   },
   allowedDevOrigins: ["127.0.0.1", "localhost"],
+  outputFileTracingIncludes: {
+    "/**": ["./content/**"],
+  },
 };
 
 export default nextConfig;
