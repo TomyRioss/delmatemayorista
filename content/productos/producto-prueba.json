@@ -1,0 +1,23 @@
+{
+  "name": "Producto Prueba",
+  "price": 15000,
+  "images": [
+    "/productos/producto-prueba/images/0.jpg"
+  ],
+  "description": "Mate con Termo de Prueba",
+  "category": "termos",
+  "variantes": [
+    {
+      "nombre": "Solo Mate",
+      "precio": 5000,
+      "imagenes": [
+        "/productos/producto-prueba/variantes/0/imagenes/0.jpg"
+      ],
+      "descripcion": "Solo mate y no termo"
+    }
+  ],
+  "minPurchase": {
+    "discriminant": "price",
+    "value": 50000
+  }
+}
