@@ -16,13 +16,13 @@ export default config({
       schema: {
         imagenDesktop: fields.image({
           label: 'Imagen (desktop)',
-          description: 'Resolución recomendada: 1200x160px',
+          description: 'Resolución recomendada: 1200x160px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
           directory: 'public/banner-personalizado',
           publicPath: '/banner-personalizado/',
         }),
         imagenMobile: fields.image({
           label: 'Imagen (celular)',
-          description: 'Resolución recomendada: 800x400px',
+          description: 'Resolución recomendada: 800x400px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
           directory: 'public/banner-personalizado',
           publicPath: '/banner-personalizado/',
         }),
@@ -39,13 +39,13 @@ export default config({
         nombre: fields.slug({ name: { label: 'Nombre interno (ej: slide-1)' } }),
         imagenDesktop: fields.image({
           label: 'Imagen (desktop)',
-          description: 'Resolución recomendada: 1500x400px',
+          description: 'Resolución recomendada: 1500x400px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
           directory: 'public/banner-hero',
           publicPath: '/banner-hero/',
         }),
         imagenMobile: fields.image({
           label: 'Imagen (celular)',
-          description: 'Resolución recomendada: 800x600px',
+          description: 'Resolución recomendada: 800x600px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
           directory: 'public/banner-hero',
           publicPath: '/banner-hero/',
         }),
@@ -64,6 +64,7 @@ export default config({
         label: fields.slug({ name: { label: 'Nombre' } }), // esto genera el slug automático (ej: "Mates" -> mates)
         image: fields.image({
           label: 'Imagen',
+          description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
           directory: 'public/categorias',
           publicPath: '/categorias/',
         }),
@@ -80,6 +81,7 @@ export default config({
         images: fields.array(
           fields.image({
             label: 'Imagen',
+            description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
             directory: 'public/productos',
             publicPath: '/productos/',
           }),
@@ -101,6 +103,7 @@ export default config({
             imagenes: fields.array(
               fields.image({
                 label: 'Imagen',
+                description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
                 directory: 'public/productos',
                 publicPath: '/productos/',
               }),
