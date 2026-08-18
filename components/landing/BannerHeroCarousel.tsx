@@ -9,7 +9,7 @@ import { withCacheBust } from "@/lib/cache-bust";
 
 type Slide = {
   imagenDesktop: string;
-  imagenMobile: string;
+  imagenMobile: string | null;
   link?: string;
 };
 
@@ -34,14 +34,16 @@ export default function BannerHeroCarousel({ slides }: { slides: Slide[] }) {
                   className="hidden object-cover sm:block"
                   sizes="100vw"
                 />
-                <Image
-                  src={withCacheBust(slide.imagenMobile)}
-                  alt=""
-                  fill
-                  priority={i === 0}
-                  className="block object-cover sm:hidden"
-                  sizes="100vw"
-                />
+                {slide.imagenMobile && (
+                  <Image
+                    src={withCacheBust(slide.imagenMobile)}
+                    alt=""
+                    fill
+                    priority={i === 0}
+                    className="block object-cover sm:hidden"
+                    sizes="100vw"
+                  />
+                )}
               </div>
             );
 

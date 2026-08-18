@@ -21,8 +21,8 @@ export default async function Home() {
   const bannerHeroRaw = await reader.collections.bannerHero.all();
   const heroSlides = bannerHeroRaw
     .map((s) => ({ imagenDesktop: s.entry.imagenDesktop, imagenMobile: s.entry.imagenMobile, link: s.entry.link }))
-    .filter((s): s is { imagenDesktop: string; imagenMobile: string; link: string } =>
-      Boolean(s.imagenDesktop && s.imagenMobile)
+    .filter((s): s is { imagenDesktop: string; imagenMobile: string | null; link: string } =>
+      Boolean(s.imagenDesktop)
     );
 
   return (
