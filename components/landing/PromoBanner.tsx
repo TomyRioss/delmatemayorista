@@ -16,15 +16,14 @@ export default function PromoBanner({ imagenDesktop, imagenMobile }: PromoBanner
         className="overflow-hidden rounded-2xl transition-opacity hover:opacity-90 lg:w-[70%]"
       >
         {imagenMobile && (
-          <div className="relative block aspect-[2/1] w-full lg:hidden">
-            <Image
-              src={withCacheBust(imagenMobile)}
-              alt="Personaliza tus productos en Mayorista Del Mate"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
+          <Image
+            src={withCacheBust(imagenMobile)}
+            alt="Personaliza tus productos en Mayorista Del Mate"
+            width={800}
+            height={400}
+            className="block h-auto w-full object-cover lg:hidden"
+            sizes="100vw"
+          />
         )}
         {imagenDesktop && (
           <Image
