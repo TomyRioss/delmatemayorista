@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HelpCircle } from "lucide-react";
+import { withCacheBust } from "@/lib/cache-bust";
 
 type PromoBannerProps = {
   imagenDesktop?: string | null;
@@ -15,9 +16,9 @@ export default function PromoBanner({ imagenDesktop, imagenMobile }: PromoBanner
         className="overflow-hidden rounded-2xl transition-opacity hover:opacity-90 lg:w-[70%]"
       >
         {imagenMobile && (
-          <div className="relative block h-24 w-full lg:hidden">
+          <div className="relative block aspect-[2/1] w-full lg:hidden">
             <Image
-              src={imagenMobile}
+              src={withCacheBust(imagenMobile)}
               alt="Personaliza tus productos en Mayorista Del Mate"
               fill
               className="object-cover"
@@ -27,7 +28,7 @@ export default function PromoBanner({ imagenDesktop, imagenMobile }: PromoBanner
         )}
         {imagenDesktop && (
           <Image
-            src={imagenDesktop}
+            src={withCacheBust(imagenDesktop)}
             alt="Personaliza tus productos en Mayorista Del Mate"
             width={1200}
             height={160}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { withCacheBust } from "@/lib/cache-bust";
 
 type Slide = {
   imagenDesktop: string;
@@ -26,7 +27,7 @@ export default function BannerHeroCarousel({ slides }: { slides: Slide[] }) {
             const image = (
               <div className="relative h-40 w-full overflow-hidden rounded-sm sm:h-64 md:h-80">
                 <Image
-                  src={slide.imagenDesktop}
+                  src={withCacheBust(slide.imagenDesktop)}
                   alt=""
                   fill
                   priority={i === 0}
@@ -34,7 +35,7 @@ export default function BannerHeroCarousel({ slides }: { slides: Slide[] }) {
                   sizes="100vw"
                 />
                 <Image
-                  src={slide.imagenMobile}
+                  src={withCacheBust(slide.imagenMobile)}
                   alt=""
                   fill
                   priority={i === 0}
