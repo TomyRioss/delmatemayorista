@@ -1,4 +1,5 @@
 {
   "nombre": "slider2",
-  "imagenDesktop": "/banner-hero/slider2/imagenDesktop.png"
+  "imagenDesktop": "/banner-hero/slider2/imagenDesktop.png",
+  "imagenMobile": "/banner-hero/slider2/imagenMobile.png"
 }
