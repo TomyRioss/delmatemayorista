@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [{ hostname: "images.pexels.com" }],
+    localPatterns: [
+      { pathname: "/banner-personalizado/**" },
+      { pathname: "/banner-hero/**" },
+    ],
   },
   allowedDevOrigins: ["127.0.0.1", "localhost"],
   outputFileTracingIncludes: {
