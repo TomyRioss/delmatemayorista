@@ -12,14 +12,6 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 
-const indice = [
-  { id: "personalizados", label: "Productos personalizados en grabado láser" },
-  { id: "como-funciona", label: "¿Cómo funciona el grabado láser?" },
-  { id: "por-que-elegir", label: "¿Por qué elegir un producto personalizado?" },
-  { id: "materiales", label: "Materiales disponibles" },
-  { id: "como-pedir", label: "Cómo hacer tu pedido" },
-];
-
 const galeria = [
   "https://images.pexels.com/photos/13526973/pexels-photo-13526973.jpeg",
   "https://images.pexels.com/photos/8279921/pexels-photo-8279921.jpeg",
@@ -75,26 +67,14 @@ export default function PersonalizadosPage() {
   return (
     <div className="flex flex-1 flex-col bg-white">
       <main className="mx-auto flex w-full max-w-[1500px] flex-1 flex-col gap-8 px-4 py-8 sm:px-6 lg:flex-row">
-        <aside className="flex w-full shrink-0 flex-col gap-4 lg:sticky lg:top-[320px] lg:h-fit lg:w-72">
+        <aside className="flex w-full shrink-0 flex-col lg:sticky lg:top-[320px] lg:h-fit lg:w-72">
           <a
             href="https://wa.me/5491100000000"
-            className="flex items-center gap-3 rounded-sm border border-black/10 bg-zinc-50 px-4 py-3 text-lg font-bold text-[#FF3412] hover:bg-zinc-100"
+            className="flex items-center justify-center gap-3 rounded-sm border border-black/10 bg-zinc-50 px-6 py-6 text-2xl font-bold text-[#FF3412] hover:bg-zinc-100"
           >
-            <FaWhatsapp className="h-8 w-8" />
+            <FaWhatsapp className="h-10 w-10" />
             11 0000-0000
           </a>
-
-          <div className="rounded-sm border border-black/10">
-            <ul className="max-h-64 overflow-y-auto px-4 py-3">
-              {indice.map((item) => (
-                <li key={item.id} className="border-b border-black/5 py-2 last:border-0">
-                  <a href={`#${item.id}`} className="text-sm font-semibold text-black hover:text-[#FF3412]">
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </aside>
 
         <div className="flex-1">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebook, FaTiktok, FaWhatsapp, FaEnvelope, FaTruckFast } from "react-icons/fa6";
+import { FaInstagram, FaFacebook, FaTiktok, FaWhatsapp, FaEnvelope, FaTruckFast, FaLocationDot } from "react-icons/fa6";
 
 const socialLinks = [
   { icon: FaInstagram, label: "@delmatemayorista", href: "https://instagram.com/delmatemayorista", iconClass: "text-[#E1306C]" },
@@ -51,13 +51,15 @@ export default function Footer() {
             <FaWhatsapp className="h-12 w-12 shrink-0 rounded-full bg-white p-1.5 text-[#25D366]" />
             <span className="text-sm font-medium sm:text-base">(011) 1565358444</span>
           </a>
+
+          <div className="flex items-center gap-3">
+            <FaLocationDot className="h-8 w-8 shrink-0" />
+            <span className="text-sm font-medium sm:text-base">O&apos;Higgins 214, Ciudadela, Buenos Aires</span>
+          </div>
         </div>
 
         <Link href="/" className="flex shrink-0 flex-col items-center justify-center">
-          <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
-            Mayorista
-          </span>
-          <div className="-mt-2 flex h-24 w-24 items-center justify-center sm:-mt-3 sm:h-32 sm:w-32">
+          <div className="flex h-24 w-24 items-center justify-center sm:h-32 sm:w-32">
             <Image
               src="/logo.png"
               alt="Del Mate"

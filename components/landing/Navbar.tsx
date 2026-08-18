@@ -10,7 +10,6 @@ import { useCart } from "@/lib/cart-context";
 const secondaryLinks = [
   { href: "/#productos", label: "Todos los productos" },
   { href: "/tienda", label: "Categorias" },
-  { href: "/personalizados", label: "Productos personalizados" },
   { href: "/ofertas", label: "Ofertas y novedades" },
 ];
 
@@ -35,10 +34,7 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-3 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
           {/* Logo */}
           <Link href="/" className="order-1 flex w-full shrink-0 flex-col items-center justify-center sm:order-0 sm:w-auto">
-            <span className="font-[family-name:var(--font-wood-type)] text-lg font-black uppercase tracking-widest text-black sm:text-2xl">
-              Mayorista
-            </span>
-            <div className="-mt-2 flex h-20 w-20 items-center justify-center sm:-mt-3 sm:h-28 sm:w-28">
+            <div className="flex h-20 w-20 items-center justify-center sm:h-28 sm:w-28">
               <Image
                 src="/logo.png"
                 alt="Del Mate"
@@ -84,12 +80,13 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center bg-gradient-to-l from-[#FF3412] via-[#FF3412]/80 to-transparent pl-4">
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center bg-gradient-to-l from-[#FF3412] via-[#FF3412]/90 to-transparent pl-6">
               <motion.div
                 animate={{ x: [0, 4, 0] }}
                 transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+                className="flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-md"
               >
-                <ChevronRight className="h-4 w-4 text-white" strokeWidth={3} />
+                <ChevronRight className="h-4 w-4 text-[#FF3412]" strokeWidth={3.5} />
               </motion.div>
             </div>
           </div>
