@@ -12,14 +12,6 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 
-const indice = [
-  { id: "como-comprar", label: "Cómo hacer tu compra" },
-  { id: "registro", label: "Registrate como mayorista" },
-  { id: "pedido-minimo", label: "Compra mínima" },
-  { id: "medios-de-pago", label: "Medios de pago" },
-  { id: "envios", label: "Envíos y entregas" },
-];
-
 const galeria = [
   "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg",
   "https://images.pexels.com/photos/1004897/pexels-photo-1004897.jpeg",
@@ -78,23 +70,11 @@ export default function ComoComprarPage() {
         <aside className="flex w-full shrink-0 flex-col gap-4 lg:sticky lg:top-[320px] lg:h-fit lg:w-72">
           <a
             href="https://wa.me/5491100000000"
-            className="flex items-center gap-2 rounded-sm border border-black/10 bg-zinc-50 px-4 py-3 font-bold text-[#FF3412] hover:bg-zinc-100"
+            className="flex items-center gap-3 whitespace-nowrap text-2xl font-black text-[#FF3412] hover:opacity-80 sm:text-3xl"
           >
-            <FaWhatsapp className="h-5 w-5" />
+            <FaWhatsapp className="h-8 w-8 shrink-0" />
             11 0000-0000
           </a>
-
-          <div className="rounded-sm border border-black/10">
-            <ul className="max-h-64 overflow-y-auto px-4 py-3">
-              {indice.map((item) => (
-                <li key={item.id} className="border-b border-black/5 py-2 last:border-0">
-                  <a href={`#${item.id}`} className="text-sm font-semibold text-black hover:text-[#FF3412]">
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </aside>
 
         <div className="flex-1">
