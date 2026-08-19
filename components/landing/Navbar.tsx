@@ -4,16 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Search, Users, Mail, ChevronRight } from "lucide-react";
+import { Search, Users, Mail, ChevronRight, ShoppingBag, Sparkles } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 
 const secondaryLinks = [
   { href: "/#productos", label: "Todos los productos" },
   { href: "/tienda", label: "Categorias" },
   { href: "/ofertas", label: "Ofertas y novedades" },
+  
 ];
 
 const iconLinks = [
+  { href: "/como-comprar", label: "Como comprar", icon: ShoppingBag },
+  { href: "/personalizados", label: "Personalizados", icon: Sparkles },
   { href: "/quienes-somos", label: "Quienes somos", icon: Users },
   { href: "/contacto", label: "Contacto", icon: Mail },
 ];
