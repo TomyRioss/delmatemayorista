@@ -15,8 +15,6 @@ const secondaryLinks = [
 ];
 
 const iconLinks = [
-  { href: "/como-comprar", label: "Como comprar", icon: ShoppingBag },
-  { href: "/personalizados", label: "Personalizados", icon: Sparkles },
   { href: "/quienes-somos", label: "Quienes somos", icon: Users },
   { href: "/contacto", label: "Contacto", icon: Mail },
 ];
