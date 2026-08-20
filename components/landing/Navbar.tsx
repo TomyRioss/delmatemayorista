@@ -119,7 +119,7 @@ export default function Navbar() {
 
       {/* Nav desktop */}
       <nav className="hidden w-full border-b border-black/10 bg-white md:block">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-4 py-6 text-sm font-bold uppercase tracking-wide sm:px-6 sm:text-base">
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-center gap-4 px-4 py-6 text-sm font-bold uppercase tracking-wide sm:px-6 sm:text-base">
           {secondaryLinks.map(({ href, label }) => (
             <a
               key={label}

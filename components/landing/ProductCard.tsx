@@ -97,11 +97,37 @@ export default function ProductCard({
             >
               Descripción
             </DialogTrigger>
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle>{name}</DialogTitle>
-                <DialogDescription>{description}</DialogDescription>
-              </DialogHeader>
+            <DialogContent
+              className="max-w-[calc(100%-2rem)] gap-0 overflow-hidden p-0 sm:max-w-lg md:max-w-2xl"
+              overlayClassName="bg-black/40 backdrop-blur-sm"
+            >
+              <div className="flex max-h-[80vh] flex-col gap-5 overflow-y-auto px-6 pt-12 pb-7 text-center sm:px-10 sm:pt-14 sm:pb-9">
+                <DialogHeader className="gap-4">
+                  <DialogTitle className="rounded-md bg-[#FF3412] px-4 py-3 text-center text-base font-black uppercase leading-snug tracking-wide text-white sm:text-xl">
+                    {name}
+                  </DialogTitle>
+                  <DialogDescription className="text-center text-base leading-relaxed text-black/80 sm:text-lg">
+                    {description}
+                  </DialogDescription>
+                </DialogHeader>
+
+                <p className="mt-2 text-base font-bold uppercase tracking-wide text-[#FF3412] sm:text-lg">
+                  Compra mínima: {minQty} unidades
+                </p>
+
+                {(category || (note && !note.toLowerCase().includes("compra mínima"))) && (
+                  <div className="mt-3 flex flex-col gap-2 border-t border-black/10 pt-4">
+                    {category && (
+                      <p className="text-xs font-semibold uppercase tracking-wide text-black/50 sm:text-sm">
+                        Categoría: {category}
+                      </p>
+                    )}
+                    {note && !note.toLowerCase().includes("compra mínima") && (
+                      <p className="text-sm text-black/60 sm:text-base">{note}</p>
+                    )}
+                  </div>
+                )}
+              </div>
             </DialogContent>
           </Dialog>
         )}
