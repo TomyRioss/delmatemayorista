@@ -1,0 +1,16 @@
+{
+  "codigo": "PED-1787228805771",
+  "fecha": "2026-08-20",
+  "nombre": "pablo",
+  "apellido": "dipasquale",
+  "email": "pablo.dipas@gmail.com",
+  "telefono": "1539091100",
+  "items": [
+    {
+      "producto": "Producto Prueba - Solo Mate",
+      "cantidad": 10,
+      "precioUnitario": 5000
+    }
+  ],
+  "total": 50000
+}
