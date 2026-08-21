@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ShoppingCart, X as XIcon } from "lucide-react";
+import { Info, ShoppingCart, X as XIcon } from "lucide-react";
 import {
   Dialog,
   DialogTrigger,
@@ -93,9 +93,10 @@ export default function ProductCard({
         {description && (
           <Dialog>
             <DialogTrigger
-              className="absolute bottom-2 left-2 rounded-full bg-[#FF3412] px-3 py-1 text-xs font-bold uppercase text-white hover:bg-black"
+              className="absolute inset-x-0 bottom-0 flex w-full cursor-pointer items-center justify-center gap-2 bg-[#FF3412] px-3 py-2 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#FF5C3D] active:bg-[#E62D0F] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-white"
             >
-              Descripción
+              <Info className="h-4 w-4 shrink-0" aria-hidden="true" />
+              Ver descripción
             </DialogTrigger>
             <DialogContent
               className="max-w-[calc(100%-2rem)] gap-0 overflow-hidden p-0 sm:max-w-lg md:max-w-2xl"
