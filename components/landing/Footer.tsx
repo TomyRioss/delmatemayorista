@@ -5,7 +5,7 @@ import { FaInstagram, FaFacebook, FaTiktok, FaWhatsapp, FaEnvelope, FaTruckFast,
 const socialLinks = [
   { icon: FaInstagram, label: "@delmatemayorista", href: "https://instagram.com/delmatemayorista", iconClass: "text-[#E1306C]" },
   { icon: FaFacebook, label: "@Delmate Mayorista", href: "https://facebook.com/DelmateMayorista", iconClass: "text-[#1877F2]" },
-  { icon: FaTiktok, label: "@delmate_mayorista", href: "https://www.tiktok.com/@delmate_mayorista", iconClass: "text-black" },
+  { icon: FaTiktok, label: "@delmate_oficial", href: "https://www.tiktok.com/@delmate_oficial", iconClass: "text-black" },
 ];
 
 export default function Footer() {
