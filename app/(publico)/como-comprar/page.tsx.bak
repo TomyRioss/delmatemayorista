@@ -10,10 +10,10 @@ export default function ComoComprarPage() {
       {/* Versión Mobile: imagen completa sin recortes ni márgenes */}
       <div className="block sm:hidden">
         <Image
-          src="/informativas/como-comprar/mobile-responsive.png"
+          src="/informativas/como-comprar/mobile.png"
           alt="Cómo hacer tu compra - Mayorista Del Mate"
-          width={1500}
-          height={1024}
+          width={750}
+          height={512}
           className="h-auto w-full"
           sizes="100vw"
           priority

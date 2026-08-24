@@ -7,10 +7,10 @@ export default function QuienesSomosPage() {
       {/* Versión Mobile: imagen completa sin recortes ni márgenes */}
       <div className="block sm:hidden">
         <Image
-          src="/informativas/quienes-somos/mobile.png"
-          alt="Cómo hacer tu compra - Mayorista Del Mate"
-          width={750}
-          height={512}
+          src="/informativas/quienes-somos/mobile-responsive.png"
+          alt="Quiénes somos - Mayorista Del Mate"
+          width={1500}
+          height={1024}
           className="h-auto w-full"
           sizes="100vw"
           priority
