@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { Search, Users, Mail, ChevronRight, ShoppingBag, Sparkles } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
@@ -82,13 +81,14 @@ export default function Navbar() {
               ))}
             </div>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center bg-gradient-to-l from-[#FF3412] via-[#FF3412]/90 to-transparent pl-6">
-              <motion.div
-                animate={{ x: [0, 4, 0] }}
-                transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
-                className="flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-md"
-              >
+              <style>{`
+                @keyframes dm-chevron { 0%, 100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(4px,0,0); } }
+                .dm-chevron { animation: dm-chevron 1.2s ease-in-out infinite; }
+                @media (prefers-reduced-motion: reduce) { .dm-chevron { animation: none; } }
+              `}</style>
+              <div className="dm-chevron flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-md">
                 <ChevronRight className="h-4 w-4 text-[#FF3412]" strokeWidth={3.5} />
-              </motion.div>
+              </div>
             </div>
           </div>
 
