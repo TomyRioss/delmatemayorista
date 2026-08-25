@@ -24,8 +24,9 @@ export default function BannerHeroCarousel({ slides }: { slides: Slide[] }) {
         <CarouselContent>
           {slides.map((slide, i) => {
             const isExternal = slide.link?.startsWith("http");
+            // ponytail: aspect-ratio en vez de altura fija. Assets 600x300 (mobile) y 1500x400 (desktop).
             const image = (
-              <div className="relative h-40 w-full overflow-hidden rounded-sm sm:h-64 md:h-80">
+              <div className="relative aspect-[2/1] w-full overflow-hidden rounded-sm sm:aspect-[15/4]">
                 <Image
                   src={withCacheBust(slide.imagenDesktop)}
                   alt=""

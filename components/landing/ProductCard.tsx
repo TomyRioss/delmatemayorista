@@ -89,14 +89,18 @@ export default function ProductCard({
             </DialogClose>
           </DialogContent>
         </Dialog>
+      </div>
 
+      <div className="flex flex-1 flex-col gap-1 overflow-hidden p-3 sm:p-4">
         {description && (
           <Dialog>
             <DialogTrigger
-              className="absolute inset-x-0 bottom-0 flex w-full cursor-pointer items-center justify-center gap-2 bg-[#FF3412] px-3 py-2 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#FF5C3D] active:bg-[#E62D0F] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-white"
+              title="Ver Descripción"
+              aria-label="Ver descripción"
+              className="mb-2 flex min-h-[38px] w-full cursor-pointer items-center justify-center gap-1.5 rounded-sm bg-[#FF3412] px-2 py-2 text-center text-[10px] font-bold leading-tight uppercase tracking-normal text-white transition-colors hover:bg-[#FF5C3D] sm:min-h-[44px] sm:gap-2 sm:px-4 sm:text-xs sm:tracking-wide"
             >
-              <Info className="h-4 w-4 shrink-0" aria-hidden="true" />
-              Ver descripción
+              <Info className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" aria-hidden="true" />
+              <span className="line-clamp-2 sm:line-clamp-1">Ver Descripción</span>
             </DialogTrigger>
             <DialogContent
               className="max-w-[calc(100%-2rem)] gap-0 overflow-hidden p-0 sm:max-w-lg md:max-w-2xl"
@@ -132,31 +136,30 @@ export default function ProductCard({
             </DialogContent>
           </Dialog>
         )}
-      </div>
-
-      <div className="flex flex-1 flex-col gap-1 overflow-hidden p-4">
         {href ? (
           <Link href={href} className="hover:underline">
-            <h3 className="line-clamp-2 min-h-[2.5rem] overflow-hidden text-sm font-semibold text-black">
+            <h3 className="line-clamp-2 min-h-[2rem] overflow-hidden text-sm font-semibold text-black">
               {name}
             </h3>
           </Link>
         ) : (
-          <h3 className="line-clamp-2 min-h-[2.5rem] overflow-hidden text-sm font-semibold text-black">
+          <h3 className="line-clamp-2 min-h-[2rem] overflow-hidden text-sm font-semibold text-black">
             {name}
           </h3>
         )}
         <p className="truncate text-base font-bold text-[#FF3412]">{price}</p>
         <p className="min-h-[1rem] truncate text-xs text-black/50">{note}</p>
 
-        <button
-          type="button"
-          onClick={() => addItem({ slug, name, image, priceValue, minQty })}
-          className="mt-auto flex items-center justify-center gap-2 rounded-sm bg-[#FF3412] px-4 py-2 text-xs font-bold uppercase text-white transition-colors hover:bg-black"
-        >
-          <ShoppingCart className="h-4 w-4 shrink-0" />
-          Agregar al carrito
-        </button>
+        <div className="mt-auto flex min-h-[38px] items-stretch overflow-hidden rounded-sm sm:min-h-[44px]">
+          <button
+            type="button"
+            onClick={() => addItem({ slug, name, image, priceValue, minQty })}
+            className="flex flex-1 items-center justify-center gap-1.5 bg-[#FF3412] px-2 py-2 text-center text-[10px] font-bold leading-tight uppercase tracking-normal text-white transition-colors hover:bg-[#FF5C3D] sm:gap-2 sm:px-4 sm:text-xs sm:tracking-wide"
+          >
+            <ShoppingCart className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" />
+            <span className="line-clamp-2 sm:line-clamp-1">Agregar al carrito</span>
+          </button>
+        </div>
       </div>
     </div>
   );

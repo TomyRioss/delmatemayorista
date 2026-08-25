@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full">
       <div className="w-full bg-[#FF3412]">
-        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-3 px-4 py-4 sm:gap-10 sm:px-6 sm:py-8">
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-3 px-4 py-1 sm:gap-10 sm:px-6 sm:py-0">
           {/* Logo */}
           <Link href="/" className="order-1 flex w-full shrink-0 flex-col items-center justify-center sm:order-0 sm:w-auto">
             <div className="flex h-20 w-20 items-center justify-center sm:h-28 sm:w-28">

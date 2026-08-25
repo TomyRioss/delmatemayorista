@@ -1,6 +1,3 @@
-"use client";
-
-import { motion, useReducedMotion } from "motion/react";
 import { FaBagShopping, FaTruckFast } from "react-icons/fa6";
 
 const items = [
@@ -8,25 +5,33 @@ const items = [
   { icon: FaTruckFast, label: "ENVÍOS A TODO EL PAÍS" },
 ];
 
-export default function TopBar() {
-  const reduceMotion = useReducedMotion();
+// ponytail: keyframes inline en vez de framer-motion. La cinta mide ~5400px y
+// animarla desde JS invalida su capa en cada frame, lo que en Android de gama
+// media le roba presupuesto de rasterizado al resto de la página (tiles viejos
+// al scrollear). En CSS la animación corre en el compositor.
+const MARQUEE_CSS = `
+@keyframes dm-marquee {
+  0%   { transform: translate3d(0, 0, 0); }
+  30%  { transform: translate3d(-16.66%, 0, 0); }
+  40%  { transform: translate3d(-16.66%, 0, 0); }
+  70%  { transform: translate3d(-33.33%, 0, 0); }
+  80%  { transform: translate3d(-33.33%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+.dm-marquee {
+  animation: dm-marquee 120s ease-in-out infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dm-marquee { animation: none; }
+}
+`;
 
+export default function TopBar() {
   return (
-    <div className="w-full overflow-hidden ">
-      <motion.div
-        className="flex w-max whitespace-nowrap bg-white py-4"
-        animate={
-          reduceMotion
-            ? { x: "0%" }
-            : { x: ["0%", "-16.66%", "-16.66%", "-33.33%", "-33.33%", "-50%"] }
-        }
-        transition={{
-          duration: 120,
-          times: [0, 0.3, 0.4, 0.7, 0.8, 1],
-          ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
-          repeat: Infinity,
-        }}
-      >
+    <div className="w-full overflow-hidden [contain:paint]">
+      <style>{MARQUEE_CSS}</style>
+      <div className="dm-marquee flex w-max whitespace-nowrap bg-white py-2">
         {Array.from({ length: 2 }).map((_, i) => (
           <span key={i} className="flex shrink-0 items-center">
             {Array.from({ length: 4 }).map((_, j) =>
@@ -42,7 +47,7 @@ export default function TopBar() {
             )}
           </span>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }
