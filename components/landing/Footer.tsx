@@ -54,7 +54,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-3">
             <FaLocationDot className="h-8 w-8 shrink-0" />
-            <span className="text-sm font-medium sm:text-base">O&apos;Higgins 214, Ciudadela, Buenos Aires</span>
+            <span className="text-sm font-medium sm:text-base">Gazeta de Buenos Aires 3705, Ciudadela, Buenos Aires</span>
           </div>
         </div>
 
