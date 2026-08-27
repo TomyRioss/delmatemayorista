@@ -1,10 +1,14 @@
 "use client";
 
-import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Autoplay from "embla-carousel-autoplay";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 import { withCacheBust } from "@/lib/cache-bust";
 
 type Slide = {
@@ -14,13 +18,11 @@ type Slide = {
 };
 
 export default function BannerHeroCarousel({ slides }: { slides: Slide[] }) {
-  const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));
-
   if (!slides.length) return null;
 
   return (
     <section className="mx-auto w-full max-w-[1500px] px-4 pt-8 sm:px-6">
-      <Carousel opts={{ loop: true }} plugins={[autoplay.current]}>
+      <Carousel opts={{ loop: true }}>
         <CarouselContent>
           {slides.map((slide, i) => {
             const isExternal = slide.link?.startsWith("http");
@@ -65,6 +67,12 @@ export default function BannerHeroCarousel({ slides }: { slides: Slide[] }) {
             );
           })}
         </CarouselContent>
+        {slides.length > 1 && (
+          <>
+            <CarouselPrevious className="left-2 size-9 border-none bg-white/80 text-black hover:bg-white sm:left-4 sm:size-10" />
+            <CarouselNext className="right-2 size-9 border-none bg-white/80 text-black hover:bg-white sm:right-4 sm:size-10" />
+          </>
+        )}
       </Carousel>
     </section>
   );
