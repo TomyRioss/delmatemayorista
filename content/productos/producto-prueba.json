@@ -1,23 +1,15 @@
 {
-  "name": "Producto Prueba",
-  "price": 15000,
+  "name": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO O YUTE",
+  "price": 0,
   "images": [
-    "/productos/producto-prueba/images/0.jpg"
+    "/productos/producto-prueba/images/0.png",
+    "/productos/producto-prueba/images/1.png"
   ],
-  "description": "Mate con Termo de Prueba",
-  "category": "termos",
-  "variantes": [
-    {
-      "nombre": "Solo Mate",
-      "precio": 5000,
-      "imagenes": [
-        "/productos/producto-prueba/variantes/0/imagenes/0.jpg"
-      ],
-      "descripcion": "Solo mate y no termo"
-    }
-  ],
+  "description": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO O YUTE",
+  "category": "COMBOS MATEROS",
+  "variantes": [],
   "minPurchase": {
-    "discriminant": "price",
-    "value": 50000
+    "discriminant": "packs",
+    "value": 3
   }
 }
