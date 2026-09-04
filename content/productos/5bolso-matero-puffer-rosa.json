@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER LUNARES ROSA",
+  "price": 11.974,
+  "images": [
+    "/productos/5bolso-matero-puffer-rosa/images/0.png",
+    "/productos/5bolso-matero-puffer-rosa/images/1.jpg"
+  ],
+  "description": "BOLSO MATERO PUFFER LUNARES ROSA",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
