@@ -1,0 +1,16 @@
+{
+  "name": "MATERO PUFFER NEGRO/AZUL",
+  "images": [
+    "/productos/Z13matero-puffer-negro-azul/images/0.png",
+    "/productos/Z13matero-puffer-negro-azul/images/1.png",
+    "/productos/Z13matero-puffer-negro-azul/images/2.png",
+    "/productos/Z13matero-puffer-negro-azul/images/3.png"
+  ],
+  "description": "MATERO PUFFER NEGRO/AZUL",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
