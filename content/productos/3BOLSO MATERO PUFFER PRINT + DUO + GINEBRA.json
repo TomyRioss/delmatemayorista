@@ -1,0 +1,12 @@
+{
+  "name": "MATERO PUFFER DOBLE BOLSILLO +YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA",
+  "images": [
+    "/productos/3BOLSO MATERO PUFFER PRINT + DUO + GINEBRA/images/0.png",
+    "/productos/3BOLSO MATERO PUFFER PRINT + DUO + GINEBRA/images/1.png"
+  ],
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
