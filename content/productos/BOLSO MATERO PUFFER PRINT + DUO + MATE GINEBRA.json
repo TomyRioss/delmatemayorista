@@ -1,22 +1,13 @@
 {
   "name": "BOLSO MATERO PUFFER PRINT + DUO + MATE GINEBRA",
-  "price": 0,
+  "price": 23450,
   "images": [
     "/productos/BOLSO MATERO PUFFER PRINT + DUO + MATE GINEBRA/images/0.png",
     "/productos/BOLSO MATERO PUFFER PRINT + DUO + MATE GINEBRA/images/1.png"
   ],
   "description": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO O YUTE",
-  "category": "mates",
-  "variantes": [
-    {
-      "nombre": "Mate Imperial de Algarrobo Negro",
-      "precio": 22000,
-      "imagenes": [
-        "/productos/BOLSO MATERO PUFFER PRINT + DUO + MATE GINEBRA/variantes/0/imagenes/0.jpg"
-      ],
-      "descripcion": "Mate imperial de algarrobo con terminación en color negro. Ideal para uso diario."
-    }
-  ],
+  "category": "COMBOS MATEROS",
+  "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
     "value": 3
