@@ -1,0 +1,15 @@
+{
+  "name": "MATERO PUFFER DOBLE BOLSILLO PRINT/NEGRO",
+  "images": [
+    "/productos/3matero-puffer-doble-bolsillo/images/0.png",
+    "/productos/3matero-puffer-doble-bolsillo/images/1.jpg",
+    "/productos/3matero-puffer-doble-bolsillo/images/2.jpg"
+  ],
+  "description": "MATERO PUFFER DOBLE BOLSILLO VERSION PRINT O VERSION NEGRO",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
