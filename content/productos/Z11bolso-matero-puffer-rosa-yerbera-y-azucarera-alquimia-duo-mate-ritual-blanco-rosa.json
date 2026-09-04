@@ -1,0 +1,14 @@
+{
+  "name": "BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL BLANCO/ROSA",
+  "images": [
+    "/productos/Z11bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ritual-blanco-rosa/images/0.png",
+    "/productos/Z11bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ritual-blanco-rosa/images/1.png"
+  ],
+  "description": "BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL BLANCO/ROSA",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
