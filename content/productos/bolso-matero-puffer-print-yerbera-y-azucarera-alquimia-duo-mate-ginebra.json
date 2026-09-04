@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO O YUTE",
+  "price": 23450,
+  "images": [
+    "/productos/bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra/images/0.png",
+    "/productos/bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra/images/1.png"
+  ],
+  "description": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO O YUTE",
+  "category": "COMBOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
