@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL BLANCO O ROSA",
+  "price": 23.45,
+  "images": [
+    "/productos/6bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ritual-blanco-o-rosa/images/0.png",
+    "/productos/6bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ritual-blanco-o-rosa/images/1.png"
+  ],
+  "description": "BOLSO MATERO PUFFER ROSA LUNARES + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL BLANCO O ROSA",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
