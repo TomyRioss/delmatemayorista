@@ -1,0 +1,12 @@
+{
+  "name": "BOLSO MATERO PUFFER PRINT",
+  "images": [
+    "/productos/1bolso-matero-puffer-print/images/0.png"
+  ],
+  "description": "BOLSO MATERO PUFFER PRINT",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
