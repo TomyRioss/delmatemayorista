@@ -1,0 +1,12 @@
+{
+  "name": "BOLSO MATERO PUFFER DOBLE BOLSILLO+ YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL",
+  "images": [
+    "/productos/3bolso-matero-puffer-doble-bolsillo-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/0.png",
+    "/productos/3bolso-matero-puffer-doble-bolsillo-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/1.png"
+  ],
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
