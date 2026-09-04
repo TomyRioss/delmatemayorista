@@ -1,0 +1,11 @@
+{
+  "name": "BOLSO MATERO PUFFER DOBLE BOLSILLO+ YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL BLANCO/NEGRO/YUTE DTF UV",
+  "images": [
+    "/productos/9bolso-matero-puffer-doble-bolsillo-yerbera-y-azucarera-alquimia-duo-mate-ritual-blanco-negro-yute-dtf-uv/images/0.png"
+  ],
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
