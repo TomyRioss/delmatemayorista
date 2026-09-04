@@ -1,0 +1,14 @@
+{
+  "name": "BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA BLANCO/ROSA",
+  "images": [
+    "/productos/Z12bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ginebra-blanco-rosa/images/0.png",
+    "/productos/Z12bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ginebra-blanco-rosa/images/1.png"
+  ],
+  "description": "BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA BLANCO/ROSA",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
