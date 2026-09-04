@@ -1,0 +1,13 @@
+{
+  "name": "MATERO PUFFER AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA AZUL",
+  "images": [
+    "/productos/Z14matero-puffer-azul-yerbera-y-azucarera-alquimia-duo-mate-ginebra-azul/images/0.png"
+  ],
+  "description": "MATERO PUFFER AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA AZUL",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
