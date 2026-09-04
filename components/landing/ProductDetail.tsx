@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ShoppingCart } from "lucide-react";
+import { ChevronLeft, ChevronRight, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import type { Product } from "@/lib/products";
 
@@ -57,6 +57,29 @@ export default function ProductDetail({ product }: { product: Product }) {
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
+          )}
+
+          {selected.images.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={() =>
+                  setImageIndex((i) => (i - 1 + selected.images.length) % selected.images.length)
+                }
+                aria-label="Imagen anterior"
+                className="absolute top-1/2 left-2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black shadow-lg transition-colors hover:bg-[#FF3412] hover:text-white"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => setImageIndex((i) => (i + 1) % selected.images.length)}
+                aria-label="Siguiente imagen"
+                className="absolute top-1/2 right-2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black shadow-lg transition-colors hover:bg-[#FF3412] hover:text-white"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+            </>
           )}
         </div>
         {selected.images.length > 1 && (

@@ -10,7 +10,7 @@ export default async function CategoriaPage({
 }: {
   params: Promise<{ categoria: string }>;
 }) {
-  const { categoria } = await params;
+  const categoria = decodeURIComponent((await params).categoria);
 
   const entry = await reader.collections.categorias.read(categoria);
   if (!entry) notFound();

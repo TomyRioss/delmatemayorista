@@ -23,7 +23,11 @@ export type Product = {
 };
 
 export async function getProducts(): Promise<Product[]> {
-  const entries = await reader.collections.productos.all();
+  const [entries, categorias] = await Promise.all([
+    reader.collections.productos.all(),
+    reader.collections.categorias.all(),
+  ]);
+  const fallbackCategory = categorias[0]?.slug ?? null;
 
   return entries.map(({ slug, entry }) => {
     const priceValue = entry.price ?? 0;
@@ -56,15 +60,9 @@ export async function getProducts(): Promise<Product[]> {
       priceValue,
       images,
       description: entry.description || undefined,
-      category: entry.category,
+      category: entry.category ?? fallbackCategory,
       minQty,
       variants,
-      note:
-        entry.minPurchase.discriminant === "packs"
-          ? `Compra mínima: ${entry.minPurchase.value} unidades`
-          : entry.minPurchase.value != null
-            ? `Compra mínima: $${entry.minPurchase.value.toLocaleString("es-AR")}`
-            : undefined,
     };
   });
 }
