@@ -1,0 +1,11 @@
+{
+  "name": "MATE RITUAL GRABADO + YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER",
+  "images": [
+    "/productos/Z40mate-ritual-grabado-yerbera-y-azucarera-duo-alquimia-puffer/images/0.png"
+  ],
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
