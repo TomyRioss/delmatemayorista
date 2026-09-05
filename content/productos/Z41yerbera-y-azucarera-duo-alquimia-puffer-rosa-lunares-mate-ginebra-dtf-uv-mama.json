@@ -1,0 +1,13 @@
+{
+  "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER ROSA LUNARES + MATE GINEBRA DTF UV MAMÁ",
+  "images": [
+    "/productos/Z41yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-mate-ginebra-dtf-uv-mama/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
