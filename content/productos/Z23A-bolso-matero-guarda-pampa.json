@@ -1,0 +1,17 @@
+{
+  "name": "BOLSO MATERO GUARDA PAMPA",
+  "images": [
+    "/productos/Z23A-bolso-matero-guarda-pampa/images/0.jpg",
+    "/productos/Z23A-bolso-matero-guarda-pampa/images/1.png",
+    "/productos/Z23A-bolso-matero-guarda-pampa/images/2.jpg",
+    "/productos/Z23A-bolso-matero-guarda-pampa/images/3.jpg",
+    "/productos/Z23A-bolso-matero-guarda-pampa/images/4.jpg"
+  ],
+  "description": "BOLSO MATERO GUARDA PAMPA\nCOLORES DISPONIBLES: NEGRO, AZUL, VERDE, ROJO\nCOMPRA MINIMA 6 UNIDADES, COLORES COMBINABLES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
