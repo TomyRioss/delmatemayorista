@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO DTF UV",
+  "images": [
+    "/productos/Z20bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-dtf-uv/images/0.png",
+    "/productos/Z20bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-dtf-uv/images/1.png",
+    "/productos/Z20bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-dtf-uv/images/2.png"
+  ],
+  "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: NEGRO\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
