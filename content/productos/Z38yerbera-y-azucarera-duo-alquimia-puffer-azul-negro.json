@@ -1,0 +1,14 @@
+{
+  "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER AZUL/NEGRO",
+  "images": [
+    "/productos/Z38yerbera-y-azucarera-duo-alquimia-puffer-azul-negro/images/0.png",
+    "/productos/Z38yerbera-y-azucarera-duo-alquimia-puffer-azul-negro/images/1.png"
+  ],
+  "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER COLORES AZUL O NEGRO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MODELO COMBINABLES.",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
