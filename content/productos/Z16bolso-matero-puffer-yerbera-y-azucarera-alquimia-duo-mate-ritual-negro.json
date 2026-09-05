@@ -1,0 +1,13 @@
+{
+  "name": "BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO",
+  "images": [
+    "/productos/Z16bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro/images/0.png"
+  ],
+  "description": "BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
