@@ -1,0 +1,12 @@
+{
+  "name": "BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO",
+  "images": [
+    "/productos/Z15bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ginebra-negro/images/0.png"
+  ],
+  "description": "MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
