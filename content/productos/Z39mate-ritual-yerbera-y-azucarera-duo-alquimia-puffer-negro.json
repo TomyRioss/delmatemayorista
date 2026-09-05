@@ -1,0 +1,13 @@
+{
+  "name": "MATE RITUAL + YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER NEGRO",
+  "images": [
+    "/productos/Z39mate-ritual-yerbera-y-azucarera-duo-alquimia-puffer-negro/images/0.png"
+  ],
+  "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER COLOR NEGRO + MATE RITUAL CON PACKAGING COLOR NEGRO\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
