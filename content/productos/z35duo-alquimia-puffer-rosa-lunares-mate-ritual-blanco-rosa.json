@@ -1,0 +1,14 @@
+{
+  "name": "DUO ALQUIMIA PUFFER ROSA LUNARES + MATE RITUAL BLANCO/ROSA",
+  "images": [
+    "/productos/z35duo-alquimia-puffer-rosa-lunares-mate-ritual-blanco-rosa/images/0.png",
+    "/productos/z35duo-alquimia-puffer-rosa-lunares-mate-ritual-blanco-rosa/images/1.png"
+  ],
+  "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: BLANCO - ROSA\nMATERIAL DEL MATE: PLÁSTICO\nINCLUYE BOMBILLA: NO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
