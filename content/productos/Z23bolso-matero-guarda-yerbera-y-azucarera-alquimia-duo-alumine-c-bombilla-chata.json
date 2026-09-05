@@ -1,0 +1,13 @@
+{
+  "name": "BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + ALUMINE C/BOMBILLA CHATA",
+  "images": [
+    "/productos/Z23bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-alumine-c-bombilla-chata/images/0.png"
+  ],
+  "description": "MATERIAL DEL MATE: ACERO\nMODELO: ALUMINE\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
