@@ -5,11 +5,11 @@
     "/productos/Z10-bolso-matero-puffer-rosa-lunares/images/0.png",
     "/productos/Z10-bolso-matero-puffer-rosa-lunares/images/1.jpg"
   ],
-  "description": "BOLSO MATERO PUFFER ROSA LUNARES",
+  "description": "COMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 6
   }
 }
