@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO/BLANCO/YUTE",
+  "images": [
+    "/productos/Z19bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-blanco-yute/images/0.png",
+    "/productos/Z19bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-blanco-yute/images/1.png",
+    "/productos/Z19bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-blanco-yute/images/2.png"
+  ],
+  "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: BLANCO - NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
