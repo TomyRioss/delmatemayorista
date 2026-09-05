@@ -3,11 +3,11 @@
   "images": [
     "/productos/5bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-dtf-uv/images/0.png"
   ],
-  "description": "BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV BLANCO O YUTE",
+  "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: BLANCO - NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nINCLUYE BOMBILLA: NO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 6
   }
 }
