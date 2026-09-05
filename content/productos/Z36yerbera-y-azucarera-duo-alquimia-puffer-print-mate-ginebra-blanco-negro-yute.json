@@ -1,0 +1,15 @@
+{
+  "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER PRINT + MATE GINEBRA BLANCO/NEGRO/YUTE",
+  "images": [
+    "/productos/Z36yerbera-y-azucarera-duo-alquimia-puffer-print-mate-ginebra-blanco-negro-yute/images/0.png",
+    "/productos/Z36yerbera-y-azucarera-duo-alquimia-puffer-print-mate-ginebra-blanco-negro-yute/images/1.png",
+    "/productos/Z36yerbera-y-azucarera-duo-alquimia-puffer-print-mate-ginebra-blanco-negro-yute/images/2.png"
+  ],
+  "description": "MODELO DEL MATE: MATE GINEBRA\nCOLORES DISPONIBLES: BLANCO - NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nINCLUYE BOMBILLA: NO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
