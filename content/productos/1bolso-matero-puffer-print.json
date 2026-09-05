@@ -3,10 +3,11 @@
   "images": [
     "/productos/1bolso-matero-puffer-print/images/0.png"
   ],
-  "description": "BOLSO MATERO PUFFER PRINT",
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 6
   }
 }
