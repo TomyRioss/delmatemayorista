@@ -6,11 +6,11 @@
     "/productos/Z13matero-puffer-negro-azul/images/2.png",
     "/productos/Z13matero-puffer-negro-azul/images/3.png"
   ],
-  "description": "MATERO PUFFER NEGRO/AZUL",
+  "description": "COMPRA MINIMA 6 UNIDADES, COLORES DE MODELO COMBINABLES.",
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 6
   }
 }
