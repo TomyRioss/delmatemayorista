@@ -1,0 +1,15 @@
+{
+  "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER + MATE RITUAL DTF UV MAMÁ",
+  "images": [
+    "/productos/Z31yerbera-y-azucarera-duo-alquimia-puffer-mate-ritual-dtf-uv-mama/images/0.png",
+    "/productos/Z31yerbera-y-azucarera-duo-alquimia-puffer-mate-ritual-dtf-uv-mama/images/1.png",
+    "/productos/Z31yerbera-y-azucarera-duo-alquimia-puffer-mate-ritual-dtf-uv-mama/images/2.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
