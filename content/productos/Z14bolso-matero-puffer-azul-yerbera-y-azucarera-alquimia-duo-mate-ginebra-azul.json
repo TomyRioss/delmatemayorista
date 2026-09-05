@@ -3,11 +3,11 @@
   "images": [
     "/productos/Z14bolso-matero-puffer-azul-yerbera-y-azucarera-alquimia-duo-mate-ginebra-azul/images/0.png"
   ],
-  "description": "MATERO PUFFER AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA AZUL",
+  "description": "MODELO DEL MATE: MATE GINEBRA\nCOLORES DISPONIBLES: AZUL\nMATERIAL DEL MATE: PLÁSTICO\nINCLUYE BOMBILLA: NO\nCOMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 6
   }
 }
