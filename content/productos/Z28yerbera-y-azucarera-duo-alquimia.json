@@ -1,0 +1,14 @@
+{
+  "name": "YERBERA Y AZUCARERA DUO ALQUIMIA",
+  "images": [
+    "/productos/Z28yerbera-y-azucarera-duo-alquimia/images/0.png",
+    "/productos/Z28yerbera-y-azucarera-duo-alquimia/images/1.png"
+  ],
+  "description": "<b>EL PRECIO PUBLICADO ES POR UNIDAD</b>\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "yerberas-y-azucareras",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
