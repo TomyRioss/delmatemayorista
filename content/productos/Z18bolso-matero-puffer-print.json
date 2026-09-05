@@ -1,0 +1,16 @@
+{
+  "name": "BOLSO MATERO PUFFER PRINT",
+  "images": [
+    "/productos/Z18bolso-matero-puffer-print/images/0.png",
+    "/productos/Z18bolso-matero-puffer-print/images/1.png",
+    "/productos/Z18bolso-matero-puffer-print/images/2.png",
+    "/productos/Z18bolso-matero-puffer-print/images/3.png"
+  ],
+  "description": "BOLSO MATERO PUFFER PRINT",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
