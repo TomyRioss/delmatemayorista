@@ -1,0 +1,12 @@
+{
+  "name": "MATE RITUAL MAMÁ",
+  "images": [
+    "/productos/z42mate-ritual-mama/images/0.png"
+  ],
+  "description": "𝗖𝗢𝗡𝗦𝗨𝗟𝗧𝗔𝗥 𝗖𝗢𝗠𝗣𝗥𝗔 𝗠Í𝗡𝗜𝗠𝗔",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
