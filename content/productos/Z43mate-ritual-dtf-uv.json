@@ -1,0 +1,14 @@
+{
+  "name": "MATE RITUAL DTF UV",
+  "images": [
+    "/productos/Z43mate-ritual-dtf-uv/images/0.png",
+    "/productos/Z43mate-ritual-dtf-uv/images/1.png"
+  ],
+  "description": "𝗖𝗢𝗡𝗦𝗨𝗟𝗧𝗔𝗥 𝗖𝗢𝗠𝗣𝗥𝗔 𝗠Í𝗡𝗜𝗠𝗔\n𝗖𝗢𝗡𝗦𝗨𝗟𝗧𝗔𝗥 𝗖𝗢𝗟𝗢𝗥𝗘𝗦 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘𝗦",
+  "category": "MATES",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
