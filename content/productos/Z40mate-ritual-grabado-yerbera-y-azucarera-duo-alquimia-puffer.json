@@ -1,13 +1,14 @@
 {
   "name": "MATE RITUAL GRABADO + YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER",
+  "price": 12.352,
   "images": [
     "/productos/Z40mate-ritual-grabado-yerbera-y-azucarera-duo-alquimia-puffer/images/0.png"
   ],
-  "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER COLOR NEGRO + MATE RITUAL GRABADO LASER CON PACKAGING COLOR AZUL\nCOMPRA MINIMA 6 UNIDADES",
+  "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER COLOR NEGRO + MATE RITUAL GRABADO LASER CON PACKAGING COLOR AZUL\nCOMPRA MINIMA 12 UNIDADES",
   "category": "YERBERAS Y AZUCARERAS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 6
+    "value": 12
   }
 }
