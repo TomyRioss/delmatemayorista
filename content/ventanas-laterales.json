@@ -1,0 +1,14 @@
+{
+  "ventanaIzquierda": {
+    "archivo": {
+      "discriminant": "imagen",
+      "value": "/ventanas-laterales/ventanaIzquierda/archivo/value.gif"
+    }
+  },
+  "ventanaDerecha": {
+    "archivo": {
+      "discriminant": "imagen",
+      "value": "/ventanas-laterales/ventanaDerecha/archivo/value.gif"
+    }
+  }
+}
