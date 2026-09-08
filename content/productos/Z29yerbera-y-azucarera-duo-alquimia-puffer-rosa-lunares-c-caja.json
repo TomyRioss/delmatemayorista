@@ -1,14 +1,15 @@
 {
   "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER ROSA LUNARES C/CAJA",
+  "price": 4.947,
   "images": [
     "/productos/Z29yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-c-caja/images/0.png",
     "/productos/Z29yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-c-caja/images/1.png"
   ],
-  "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER CON PACKAGING\nCOMPRA MINIMA 6 UNIDADES",
+  "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER CON PACKAGING\nCOMPRA MINIMA 12 UNIDADES",
   "category": "YERBERAS Y AZUCARERAS",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 6
+    "value": 12
   }
 }
