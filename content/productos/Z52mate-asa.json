@@ -1,0 +1,14 @@
+{
+  "name": "MATE ASA VARIOS COLORES",
+  "price": 1.139,
+  "images": [
+    "/productos/Z52mate-asa/images/0.jpg"
+  ],
+  "description": "MATE ASA PP\nCOMPRA MINIMA BULTO X 80 UNIDADES",
+  "category": "MATES",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 80
+  }
+}
