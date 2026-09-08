@@ -27,7 +27,7 @@ function VentanaFija({ ventana }: { ventana: Ventana }) {
       muted
       loop
       playsInline
-      className="h-full w-full object-cover"
+      className="h-full w-full bg-white object-contain"
     />
   ) : ventana.imagen ? (
     ventana.imagen.toLowerCase().endsWith(".gif") ? (
@@ -35,14 +35,14 @@ function VentanaFija({ ventana }: { ventana: Ventana }) {
       <img
         src={withCacheBust(ventana.imagen)}
         alt=""
-        className="h-full w-full object-cover"
+        className="h-full w-full bg-white object-contain"
       />
     ) : (
       <Image
         src={withCacheBust(ventana.imagen)}
         alt=""
         fill
-        className="object-cover"
+        className="object-contain"
         sizes="(max-width: 1024px) 50vw, 25vw"
       />
     )
@@ -53,7 +53,7 @@ function VentanaFija({ ventana }: { ventana: Ventana }) {
   );
 
   const box = (
-    <div className="relative h-28 w-full overflow-hidden rounded-sm sm:h-40">
+    <div className="relative h-28 w-full overflow-hidden rounded-sm bg-white sm:h-40">
       {media}
     </div>
   );
