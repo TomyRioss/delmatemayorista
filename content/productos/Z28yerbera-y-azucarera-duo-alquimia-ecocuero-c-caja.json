@@ -1,0 +1,15 @@
+{
+  "name": "YERBERA Y AZUCARERA DUO ALQUIMIA ECOCUERO C/CAJA",
+  "price": 4.174,
+  "images": [
+    "/productos/Z28yerbera-y-azucarera-duo-alquimia-ecocuero-c-caja/images/0.png",
+    "/productos/Z28yerbera-y-azucarera-duo-alquimia-ecocuero-c-caja/images/1.png"
+  ],
+  "description": "𝗘𝗟 𝗣𝗥𝗘𝗖𝗜𝗢 𝗣𝗨𝗕𝗟𝗜𝗖𝗔𝗗𝗢 𝗘𝗦 𝗣𝗢𝗥 𝗨𝗡𝗜𝗗𝗔D\nCONSULTAR COLORES DISPONIBLES\nCOMPRA MINIMA 12 UNIDADES",
+  "category": "YERBERAS Y AZUCARERAS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 12
+  }
+}
