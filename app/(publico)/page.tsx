@@ -18,6 +18,13 @@ export default async function Home() {
 
   const products = await getProducts();
   const banner = await reader.singletons.bannerPersonalizado.read();
+  const ventanas = await reader.singletons.ventanasLaterales.read();
+  type VentanaEntry = NonNullable<typeof ventanas>["ventanaIzquierda"];
+  const mapVentana = (v: VentanaEntry | null | undefined) => ({
+    imagen: v?.archivo.discriminant === "imagen" ? (v.archivo.value ?? null) : null,
+    video: v?.archivo.discriminant === "video" ? (v.archivo.value ?? null) : null,
+    link: v?.link ?? "",
+  });
   const bannerHeroRaw = await reader.collections.bannerHero.all();
   const heroSlides = bannerHeroRaw
     .map((s) => ({ imagenDesktop: s.entry.imagenDesktop, imagenMobile: s.entry.imagenMobile, link: s.entry.link }))
@@ -29,7 +36,11 @@ export default async function Home() {
     <div className="flex flex-1 flex-col bg-white">
       <main className="flex flex-1 flex-col">
         <BannerHeroCarousel slides={heroSlides} />
-        <HeroSlider categories={categorias} />
+        <HeroSlider
+          categories={categorias}
+          ventanaIzquierda={mapVentana(ventanas?.ventanaIzquierda)}
+          ventanaDerecha={mapVentana(ventanas?.ventanaDerecha)}
+        />
         <PromoBanner imagenDesktop={banner?.imagenDesktop} imagenMobile={banner?.imagenMobile} />
         <ProductGrid products={products} title="Todos los productos" />
       </main>

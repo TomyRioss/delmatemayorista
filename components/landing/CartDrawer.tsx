@@ -6,6 +6,7 @@ import { Minus, Plus, Trash2, X as XIcon } from "lucide-react";
 import { Dialog } from "@base-ui/react/dialog";
 import { useCart, MIN_ORDER_TOTAL } from "@/lib/cart-context";
 import { cn } from "@/lib/utils";
+import { formatPrice } from "@/lib/format";
 
 type View = "cart" | "checkout" | "success";
 
@@ -43,7 +44,7 @@ export default function CartDrawer() {
 
     if (belowMinOrder) {
       setFormError(
-        `El pedido mínimo es de $${MIN_ORDER_TOTAL.toLocaleString("es-AR")}. Agregá más productos para continuar.`
+        `El pedido mínimo es de ${formatPrice(MIN_ORDER_TOTAL)}. Agregá más productos para continuar.`
       );
       return;
     }
@@ -126,7 +127,7 @@ export default function CartDrawer() {
                         <div className="flex flex-1 flex-col gap-1">
                           <p className="line-clamp-2 text-sm font-semibold text-black">{item.name}</p>
                           <p className="text-sm font-bold text-[#FF3412]">
-                            ${item.priceValue.toLocaleString("es-AR")}
+                            {formatPrice(item.priceValue)}
                           </p>
                           {item.quantity <= item.minQty && item.minQty > 1 && (
                             <p className="text-[11px] font-semibold text-black/50">
@@ -177,13 +178,13 @@ export default function CartDrawer() {
                   )}
                   {!hasInvalidItems && belowMinOrder && (
                     <p role="alert" className="mb-3 text-xs font-semibold text-[#FF3412]">
-                      Pedido mínimo: ${MIN_ORDER_TOTAL.toLocaleString("es-AR")}. Te faltan $
-                      {(MIN_ORDER_TOTAL - totalPrice).toLocaleString("es-AR")}.
+                      Pedido mínimo: {formatPrice(MIN_ORDER_TOTAL)}. Te faltan{" "}
+                      {formatPrice(MIN_ORDER_TOTAL - totalPrice)}.
                     </p>
                   )}
                   <div className="mb-3 flex items-center justify-between text-sm font-bold text-black">
                     <span>Total ({totalCount} {totalCount === 1 ? "unidad" : "unidades"})</span>
-                    <span className="text-[#FF3412]">${totalPrice.toLocaleString("es-AR")}</span>
+                    <span className="text-[#FF3412]">{formatPrice(totalPrice)}</span>
                   </div>
                   <button
                     type="button"
@@ -247,7 +248,7 @@ export default function CartDrawer() {
               <div className="mt-4 flex flex-col gap-2 border-t border-black/10 pt-4">
                 <div className="flex items-center justify-between text-sm font-bold text-black">
                   <span>Total</span>
-                  <span className="text-[#FF3412]">${totalPrice.toLocaleString("es-AR")}</span>
+                  <span className="text-[#FF3412]">{formatPrice(totalPrice)}</span>
                 </div>
                 <button
                   type="submit"

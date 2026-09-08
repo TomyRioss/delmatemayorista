@@ -9,6 +9,81 @@ export default config({
     },
   },
   singletons: {
+    ventanasLaterales: singleton({
+      label: 'Ventanas laterales - GIF / Video (items 1 y 4)',
+      path: 'content/ventanas-laterales',
+      format: { data: 'json' },
+      schema: {
+        ventanaIzquierda: fields.object(
+          {
+            archivo: fields.conditional(
+              fields.select({
+                label: 'Tipo',
+                description: 'Elegí qué vas a subir en la ventana izquierda.',
+                options: [
+                  { label: 'Imagen / GIF', value: 'imagen' },
+                  { label: 'Video', value: 'video' },
+                ],
+                defaultValue: 'imagen',
+              }),
+              {
+                imagen: fields.image({
+                  label: 'Archivo',
+                  description: 'Recomendado: 600x320px. Formatos: .gif, .jpg, .png, .webp.',
+                  directory: 'public/ventanas-laterales',
+                  publicPath: '/ventanas-laterales/',
+                }),
+                video: fields.file({
+                  label: 'Archivo',
+                  description: 'Recomendado: 600x320px horizontal. Formatos: .mp4 o .webm, máx 5MB, sin sonido.',
+                  directory: 'public/ventanas-laterales',
+                  publicPath: '/ventanas-laterales/',
+                }),
+              }
+            ),
+            link: fields.text({
+              label: 'Link (opcional)',
+              description: 'Ej: /tienda o https://... Vacío = sin enlace.',
+            }),
+          },
+          { label: 'Item 1 - Ventana izquierda' }
+        ),
+        ventanaDerecha: fields.object(
+          {
+            archivo: fields.conditional(
+              fields.select({
+                label: 'Tipo',
+                description: 'Elegí qué vas a subir en la ventana derecha.',
+                options: [
+                  { label: 'Imagen / GIF', value: 'imagen' },
+                  { label: 'Video', value: 'video' },
+                ],
+                defaultValue: 'imagen',
+              }),
+              {
+                imagen: fields.image({
+                  label: 'Archivo',
+                  description: 'Recomendado: 600x320px. Formatos: .gif, .jpg, .png, .webp.',
+                  directory: 'public/ventanas-laterales',
+                  publicPath: '/ventanas-laterales/',
+                }),
+                video: fields.file({
+                  label: 'Archivo',
+                  description: 'Recomendado: 600x320px horizontal. Formatos: .mp4 o .webm, máx 5MB, sin sonido.',
+                  directory: 'public/ventanas-laterales',
+                  publicPath: '/ventanas-laterales/',
+                }),
+              }
+            ),
+            link: fields.text({
+              label: 'Link (opcional)',
+              description: 'Ej: /tienda o https://... Vacío = sin enlace.',
+            }),
+          },
+          { label: 'Item 4 - Ventana derecha' }
+        ),
+      },
+    }),
     bannerPersonalizado: singleton({
       label: 'Banner - Personaliza tus productos',
       path: 'content/banner-personalizado',

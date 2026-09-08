@@ -1,4 +1,5 @@
 import { reader } from "@/lib/keystatic";
+import { formatPrice } from "@/lib/format";
 
 export type ProductVariant = {
   id: string;
@@ -46,7 +47,7 @@ export async function getProducts(): Promise<Product[]> {
       return {
         id: `v${i}`,
         name: v.nombre || `Variante ${i + 1}`,
-        price: `$${variantPriceValue.toLocaleString("es-AR")}`,
+        price: formatPrice(variantPriceValue),
         priceValue: variantPriceValue,
         images: variantImages.length > 0 ? variantImages : images,
         description: v.descripcion || entry.description || undefined,
@@ -56,7 +57,7 @@ export async function getProducts(): Promise<Product[]> {
     return {
       slug,
       name: entry.name,
-      price: `$${priceValue.toLocaleString("es-AR")}`,
+      price: formatPrice(priceValue),
       priceValue,
       images,
       description: entry.description || undefined,
