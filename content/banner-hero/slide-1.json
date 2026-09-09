@@ -1,6 +1,6 @@
 {
   "nombre": "slide-1",
-  "imagenDesktop": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/banner-hero/slide-1/imagenDesktop.png",
-  "imagenMobile": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/banner-hero/slide-1/imagenMobile.png",
+  "imagenDesktop": "/banner-hero/slide-1/imagenDesktop.png",
+  "imagenMobile": "/banner-hero/slide-1/imagenMobile.png",
   "link": "/tienda"
 }

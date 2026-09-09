@@ -2,8 +2,8 @@
   "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER AZUL/NEGRO",
   "price": 4.671,
   "images": [
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z38yerbera-y-azucarera-duo-alquimia-puffer-azul-negro/images/0.png",
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z38yerbera-y-azucarera-duo-alquimia-puffer-azul-negro/images/1.png"
+    "/productos/Z38yerbera-y-azucarera-duo-alquimia-puffer-azul-negro/images/0.png",
+    "/productos/Z38yerbera-y-azucarera-duo-alquimia-puffer-azul-negro/images/1.png"
   ],
   "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER COLORES AZUL O NEGRO\nCOMPRA MINIMA 12 UNIDADES, COLORES DE MODELO COMBINABLES.",
   "category": "YERBERAS Y AZUCARERAS",

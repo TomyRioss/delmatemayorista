@@ -27,9 +27,11 @@ export default config({
                 defaultValue: 'imagen',
               }),
               {
-                imagen: fields.url({
-                  label: 'Archivo (URL)',
-                  description: 'URL https del Blob. Recomendado: 600x320px.',
+                imagen: fields.image({
+                  label: 'Archivo',
+                  description: 'Recomendado: 600x320px. Formatos: .gif, .jpg, .png, .webp.',
+                  directory: 'public/ventanas-laterales',
+                  publicPath: '/ventanas-laterales/',
                 }),
                 video: fields.file({
                   label: 'Archivo',
@@ -59,9 +61,11 @@ export default config({
                 defaultValue: 'imagen',
               }),
               {
-                imagen: fields.url({
-                  label: 'Archivo (URL)',
-                  description: 'URL https del Blob. Recomendado: 600x320px.',
+                imagen: fields.image({
+                  label: 'Archivo',
+                  description: 'Recomendado: 600x320px. Formatos: .gif, .jpg, .png, .webp.',
+                  directory: 'public/ventanas-laterales',
+                  publicPath: '/ventanas-laterales/',
                 }),
                 video: fields.file({
                   label: 'Archivo',
@@ -85,13 +89,17 @@ export default config({
       path: 'content/banner-personalizado',
       format: { data: 'json' },
       schema: {
-        imagenDesktop: fields.url({
-          label: 'Imagen desktop (URL)',
-          description: 'URL https del Blob. Recomendado: 1200x160px.',
+        imagenDesktop: fields.image({
+          label: 'Imagen (desktop)',
+          description: 'Resolución recomendada: 1200x160px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/banner-personalizado',
+          publicPath: '/banner-personalizado/',
         }),
-        imagenMobile: fields.url({
-          label: 'Imagen celular (URL)',
-          description: 'URL https del Blob. Recomendado: 800x400px.',
+        imagenMobile: fields.image({
+          label: 'Imagen (celular)',
+          description: 'Resolución recomendada: 800x400px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/banner-personalizado',
+          publicPath: '/banner-personalizado/',
         }),
       },
     }),
@@ -104,13 +112,17 @@ export default config({
       format: { data: 'json' },
       schema: {
         nombre: fields.slug({ name: { label: 'Nombre interno (ej: slide-1)' } }),
-        imagenDesktop: fields.url({
-          label: 'Imagen desktop (URL)',
-          description: 'URL https del Blob. Recomendado: 1500x400px.',
+        imagenDesktop: fields.image({
+          label: 'Imagen (desktop)',
+          description: 'Resolución recomendada: 1500x400px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/banner-hero',
+          publicPath: '/banner-hero/',
         }),
-        imagenMobile: fields.url({
-          label: 'Imagen celular (URL)',
-          description: 'URL https del Blob. Recomendado: 800x600px.',
+        imagenMobile: fields.image({
+          label: 'Imagen (celular)',
+          description: 'Resolución recomendada: 800x600px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/banner-hero',
+          publicPath: '/banner-hero/',
         }),
         link: fields.text({
           label: 'Link (opcional)',
@@ -125,9 +137,11 @@ export default config({
       format: { data: 'json' },
       schema: {
         label: fields.slug({ name: { label: 'Nombre' } }), // esto genera el slug automático (ej: "Mates" -> mates)
-        image: fields.url({
-          label: 'Imagen (URL)',
-          description: 'URL https del Blob.',
+        image: fields.image({
+          label: 'Imagen',
+          description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/categorias',
+          publicPath: '/categorias/',
         }),
       },
     }),
@@ -140,9 +154,11 @@ export default config({
         name: fields.slug({ name: { label: 'Nombre' } }),
         price: fields.number({ label: 'Precio', validation: { min: 0 } }),
         images: fields.array(
-          fields.url({
-            label: 'Imagen (URL)',
-            description: 'URL https del Blob. Se sube una vez y se pega acá.',
+          fields.image({
+            label: 'Imagen',
+            description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+            directory: 'public/productos',
+            publicPath: '/productos/',
           }),
           { label: 'Imágenes', itemLabel: () => 'Imagen' }
         ),
@@ -160,9 +176,11 @@ export default config({
               validation: { min: 0 },
             }),
             imagenes: fields.array(
-              fields.url({
-                label: 'Imagen (URL)',
-                description: 'URL https del Blob. Vacío = usa las del producto.',
+              fields.image({
+                label: 'Imagen',
+                description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+                directory: 'public/productos',
+                publicPath: '/productos/',
               }),
               {
                 label: 'Imágenes (opcional)',

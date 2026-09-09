@@ -1,10 +1,10 @@
 {
   "name": "BOLSO MATERO PUFFER PRINT",
   "images": [
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z18bolso-matero-puffer-print/images/0.png",
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z18bolso-matero-puffer-print/images/1.png",
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z18bolso-matero-puffer-print/images/2.png",
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z18bolso-matero-puffer-print/images/3.png"
+    "/productos/Z18bolso-matero-puffer-print/images/0.png",
+    "/productos/Z18bolso-matero-puffer-print/images/1.png",
+    "/productos/Z18bolso-matero-puffer-print/images/2.png",
+    "/productos/Z18bolso-matero-puffer-print/images/3.png"
   ],
   "description": "COMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",

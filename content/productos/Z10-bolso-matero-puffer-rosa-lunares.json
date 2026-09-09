@@ -2,8 +2,8 @@
   "name": "BOLSO MATERO PUFFER ROSA LUNARES",
   "price": 11.974,
   "images": [
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z10-bolso-matero-puffer-rosa-lunares/images/0.png",
-    "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/productos/Z10-bolso-matero-puffer-rosa-lunares/images/1.jpg"
+    "/productos/Z10-bolso-matero-puffer-rosa-lunares/images/0.png",
+    "/productos/Z10-bolso-matero-puffer-rosa-lunares/images/1.jpg"
   ],
   "description": "COMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
