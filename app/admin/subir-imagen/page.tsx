@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { upload } from "@vercel/blob/client";
 import { ArrowLeft, Check, Copy, ImagePlus, Loader2, TriangleAlert } from "lucide-react";
 
 const CARPETAS = [
@@ -29,18 +30,28 @@ export default function SubirImagenPage() {
     setPreview(f ? URL.createObjectURL(f) : null);
   }
 
+  function nombreSeguro(name: string) {
+    const base = name
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9._-]+/g, "-")
+      .replace(/-+/g, "-")
+      .slice(0, 80);
+    return base || "imagen";
+  }
+
   async function subir() {
     if (!file) return;
     setError(null);
     setSubiendo(true);
     try {
-      const form = new FormData();
-      form.set("file", file);
-      form.set("carpeta", carpeta);
-      const res = await fetch("/api/admin/upload", { method: "POST", body: form });
-      const data = await res.json().catch(() => null);
-      if (!res.ok) throw new Error(data?.error || "No se pudo subir.");
-      setUrl(data.url);
+      const blob = await upload(`${carpeta}/${nombreSeguro(file.name)}`, file, {
+        access: "public",
+        handleUploadUrl: "/api/admin/upload",
+        multipart: true,
+      });
+      setUrl(blob.url);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error inesperado.");
     } finally {
@@ -91,7 +102,7 @@ export default function SubirImagenPage() {
       >
         <ImagePlus className="h-8 w-8 text-black/40" strokeWidth={2} />
         <span className="text-sm font-bold text-black">
-          {file ? file.name : "Elegí una imagen (máx 8MB)"}
+          {file ? file.name : "Elegí una imagen (máx 100MB)"}
         </span>
         <input
           type="file"
