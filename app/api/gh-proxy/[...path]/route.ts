@@ -1,6 +1,6 @@
 // Proxy same-origin hacia api.github.com para el admin Keystatic.
 // Solo permite endpoints del repo y /user. Reenvía el Authorization del usuario.
-const ALLOW = [/^\/repos\/TomyRioss\/delmatemayorista\//, /^\/user\/?$/];
+const ALLOW = [/^\/repos\/TomyRioss\/delmatemayorista($|\/)/, /^\/user\/?$/, /^\/graphql$/];
 
 async function handler(req: Request, ctx: { params: Promise<{ path: string[] }> }) {
   const { path } = await ctx.params;
