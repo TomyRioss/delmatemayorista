@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [{ hostname: "images.pexels.com" }],
+    remotePatterns: [
+      { hostname: "images.pexels.com" },
+      { hostname: "*.public.blob.vercel-storage.com" },
+    ],
     localPatterns: [{ pathname: "/**" }],
   },
   allowedDevOrigins: ["127.0.0.1", "localhost"],

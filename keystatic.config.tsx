@@ -154,11 +154,9 @@ export default config({
         name: fields.slug({ name: { label: 'Nombre' } }),
         price: fields.number({ label: 'Precio', validation: { min: 0 } }),
         images: fields.array(
-          fields.image({
-            label: 'Imagen',
-            description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
-            directory: 'public/productos',
-            publicPath: '/productos/',
+          fields.url({
+            label: 'Imagen (URL)',
+            description: 'URL https del Blob. Se sube una vez y se pega acá.',
           }),
           { label: 'Imágenes', itemLabel: () => 'Imagen' }
         ),
@@ -176,11 +174,9 @@ export default config({
               validation: { min: 0 },
             }),
             imagenes: fields.array(
-              fields.image({
-                label: 'Imagen',
-                description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
-                directory: 'public/productos',
-                publicPath: '/productos/',
+              fields.url({
+                label: 'Imagen (URL)',
+                description: 'URL https del Blob. Vacío = usa las del producto.',
               }),
               {
                 label: 'Imágenes (opcional)',
