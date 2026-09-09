@@ -10,7 +10,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  if (request.nextUrl.pathname.startsWith("/api/keystatic")) {
+  if (request.nextUrl.pathname.startsWith("/api/")) {
     return NextResponse.json({ error: "No autorizado." }, { status: 401 });
   }
 
@@ -23,5 +23,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/keystatic/:path*", "/api/keystatic/:path*"],
+  matcher: ["/keystatic/:path*", "/api/keystatic/:path*", "/admin/subir-imagen", "/api/admin/upload"],
 };
