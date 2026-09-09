@@ -1,4 +1,4 @@
 {
-  "imagenDesktop": "/banner-personalizado/imagenDesktop.png",
-  "imagenMobile": "/banner-personalizado/imagenMobile.png"
+  "imagenDesktop": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/banner-personalizado/imagenDesktop.png",
+  "imagenMobile": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/banner-personalizado/imagenMobile.png"
 }

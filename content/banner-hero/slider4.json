@@ -1,5 +1,5 @@
 {
   "nombre": "slider4",
-  "imagenDesktop": "/banner-hero/slider4/imagenDesktop.png",
-  "imagenMobile": "/banner-hero/slider4/imagenMobile.png"
+  "imagenDesktop": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/banner-hero/slider4/imagenDesktop.png",
+  "imagenMobile": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/banner-hero/slider4/imagenMobile.png"
 }

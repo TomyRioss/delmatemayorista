@@ -2,13 +2,13 @@
   "ventanaIzquierda": {
     "archivo": {
       "discriminant": "imagen",
-      "value": "/ventanas-laterales/ventanaIzquierda/archivo/value.gif"
+      "value": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/ventanas-laterales/ventanaIzquierda/archivo/value.gif"
     }
   },
   "ventanaDerecha": {
     "archivo": {
       "discriminant": "imagen",
-      "value": "/ventanas-laterales/ventanaDerecha/archivo/value.gif"
+      "value": "https://fefco9d9nywa1snq.public.blob.vercel-storage.com/ventanas-laterales/ventanaDerecha/archivo/value.gif"
     }
   }
 }
