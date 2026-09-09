@@ -1,14 +1,21 @@
 // Proxy same-origin hacia api.github.com para el admin Keystatic.
 // Solo permite endpoints del repo y /user. Reenvía el Authorization del usuario.
 const ALLOW = [/^\/repos\/TomyRioss\/delmatemayorista($|\/)/, /^\/user\/?$/, /^\/graphql$/];
+const RAW_ALLOW = /^\/raw\/TomyRioss\/delmatemayorista\//;
 
 async function handler(req: Request, ctx: { params: Promise<{ path: string[] }> }) {
   const { path } = await ctx.params;
   const pathname = '/' + (path || []).join('/');
-  if (!ALLOW.some((rx) => rx.test(pathname))) {
-    return Response.json({ message: 'forbidden' }, { status: 403 });
-  }
   const search = new URL(req.url).search;
+  let upstreamUrl: string;
+  if (RAW_ALLOW.test(pathname)) {
+    upstreamUrl = `https://raw.githubusercontent.com${pathname.replace(/^\/raw/, '')}${search}`;
+  } else {
+    if (!ALLOW.some((rx) => rx.test(pathname))) {
+      return Response.json({ message: 'forbidden' }, { status: 403 });
+    }
+    upstreamUrl = `https://api.github.com${pathname}${search}`;
+  }
   const headers = new Headers();
   const auth = req.headers.get('authorization');
   if (auth) headers.set('authorization', auth);
@@ -20,7 +27,7 @@ async function handler(req: Request, ctx: { params: Promise<{ path: string[] }> 
   if (req.method !== 'GET' && req.method !== 'HEAD') {
     init.body = Buffer.from(await req.arrayBuffer());
   }
-  const upstream = await fetch(`https://api.github.com${pathname}${search}`, init);
+  const upstream = await fetch(upstreamUrl, init);
   const body = await upstream.arrayBuffer();
   return new Response(body, {
     status: upstream.status,

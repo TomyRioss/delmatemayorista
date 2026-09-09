@@ -8,12 +8,16 @@ import config from "../../keystatic.config";
 if (typeof window !== "undefined" && !(window as any).__ghProxyPatched) {
   (window as any).__ghProxyPatched = true;
   const GH = "https://api.github.com";
+  const RAW = "https://raw.githubusercontent.com";
   const origFetch = window.fetch.bind(window);
   window.fetch = ((input: any, init?: RequestInit) => {
     try {
       const u = typeof input === "string" ? input : (input as Request)?.url;
       if (typeof u === "string" && u.startsWith(GH)) {
         const target = "/api/gh-proxy" + u.slice(GH.length);
+        input = typeof input === "string" ? target : new Request(target, input);
+      } else if (typeof u === "string" && u.startsWith(RAW)) {
+        const target = "/api/gh-proxy/raw" + u.slice(RAW.length);
         input = typeof input === "string" ? target : new Request(target, input);
       }
     } catch {
