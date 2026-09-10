@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER PRINT ANIMAL",
+  "price": 14.553,
+  "images": [
+    "/productos/Z18bolso-matero-puffer-print-animal/images/0.png",
+    "/productos/Z18bolso-matero-puffer-print-animal/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
