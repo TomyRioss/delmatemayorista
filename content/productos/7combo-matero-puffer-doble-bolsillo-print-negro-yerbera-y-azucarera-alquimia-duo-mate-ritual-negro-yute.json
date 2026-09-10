@@ -1,0 +1,16 @@
+{
+  "name": "COMBO MATERO PUFFER DOBLE BOLSILLO PRINT/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL",
+  "price": 18.351,
+  "images": [
+    "/productos/7combo-matero-puffer-doble-bolsillo-print-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-yute/images/0.png",
+    "/productos/7combo-matero-puffer-doble-bolsillo-print-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-yute/images/1.png",
+    "/productos/7combo-matero-puffer-doble-bolsillo-print-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-yute/images/2.png"
+  ],
+  "description": "BOLSO MATERO DOBLE BOLSILLO VERSION PRINTE, NEGRO O VERDE MILITAR\nMODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
