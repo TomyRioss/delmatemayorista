@@ -1,0 +1,14 @@
+{
+  "name": "BOLSO MATERO PUFFER DOBLE BOLSILLO NEGRO/PRINT/ VERDE MILITAR",
+  "price": 7.238,
+  "images": [
+    "/productos/6bolso-matero-puffer-doble-bolsillo/images/0.png"
+  ],
+  "description": "MATERO PUFFER DOBLE BOLSILLO VERSION PRINT, NEGRO O VERDE MILITAR\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
