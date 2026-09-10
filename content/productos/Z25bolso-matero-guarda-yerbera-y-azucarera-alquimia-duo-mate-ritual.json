@@ -1,0 +1,14 @@
+{
+  "name": "BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL ",
+  "price": 19.304,
+  "images": [
+    "/productos/Z25bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
