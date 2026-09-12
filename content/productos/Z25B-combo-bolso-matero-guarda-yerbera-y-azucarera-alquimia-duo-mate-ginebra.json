@@ -1,0 +1,14 @@
+{
+  "name": "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA",
+  "price": 19.304,
+  "images": [
+    "/productos/Z25B-combo-bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-ginebra/images/0.png"
+  ],
+  "description": "MATE GINEBRA NEGRO EN CAJA CON BOMBILLA\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
