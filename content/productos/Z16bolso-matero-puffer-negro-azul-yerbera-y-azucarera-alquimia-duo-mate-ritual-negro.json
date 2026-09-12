@@ -1,0 +1,15 @@
+{
+  "name": "BOLSO MATERO PUFFER NEGRO/AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO",
+  "price": 23.911,
+  "images": [
+    "/productos/Z16bolso-matero-puffer-negro-azul-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro/images/0.png",
+    "/productos/Z16bolso-matero-puffer-negro-azul-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCOLORES COMBINABLES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
