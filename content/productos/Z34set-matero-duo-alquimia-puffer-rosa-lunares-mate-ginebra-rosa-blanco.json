@@ -1,0 +1,15 @@
+{
+  "name": "SET MATERO DUO ALQUIMIA PUFFER ROSA LUNARES + MATE GINEBRA ROSA/BLANCO",
+  "price": 10.139,
+  "images": [
+    "/productos/Z34set-matero-duo-alquimia-puffer-rosa-lunares-mate-ginebra-rosa-blanco/images/0.png",
+    "/productos/Z34set-matero-duo-alquimia-puffer-rosa-lunares-mate-ginebra-rosa-blanco/images/1.png"
+  ],
+  "description": "MODELO DEL MATE: MATE GINEBRA\nCOLORES DISPONIBLES: BLANCO - ROSA\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 12 UNIDADES, COLORES DE MATE COMBINABLES.",
+  "category": "set-matero",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 12
+  }
+}
