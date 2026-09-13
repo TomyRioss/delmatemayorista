@@ -7,9 +7,67 @@ import { withCacheBust } from "@/lib/cache-bust";
 type PromoBannerProps = {
   imagenDesktop?: string | null;
   imagenMobile?: string | null;
+  comoComprarDesktop?: string | null;
+  comoComprarMobile?: string | null;
+  comoComprarLink?: string | null;
 };
 
-export default function PromoBanner({ imagenDesktop, imagenMobile }: PromoBannerProps) {
+export default function PromoBanner({
+  imagenDesktop,
+  imagenMobile,
+  comoComprarDesktop,
+  comoComprarMobile,
+  comoComprarLink,
+}: PromoBannerProps) {
+  const comoComprarHref = comoComprarLink || "/como-comprar";
+  const comoComprarImagen = comoComprarMobile || comoComprarDesktop ? (
+    <Link
+      href={comoComprarHref}
+      className="block overflow-hidden rounded-2xl transition-opacity hover:opacity-90 lg:flex lg:w-[30%]"
+    >
+      {comoComprarMobile && (
+        <div className="relative block aspect-[16/5] w-full lg:hidden">
+          <Image
+            src={withCacheBust(comoComprarMobile)}
+            alt="Cómo hacer tu compra"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      )}
+      {comoComprarDesktop && (
+        <div className="relative hidden w-full flex-1 lg:block lg:min-h-[120px]">
+          <Image
+            src={withCacheBust(comoComprarDesktop)}
+            alt="Cómo hacer tu compra"
+            fill
+            className="object-cover"
+            sizes="30vw"
+          />
+        </div>
+      )}
+    </Link>
+  ) : (
+    <Link
+      href="/como-comprar"
+      className="flex items-center justify-between gap-4 rounded-2xl bg-[#FF3412] px-6 py-4 transition-opacity hover:opacity-90 lg:w-[30%]"
+    >
+      <div>
+        <h2 className="text-lg font-extrabold uppercase leading-tight text-white sm:text-2xl">
+          Como hacer tu compra
+        </h2>
+        <p className="mt-1 text-xs font-extrabold uppercase leading-tight text-white sm:text-sm">
+          Te lo explicamos paso a paso
+        </p>
+      </div>
+      <HelpCircle
+        className="h-10 w-10 shrink-0 text-white sm:h-12 sm:w-12"
+        strokeWidth={1.5}
+      />
+    </Link>
+  );
+
   return (
     <section className="mx-auto flex w-full max-w-[1500px] flex-col gap-4 px-4 pt-8 sm:px-6 lg:flex-row">
       <Link
@@ -38,23 +96,7 @@ export default function PromoBanner({ imagenDesktop, imagenMobile }: PromoBanner
         )}
       </Link>
 
-      <Link
-        href="/como-comprar"
-        className="flex items-center justify-between gap-4 rounded-2xl bg-[#FF3412] px-6 py-4 transition-opacity hover:opacity-90 lg:w-[30%]"
-      >
-        <div>
-          <h2 className="text-lg font-extrabold uppercase leading-tight text-white sm:text-2xl">
-            Como hacer tu compra
-          </h2>
-          <p className="mt-1 text-xs font-extrabold uppercase leading-tight text-white sm:text-sm">
-            Te lo explicamos paso a paso
-          </p>
-        </div>
-        <HelpCircle
-          className="h-10 w-10 shrink-0 text-white sm:h-12 sm:w-12"
-          strokeWidth={1.5}
-        />
-      </Link>
+      {comoComprarImagen}
     </section>
   );
 }

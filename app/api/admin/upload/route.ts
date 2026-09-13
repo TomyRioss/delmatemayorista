@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import { handleUpload, type HandleUploadBody } from "@vercel/blob/client";
 import { SESSION_COOKIE, getSessionToken } from "@/lib/admin-auth";
 
-const CARPETAS = ["productos", "categorias", "banner-hero", "banner-personalizado", "ventanas-laterales"];
+const CARPETAS = ["productos", "categorias", "banner-hero", "banner-personalizado", "banner-como-comprar", "ventanas-laterales"];
 const MAX_BYTES = 100 * 1024 * 1024;
 
 export async function POST(request: Request) {

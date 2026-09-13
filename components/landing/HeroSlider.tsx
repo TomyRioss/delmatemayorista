@@ -99,19 +99,24 @@ export default function HeroSlider({
             <CarouselContent>
               {categories.map((cat) => (
                 <CarouselItem key={cat.slug} className="basis-1/2">
-                  <div className="relative flex h-28 items-center justify-center overflow-hidden rounded-sm sm:h-40">
-                    <Image
-                      src={cat.image}
-                      alt={cat.label}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 25vw, 12vw"
-                    />
-                    <div className="absolute inset-0 bg-black/40" />
-                    <span className="relative text-center text-sm font-black uppercase tracking-wide text-white sm:text-base">
-                      {cat.label}
-                    </span>
-                  </div>
+                  <Link
+                    href={`/tienda/${encodeURIComponent(cat.slug)}`}
+                    className="block"
+                  >
+                    <div className="relative flex h-28 items-center justify-center overflow-hidden rounded-sm sm:h-40">
+                      <Image
+                        src={cat.image}
+                        alt={cat.label}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 25vw, 12vw"
+                      />
+                      <div className="absolute inset-0 bg-black/40" />
+                      <span className="relative text-center text-sm font-black uppercase tracking-wide text-white sm:text-base">
+                        {cat.label}
+                      </span>
+                    </div>
+                  </Link>
                 </CarouselItem>
               ))}
             </CarouselContent>

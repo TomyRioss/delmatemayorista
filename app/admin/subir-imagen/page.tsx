@@ -10,6 +10,7 @@ const CARPETAS = [
   { value: "categorias", label: "Categorías" },
   { value: "banner-hero", label: "Flyer principal" },
   { value: "banner-personalizado", label: "Banner personalizado" },
+  { value: "banner-como-comprar", label: "Banner cómo comprar" },
   { value: "ventanas-laterales", label: "Ventanas laterales" },
 ];
 

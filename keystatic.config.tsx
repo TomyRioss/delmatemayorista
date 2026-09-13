@@ -103,6 +103,29 @@ export default config({
         }),
       },
     }),
+    bannerComoComprar: singleton({
+      label: 'Banner - Cómo hacer tu compra',
+      path: 'content/banner-como-comprar',
+      format: { data: 'json' },
+      schema: {
+        imagenDesktop: fields.image({
+          label: 'Imagen (desktop)',
+          description: 'Proporción 3,2:1 (ej: 960x300px). Ocupa la columna derecha (30%) e iguala en altura al banner vecino; centrar el texto importante. Formatos: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/banner-como-comprar',
+          publicPath: '/banner-como-comprar/',
+        }),
+        imagenMobile: fields.image({
+          label: 'Imagen (celular)',
+          description: 'Proporción 3,2:1 (ej: 800x250px). Se muestra a ancho completo; centrar el texto importante. Formatos: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/banner-como-comprar',
+          publicPath: '/banner-como-comprar/',
+        }),
+        link: fields.text({
+          label: 'Link (opcional)',
+          description: 'Vacío = /como-comprar. Ej: /tienda o https://...',
+        }),
+      },
+    }),
   },
   collections: {
     bannerHero: collection({

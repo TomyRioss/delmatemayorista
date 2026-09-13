@@ -1,5 +1,5 @@
 import { reader } from "@/lib/keystatic";
-import { formatPrice } from "@/lib/format";
+import { formatPrice, normalizePrice } from "@/lib/format";
 
 export type ProductVariant = {
   id: string;
@@ -31,17 +31,17 @@ export async function getProducts(): Promise<Product[]> {
   const fallbackCategory = categorias[0]?.slug ?? null;
 
   return entries.map(({ slug, entry }) => {
-    const priceValue = entry.price ?? 0;
+    const priceValue = normalizePrice(entry.price ?? 0);
     const minQty =
       entry.minPurchase.discriminant === "packs"
         ? Math.max(1, entry.minPurchase.value ?? 1)
         : priceValue > 0
-          ? Math.max(1, Math.ceil((entry.minPurchase.value ?? 0) / priceValue))
+          ? Math.max(1, Math.ceil(normalizePrice(entry.minPurchase.value ?? 0) / priceValue))
           : 1;
     const images = entry.images.filter((img): img is string => !!img);
 
     const variants: ProductVariant[] = entry.variantes.map((v, i) => {
-      const variantPriceValue = v.precio ?? priceValue;
+      const variantPriceValue = normalizePrice(v.precio ?? priceValue);
       const variantImages = v.imagenes.filter((img): img is string => !!img);
 
       return {

@@ -18,6 +18,7 @@ export default async function Home() {
 
   const products = await getProducts();
   const banner = await reader.singletons.bannerPersonalizado.read();
+  const comoComprar = await reader.singletons.bannerComoComprar.read();
   const ventanas = await reader.singletons.ventanasLaterales.read();
   type VentanaEntry = NonNullable<typeof ventanas>["ventanaIzquierda"];
   const mapVentana = (v: VentanaEntry | null | undefined) => ({
@@ -41,7 +42,13 @@ export default async function Home() {
           ventanaIzquierda={mapVentana(ventanas?.ventanaIzquierda)}
           ventanaDerecha={mapVentana(ventanas?.ventanaDerecha)}
         />
-        <PromoBanner imagenDesktop={banner?.imagenDesktop} imagenMobile={banner?.imagenMobile} />
+        <PromoBanner
+          imagenDesktop={banner?.imagenDesktop}
+          imagenMobile={banner?.imagenMobile}
+          comoComprarDesktop={comoComprar?.imagenDesktop}
+          comoComprarMobile={comoComprar?.imagenMobile}
+          comoComprarLink={comoComprar?.link}
+        />
         <ProductGrid products={products} title="Todos los productos" />
       </main>
     </div>
