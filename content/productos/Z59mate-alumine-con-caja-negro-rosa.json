@@ -5,11 +5,11 @@
     "/productos/Z59mate-alumine-con-caja-negro-rosa/images/0.png",
     "/productos/Z59mate-alumine-con-caja-negro-rosa/images/1.jpg"
   ],
-  "description": "COMPRA MINIMA 6 UNIDADES",
+  "description": "COMPRA MINIMA 3 UNIDADES",
   "category": "MATES",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 6
+    "value": 3
   }
 }
