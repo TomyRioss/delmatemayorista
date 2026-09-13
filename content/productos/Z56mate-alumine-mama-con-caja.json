@@ -4,11 +4,11 @@
   "images": [
     "/productos/Z56mate-alumine-mama-con-caja/images/0.png"
   ],
-  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR COLORES Y MOTIVOS DISPONIBLES",
+  "description": "COMPRA MINIMA 3 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
   "category": "MATES",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 6
+    "value": 3
   }
 }
