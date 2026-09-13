@@ -1,0 +1,14 @@
+{
+  "name": "MATE ALUMINE GRABADO NEGRO",
+  "price": 3.411,
+  "images": [
+    "/productos/Z58mate-alumine-grabado-negro/images/0.png",
+    "/productos/Z58mate-alumine-grabado-negro/images/1.png",
+    "/productos/Z58mate-alumine-grabado-negro/images/2.png"
+  ],
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
