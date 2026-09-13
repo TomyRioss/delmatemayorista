@@ -5,11 +5,11 @@
     "/productos/Z57mate-alumine-grabado-con-caja-negro-rosa/images/0.png",
     "/productos/Z57mate-alumine-grabado-con-caja-negro-rosa/images/1.jpg"
   ],
-  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
+  "description": "COMPRA MINIMA 3 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
   "category": "MATES",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 6
+    "value": 3
   }
 }
