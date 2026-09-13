@@ -1,0 +1,14 @@
+{
+  "name": "SET MATERO DUO ALQUIMIA PUFFER ROSA LUNARES + MATE RITUAL DTF UV",
+  "price": 11.443,
+  "images": [
+    "/productos/Z33set-matero-duo-alquimia-puffer-rosa-lunares-mate-ritual-dtf-uv/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 12 UNIDADES",
+  "category": "set-matero",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 12
+  }
+}
