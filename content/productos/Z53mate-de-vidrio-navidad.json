@@ -1,0 +1,15 @@
+{
+  "name": "MATE DE VIDRIO NAVIDAD",
+  "price": 1.201,
+  "images": [
+    "/productos/Z53mate-de-vidrio-navidad/images/0.jpg",
+    "/productos/Z53mate-de-vidrio-navidad/images/1.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR COLORES Y MOTIVOS DIFERENTES",
+  "category": "MATES",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
