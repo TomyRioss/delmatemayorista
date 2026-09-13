@@ -1,0 +1,15 @@
+{
+  "name": "MATE ALUMINE GRABADO CON CAJA (NEGRO-ROSA)",
+  "price": 3.411,
+  "images": [
+    "/productos/Z57mate-alumine-grabado-con-caja-negro-rosa/images/0.png",
+    "/productos/Z57mate-alumine-grabado-con-caja-negro-rosa/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
+  "category": "MATES",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
