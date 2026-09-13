@@ -6,9 +6,11 @@
     "/productos/Z58mate-alumine-grabado-negro/images/1.png",
     "/productos/Z58mate-alumine-grabado-negro/images/2.png"
   ],
+  "description": "COMPRA MINIMA 3 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
+  "category": "MATES",
   "variantes": [],
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 3
   }
 }
