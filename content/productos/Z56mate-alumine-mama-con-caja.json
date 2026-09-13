@@ -1,0 +1,14 @@
+{
+  "name": "MATE ALUMINE MAMA CON CAJA",
+  "price": 3.619,
+  "images": [
+    "/productos/Z56mate-alumine-mama-con-caja/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR COLORES Y MOTIVOS DISPONIBLES",
+  "category": "MATES",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
