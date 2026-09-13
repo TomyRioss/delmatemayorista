@@ -1,0 +1,14 @@
+{
+  "name": "MATE DE VIDRIO PINTADO",
+  "images": [
+    "/productos/Z54mate-de-vidrio-pintado/images/0.png",
+    "/productos/Z54mate-de-vidrio-pintado/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR COLORES DISPONIBLES",
+  "category": "MATES",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
