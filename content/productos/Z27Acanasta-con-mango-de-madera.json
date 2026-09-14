@@ -1,0 +1,15 @@
+{
+  "name": "CANASTA CON MANGO DE MADERA",
+  "price": 9501,
+  "images": [
+    "/productos/Z27Acanasta-con-mango-de-madera/images/0.png",
+    "/productos/Z27Acanasta-con-mango-de-madera/images/1.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR COLORES DISPONIBLES",
+  "category": "porta-termos",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
