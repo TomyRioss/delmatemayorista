@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import type { Product } from "@/lib/products";
+import OfertaBadge from "./OfertaBadge";
 
 export default function ProductDetail({ product }: { product: Product }) {
   const { slug, note, minQty, variants } = product;
@@ -57,6 +58,11 @@ export default function ProductDetail({ product }: { product: Product }) {
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
+          )}
+          {product.oferta && (
+            <div className="absolute top-4 right-4 z-10">
+              <OfertaBadge size="lg" />
+            </div>
           )}
 
           {selected.images.length > 1 && (

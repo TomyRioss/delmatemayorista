@@ -20,6 +20,7 @@ export type Product = {
   description?: string;
   category: string | null;
   minQty: number;
+  oferta: boolean;
   variants: ProductVariant[];
 };
 
@@ -63,6 +64,7 @@ export async function getProducts(): Promise<Product[]> {
       description: entry.description || undefined,
       category: entry.category ?? fallbackCategory,
       minQty,
+      oferta: entry.oferta ?? false,
       variants,
     };
   });

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import type { Product } from "@/lib/products";
+import OfertaBadge from "./OfertaBadge";
 
 export type { Product };
 
@@ -18,6 +19,7 @@ export default function ProductCard({
   note,
   category,
   minQty,
+  oferta,
 }: Product) {
   const [imageIndex] = useState(0);
   const { addItem } = useCart();
@@ -47,6 +49,11 @@ export default function ProductCard({
           </Link>
         ) : (
           imageInner
+        )}
+        {oferta && (
+          <div className="absolute top-2 right-2 z-10">
+            <OfertaBadge size="sm" />
+          </div>
         )}
       </div>
 

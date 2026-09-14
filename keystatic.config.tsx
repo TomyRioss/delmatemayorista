@@ -224,6 +224,11 @@ export default config({
             itemLabel: (props) => props.fields.nombre.value || 'Variante',
           }
         ),
+        oferta: fields.checkbox({
+          label: 'Oferta',
+          description: 'Si está activo, muestra el sello SUPER OFERTA en la card y el detalle.',
+          defaultValue: false,
+        }),
         minPurchase: fields.conditional(
           fields.select({
             label: 'Compra mínima',
