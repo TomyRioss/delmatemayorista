@@ -226,7 +226,7 @@ export default config({
         ),
         oferta: fields.checkbox({
           label: 'Oferta',
-          description: 'Si está activo, muestra el sello SUPER OFERTA en la card y el detalle.',
+          description: 'Si está activo, muestra el sello OFERTA en la card y el detalle.',
           defaultValue: false,
         }),
         minPurchase: fields.conditional(
