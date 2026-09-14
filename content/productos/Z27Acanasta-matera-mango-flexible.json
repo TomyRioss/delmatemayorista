@@ -1,0 +1,15 @@
+{
+  "name": "CANASTA MATERA MANGO FLEXIBLE",
+  "price": 9000,
+  "images": [
+    "/productos/Z27Acanasta-matera-mango-flexible/images/0.jpg",
+    "/productos/Z27Acanasta-matera-mango-flexible/images/1.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES\nCONSULTAR COLORES DISPONIBLES\n",
+  "category": "porta-termos",
+  "variantes": [],
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
