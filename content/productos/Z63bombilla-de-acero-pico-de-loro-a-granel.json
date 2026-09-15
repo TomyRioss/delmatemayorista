@@ -1,0 +1,17 @@
+{
+  "name": "BOMBILLA DE ACERO PICO DE LORO A GRANEL",
+  "price": 2.057,
+  "images": [
+    "/productos/Z63bombilla-de-acero-pico-de-loro-a-granel/images/0.jpg",
+    "/productos/Z63bombilla-de-acero-pico-de-loro-a-granel/images/1.jpg",
+    "/productos/Z63bombilla-de-acero-pico-de-loro-a-granel/images/2.jpg"
+  ],
+  "description": "MATERIAL: ACERO\nMEDIDA: 17CM\n𝗘𝗟 𝗣𝗥𝗘𝗖𝗜𝗢 𝗣𝗨𝗕𝗟𝗜𝗖𝗔𝗗𝗢 𝗘𝗦 𝗣𝗢𝗥 𝗨𝗡𝗜𝗗𝗔𝗗",
+  "category": "bombillas",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
