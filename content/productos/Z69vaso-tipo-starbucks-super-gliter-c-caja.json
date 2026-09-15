@@ -1,0 +1,16 @@
+{
+  "name": "VASO TIPO STARBUCKS SUPER GLITER C/CAJA",
+  "price": 2.244,
+  "images": [
+    "/productos/Z69vaso-tipo-starbucks-super-gliter-c-caja/images/0.png",
+    "/productos/Z69vaso-tipo-starbucks-super-gliter-c-caja/images/1.png"
+  ],
+  "description": "CONSULTAR COLORES DISPONIBLES\nCOMPRA MINIMA 3 UNIDADES",
+  "category": "vasos-starbucks",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
