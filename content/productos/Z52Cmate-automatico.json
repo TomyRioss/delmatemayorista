@@ -1,0 +1,15 @@
+{
+  "name": "MATE AUTOMATICO",
+  "price": 3.754,
+  "images": [
+    "/productos/Z52Cmate-automatico/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "MATES",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
