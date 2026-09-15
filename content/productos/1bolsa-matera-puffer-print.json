@@ -7,7 +7,7 @@
   "description": "PRINT ANIMAL\nCOMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
   "variantes": [],
-  "oferta": true,
+  "oferta": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
