@@ -1,0 +1,16 @@
+{
+  "name": "MATE LISTO",
+  "price": 4.828,
+  "images": [
+    "/productos/Z52Bmate-listo/images/0.jpg",
+    "/productos/Z52Bmate-listo/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "MATES",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
