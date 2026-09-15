@@ -1,0 +1,15 @@
+{
+  "name": "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + ALUMINE C/BOMBILLA CHATA",
+  "price": 15.037,
+  "images": [
+    "/productos/Z23Bcombo-bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-alumine-c-bombilla-chata/images/0.png"
+  ],
+  "description": "MATERIAL DEL MATE: ACERO\nMODELO: ALUMINE\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "COMBOS MATEROS",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
