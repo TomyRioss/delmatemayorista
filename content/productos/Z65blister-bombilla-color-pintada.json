@@ -1,0 +1,14 @@
+{
+  "name": "BLISTER BOMBILLA COLOR PINTADA",
+  "price": 4.106,
+  "images": [
+    "/productos/Z65blister-bombilla-color-pintada/images/0.png"
+  ],
+  "category": "bombillas",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
