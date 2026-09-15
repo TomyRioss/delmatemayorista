@@ -1,0 +1,16 @@
+{
+  "name": "MATE PLASTICO UNA ASA CON SACA YERBA",
+  "price": 1.375,
+  "images": [
+    "/productos/Z52mate-plastico-una-asa-con-saca-yerba/images/0.jpg",
+    "/productos/Z52mate-plastico-una-asa-con-saca-yerba/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "MATES",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
