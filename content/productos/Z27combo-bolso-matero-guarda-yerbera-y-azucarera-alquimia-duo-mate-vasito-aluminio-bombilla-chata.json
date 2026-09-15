@@ -2,11 +2,12 @@
   "name": "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE VASITO ALUMINIO + BOMBILLA CHATA",
   "price": 14.873,
   "images": [
-    "/productos/Z27bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-vasito-aluminio-bombilla-chata/images/0.png"
+    "/productos/Z27combo-bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-vasito-aluminio-bombilla-chata/images/0.png"
   ],
   "description": "COMPRA MINIMA 6 UNIDADES",
-  "category": "BOLSOS MATEROS",
+  "category": "COMBOS MATEROS",
   "variantes": [],
+  "oferta": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
