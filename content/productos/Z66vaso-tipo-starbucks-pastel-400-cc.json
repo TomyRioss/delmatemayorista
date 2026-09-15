@@ -1,0 +1,15 @@
+{
+  "name": "VASO TIPO STARBUCKS PASTEL (400CC)",
+  "price": 2.024,
+  "images": [
+    "/productos/Z66vaso-tipo-starbucks-pastel-400-cc/images/0.png"
+  ],
+  "description": "CONSULTAR COLORES DISPONIBLES\nCOMPRA MINIMA 3 UNIDADES",
+  "category": "vasos-starbucks",
+  "variantes": [],
+  "oferta": true,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
