@@ -1,0 +1,16 @@
+{
+  "name": "VASO TIPO STARBUCKS CON CAJA",
+  "price": 2.244,
+  "images": [
+    "/productos/Z67vaso-tipo-starbucks-con-caja/images/0.png",
+    "/productos/Z67vaso-tipo-starbucks-con-caja/images/1.png"
+  ],
+  "description": "CONSULTAR COLORES DISPONIBLES\nCOMPRA MINIMA 3 UNIDADES",
+  "category": "vasos-starbucks",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
