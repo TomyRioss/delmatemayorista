@@ -1,0 +1,14 @@
+{
+  "name": "BLISTER BOMBILLA CHATA DE ACERO LISA",
+  "price": 11.423,
+  "images": [
+    "/productos/Z62blister-bombilla-chata-de-acero-lisa/images/0.jpg"
+  ],
+  "category": "bombillas",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
