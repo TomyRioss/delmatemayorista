@@ -1,0 +1,17 @@
+{
+  "name": "VASO TIPO STARBUCK GRABADO DISEÑO",
+  "price": 2.574,
+  "images": [
+    "/productos/Z70vaso-tipo-starbuck-grabado-diseno/images/0.png",
+    "/productos/Z70vaso-tipo-starbuck-grabado-diseno/images/1.png",
+    "/productos/Z70vaso-tipo-starbuck-grabado-diseno/images/2.png"
+  ],
+  "description": "CONSULTAR COLORES Y DISEÑOS DISPONIBLES\nCOMPRA MINIMA 3 UNIDADES",
+  "category": "vasos-starbucks",
+  "variantes": [],
+  "oferta": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
