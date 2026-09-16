@@ -1,0 +1,45 @@
+{
+  "sessions": {
+    "term-1789583731335-d3uubp": {
+      "id": "term-1789583731335-d3uubp",
+      "name": "model-switch",
+      "status": "closed",
+      "createdAt": "2026-09-16T18:35:31.335Z",
+      "lastActivity": "2026-09-16T18:35:39.845Z",
+      "workingDir": "C:\\Users\\Pc\\Desktop\\clientes\\delmatemayorista",
+      "history": [
+        {
+          "command": "powershell -NoProfile -Command \"$files = @('C:\\Users\\Pc\\.config\\opencode\\opencode.jsonc','C:\\Users\\Pc\\.config\\opencode\\AGENTS.md') + (Get-ChildItem 'C:\\Users\\Pc\\.config\\opencode\\agents\\*.md' | Select-Object -ExpandProperty FullName); foreach ($f in $files) { (Get-Content $f -Raw) -replace 'opencode-go/mimo-v2.5','opencode-go/muse-spark-1.3-contributor' | Set-Content $f -NoNewline }; Write-Output done:$($files.Count)\"",
+          "output": "done:16\r\n",
+          "timestamp": "2026-09-16T18:35:39.845Z",
+          "exitCode": 0
+        }
+      ],
+      "env": {}
+    },
+    "term-1789588598636-i9nkc0": {
+      "id": "term-1789588598636-i9nkc0",
+      "name": "git-check",
+      "status": "closed",
+      "createdAt": "2026-09-16T19:56:38.636Z",
+      "lastActivity": "2026-09-16T19:56:56.258Z",
+      "workingDir": "C:\\Users\\Pc\\Desktop\\clientes\\delmatemayorista",
+      "history": [
+        {
+          "command": "git status --short; echo ---; git remote -v; echo ---; git log --oneline -5",
+          "output": "\n[stderr] error: unknown option `short;'\nusage: git status [<options>] [--] [<pathspec>...]\n\n    -v, --[no-]verbose    be verbose\n    -s, --[no-]short      show status concisely\n    -b, --[no-]branch     show branch information\n    --[no-]show-stash     show stash information\n    --[no-]ahead-behind   compute full ahead/behind values\n    --[no-]porcelain[=<version>]\n                          machine-readable output\n    --[no-]long           show status in long format (default)\n    -z, --[no-]null       terminate entries with NUL\n    -u, --[no-]untracked-files[=<mode>]\n                          show untracked files, optional modes: all, normal, no. (Default: all)\n    --[no-]ignored[=<mode>]\n                          show ignored files, optional modes: traditional, matching, no. (Default: traditional)\n    --[no-]ignore-submodules[=<when>]\n                          ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)\n    --[no-]column[=<style>]\n                          list untracked files in columns\n    --no-renames          do not detect renames\n    --renames             opposite of --no-renames\n    -M, --find-renames[=<n>]\n                          detect renames, optionally set similarity index\n\n",
+          "timestamp": "2026-09-16T19:56:48.404Z",
+          "exitCode": 129
+        },
+        {
+          "command": "git status",
+          "output": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   components/landing/CartDrawer.tsx\n\tmodified:   keystatic.config.tsx\n\tmodified:   lib/products.ts\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\t.claude-flow/\n\t.swarm/\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n",
+          "timestamp": "2026-09-16T19:56:56.258Z",
+          "exitCode": 0
+        }
+      ],
+      "env": {}
+    }
+  },
+  "version": "3.0.0"
+}
