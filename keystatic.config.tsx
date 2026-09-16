@@ -229,6 +229,11 @@ export default config({
           description: 'Si está activo, muestra el sello OFERTA en la card y el detalle.',
           defaultValue: false,
         }),
+        pausado: fields.checkbox({
+          label: 'Pausado',
+          description: 'Si está activo, el producto no aparece en la lista.',
+          defaultValue: false,
+        }),
         minPurchase: fields.conditional(
           fields.select({
             label: 'Compra mínima',

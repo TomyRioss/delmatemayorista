@@ -21,6 +21,7 @@ export type Product = {
   category: string | null;
   minQty: number;
   oferta: boolean;
+  pausado: boolean;
   variants: ProductVariant[];
 };
 
@@ -31,7 +32,9 @@ export async function getProducts(): Promise<Product[]> {
   ]);
   const fallbackCategory = categorias[0]?.slug ?? null;
 
-  return entries.map(({ slug, entry }) => {
+  return entries
+    .filter(({ entry }) => !(entry.pausado ?? false))
+    .map(({ slug, entry }) => {
     const priceValue = normalizePrice(entry.price ?? 0);
     const minQty =
       entry.minPurchase.discriminant === "packs"
@@ -65,6 +68,7 @@ export async function getProducts(): Promise<Product[]> {
       category: entry.category ?? fallbackCategory,
       minQty,
       oferta: entry.oferta ?? false,
+      pausado: entry.pausado ?? false,
       variants,
     };
   });
