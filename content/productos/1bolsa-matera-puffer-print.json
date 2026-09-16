@@ -6,7 +6,13 @@
   ],
   "description": "PRINT ANIMAL\nCOMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
-  "variantes": [],
+  "variantes": [
+    {
+      "nombre": "Negro",
+      "precio": 11200,
+      "imagenes": []
+    }
+  ],
   "oferta": false,
   "minPurchase": {
     "discriminant": "packs",
