@@ -1,0 +1,16 @@
+{
+  "codigo": "PED-1789565773798",
+  "fecha": "2026-09-16",
+  "nombre": "pablo",
+  "apellido": "pirulo",
+  "email": "pablo.dipas@gmail.com",
+  "telefono": "1539091100",
+  "items": [
+    {
+      "producto": "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE VASITO ALUMINIO + BOMBILLA CHATA",
+      "cantidad": 6,
+      "precioUnitario": 14873
+    }
+  ],
+  "total": 89238
+}
