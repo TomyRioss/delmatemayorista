@@ -14,7 +14,7 @@
     }
   ],
   "oferta": false,
-  "pausado": true,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
