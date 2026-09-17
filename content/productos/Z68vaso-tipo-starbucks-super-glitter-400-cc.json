@@ -6,9 +6,10 @@
     "/productos/Z68vaso-tipo-starbucks-super-glitter-400-cc/images/1.png"
   ],
   "description": "CONSULTAR COLORES DISPONIBLES\nCOMPRA MINIMA 3 UNIDADES",
-  "category": "vasos-starbucks",
+  "category": "vasos-tipo-starbucks",
   "variantes": [],
   "oferta": true,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 3
