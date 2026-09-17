@@ -1,6 +1,6 @@
 {
   "name": "COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO",
-  "price": 20.534,
+  "price": 23000,
   "images": [
     "/productos/Z15combo-bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ginebra-negro/images/0.png"
   ],
@@ -8,6 +8,7 @@
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
