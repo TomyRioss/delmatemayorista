@@ -1,6 +1,6 @@
 {
   "name": "COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO DTF UV",
-  "price": 20.864,
+  "price": 25000,
   "images": [
     "/productos/Z20combo-bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-dtf-uv/images/0.png"
   ],
@@ -8,6 +8,7 @@
   "category": "COMBOS MATEROS",
   "variantes": [],
   "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
