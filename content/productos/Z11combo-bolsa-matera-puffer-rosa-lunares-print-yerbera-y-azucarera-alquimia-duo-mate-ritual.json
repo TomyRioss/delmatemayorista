@@ -1,6 +1,6 @@
 {
   "name": "COMBO BOLSA MATERA PUFFER ROSA LUNARES/PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL",
-  "price": 23.451,
+  "price": 23450,
   "images": [
     "/productos/Z11combo-bolsa-matera-puffer-rosa-lunares-print-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/0.png",
     "/productos/Z11combo-bolsa-matera-puffer-rosa-lunares-print-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/1.png"
@@ -8,6 +8,8 @@
   "description": "MODELO DEL MATE: MATE RITUAL\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
