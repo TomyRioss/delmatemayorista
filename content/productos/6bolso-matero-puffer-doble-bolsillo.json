@@ -8,6 +8,8 @@
   "description": "MATERO PUFFER DOBLE BOLSILLO VERSION PRINT, NEGRO O VERDE MILITAR\nCOMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
   "variantes": [],
+  "oferta": false,
+  "pausado": true,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
