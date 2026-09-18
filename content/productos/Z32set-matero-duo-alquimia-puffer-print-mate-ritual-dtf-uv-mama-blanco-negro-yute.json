@@ -1,6 +1,6 @@
 {
   "name": "SET MATERO DUO ALQUIMIA PUFFER PRINT + MATE RITUAL DTF UV MAMÁ BLANCO/NEGRO/YUTE",
-  "price": 10.469,
+  "price": 13500,
   "images": [
     "/productos/Z32set-matero-duo-alquimia-puffer-print-mate-ritual-dtf-uv-mama-blanco-negro-yute/images/0.png",
     "/productos/Z32set-matero-duo-alquimia-puffer-print-mate-ritual-dtf-uv-mama-blanco-negro-yute/images/1.png",
@@ -9,6 +9,8 @@
   "description": "MODELO DEL MATE: MATE RITUAL MAMÁ\nCOLORES DISPONIBLES: BLANCO - NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 12 UNIDADES\nCOLORES DE MATE COMBINABLES.",
   "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 12
