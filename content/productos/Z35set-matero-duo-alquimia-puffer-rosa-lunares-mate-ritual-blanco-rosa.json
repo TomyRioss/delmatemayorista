@@ -1,15 +1,17 @@
 {
   "name": "SET MATERO DUO ALQUIMIA PUFFER ROSA LUNARES + MATE RITUAL BLANCO/ROSA",
-  "price": 11.113,
+  "price": 12900,
   "images": [
     "/productos/Z35set-matero-duo-alquimia-puffer-rosa-lunares-mate-ritual-blanco-rosa/images/0.png",
     "/productos/Z35set-matero-duo-alquimia-puffer-rosa-lunares-mate-ritual-blanco-rosa/images/1.png"
   ],
-  "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: BLANCO - ROSA\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 12 UNIDADES, COLORES DE MATE COMBINABLES.",
+  "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: BLANCO - ROSA\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
   "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 12
+    "value": 6
   }
 }
