@@ -1,6 +1,6 @@
 {
   "name": "SET MATERO DUO ALQUIMIA PUFFER + MATE RITUAL NEGRO/AZUL",
-  "price": 10.882,
+  "price": 11900,
   "images": [
     "/productos/Z27Cset-matero-duo-alquimia-puffer-mate-ritual-negro-azul/images/0.png",
     "/productos/Z27Cset-matero-duo-alquimia-puffer-mate-ritual-negro-azul/images/1.png"
@@ -8,6 +8,8 @@
   "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER COLOR NEGRO + MATE RITUAL CON PACKAGING COLOR NEGRO O AZUL\nCOMPRA MINIMA 6 UNIDADES,COLORES COMBINABLES.",
   "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
