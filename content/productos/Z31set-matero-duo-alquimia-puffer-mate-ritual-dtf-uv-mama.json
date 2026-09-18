@@ -1,6 +1,6 @@
 {
   "name": "SET MATERO DUO ALQUIMIA PUFFER + MATE RITUAL DTF UV MAMÁ",
-  "price": 11.212,
+  "price": 13500,
   "images": [
     "/productos/Z31set-matero-duo-alquimia-puffer-mate-ritual-dtf-uv-mama/images/0.png",
     "/productos/Z31set-matero-duo-alquimia-puffer-mate-ritual-dtf-uv-mama/images/1.png",
@@ -9,6 +9,8 @@
   "description": "YERBERA Y AZUCARERA ALQUIMIA DUO CON MATE RITUAL MODELO DIA DE LA MADRE\nCOLOR:NEGRO\nCOMPRA MINIMA 6 UNIDADES",
   "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
