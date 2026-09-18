@@ -1,6 +1,6 @@
 {
   "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER PRINT + MATE RITUAL NEGRO/YUTE",
-  "price": 11.113,
+  "price": 12900,
   "images": [
     "/productos/Z36yerbera-y-azucarera-duo-alquimia-puffer-print-mate-ritual-negro-yute/images/0.png",
     "/productos/Z36yerbera-y-azucarera-duo-alquimia-puffer-print-mate-ritual-negro-yute/images/1.png"
@@ -8,6 +8,8 @@
   "description": "MODELO DEL MATE: MATE RITUAL\nCOLORES DISPONIBLES: NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 12 UNIDADES, COLORES DE MATE COMBINABLES.",
   "category": "YERBERAS Y AZUCARERAS",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 12
