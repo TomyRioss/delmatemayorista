@@ -272,7 +272,8 @@ export default function CartDrawer() {
             <div className="flex flex-1 flex-col items-center justify-center gap-3 px-4 py-4 text-center">
               <p className="text-lg font-black uppercase text-black">¡Pedido recibido!</p>
               <p className="text-sm text-black/60">
-                Te vamos a contactar a la brevedad. Gracias por tú compra!!!
+                Te vamos a contactar a la brevedad.
+                <span className="block">Gracias por tú compra!!!</span>
               </p>
               <Dialog.Close className="mt-2 rounded-sm bg-[#FF3412] px-4 py-3 text-sm font-bold uppercase text-white hover:bg-black">
                 Cerrar
