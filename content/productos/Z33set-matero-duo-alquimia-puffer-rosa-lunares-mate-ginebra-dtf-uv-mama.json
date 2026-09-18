@@ -1,6 +1,6 @@
 {
   "name": "SET MATERO DUO ALQUIMIA PUFFER ROSA LUNARES + MATE GINEBRA DTF UV MAMÁ",
-  "price": 10.469,
+  "price": 13000,
   "images": [
     "/productos/Z33set-matero-duo-alquimia-puffer-rosa-lunares-mate-ginebra-dtf-uv-mama/images/0.png"
   ],
@@ -8,6 +8,7 @@
   "category": "set-matero",
   "variantes": [],
   "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 12
