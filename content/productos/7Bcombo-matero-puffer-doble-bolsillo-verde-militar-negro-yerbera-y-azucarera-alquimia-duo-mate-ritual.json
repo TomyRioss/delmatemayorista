@@ -1,0 +1,17 @@
+{
+  "name": "COMBO MATERO PUFFER DOBLE BOLSILLO VERDE MILITAR/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL",
+  "price": 23000,
+  "images": [
+    "/productos/7Bcombo-matero-puffer-doble-bolsillo-verde-militar-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/0.png",
+    "/productos/7Bcombo-matero-puffer-doble-bolsillo-verde-militar-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual/images/1.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}

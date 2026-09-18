@@ -1,0 +1,17 @@
+diff --git a/node_modules/@keystatic/core/dist/keystatic-core-ui.js b/node_modules/@keystatic/core/dist/keystatic-core-ui.js
+index bc14f53..a0cf9d3 100644
+--- a/node_modules/@keystatic/core/dist/keystatic-core-ui.js
++++ b/node_modules/@keystatic/core/dist/keystatic-core-ui.js
+@@ -1105,7 +1105,11 @@ function CollectionTable(props) {
+     });
+   }, [entriesWithStatus, mainFiles]);
+   const filteredItems = useMemo(() => {
+-    return entriesWithData.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
++    const searchWords = searchTerm.toLowerCase().replace(/[-_]+/g, ' ').trim().split(/\s+/).filter(Boolean);
++    return entriesWithData.filter(item => {
++      const normalizedName = item.name.toLowerCase().replace(/[-_]+/g, ' ');
++      return searchWords.every(word => normalizedName.includes(word));
++    });
+   }, [entriesWithData, searchTerm]);
+   const sortedItems = useMemo(() => {
+     return [...filteredItems].sort((a, b) => {

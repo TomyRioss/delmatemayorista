@@ -1,6 +1,6 @@
 {
   "name": "SET MATERO DUO ALQUIMIA PUFFER PRINT + MATE GINEBRA DTF UV NEGRO/BLANCO/YUTE",
-  "price": 10.469,
+  "price": 13000,
   "images": [
     "/productos/Z30set-matero-duo-alquimia-puffer-print-mate-ginebra-dtf-uv-negro-blanco-yute/images/0.png",
     "/productos/Z30set-matero-duo-alquimia-puffer-print-mate-ginebra-dtf-uv-negro-blanco-yute/images/1.png",
@@ -9,6 +9,8 @@
   "description": "MODELO DEL MATE: MATE GINEBRA\nCOLORES DISPONIBLES: BLANCO - NEGRO - YUTE\nMATERIAL DEL MATE: PLÁSTICO\nCOMPRA MINIMA 6 UNIDADES, COLORES DE MATE COMBINABLES.",
   "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6

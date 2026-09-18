@@ -1,0 +1,18 @@
+{
+  "name": "MATE ALUMINE GRABADO MAMA",
+  "price": 4500,
+  "images": [
+    "/productos/Z60mate-alumine-grabado-mama/images/0.png",
+    "/productos/Z60mate-alumine-grabado-mama/images/1.png",
+    "/productos/Z60mate-alumine-grabado-mama/images/2.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
+  "category": "MATES",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}

@@ -1,14 +1,16 @@
 {
   "name": "BLISTER BOMBILLA ACERO REDONDA RESORTE",
-  "price": 8.413,
+  "price": 9120,
   "images": [
     "/productos/Z64blister-bombilla-acero-redonda-resorte/images/0.jpg"
   ],
+  "description": "COMPRA MINIMA 12 UNIDADES",
   "category": "bombillas",
   "variantes": [],
   "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 12
   }
 }

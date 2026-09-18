@@ -1,0 +1,21 @@
+{
+  "codigo": "PED-1789674006022",
+  "fecha": "2026-09-17",
+  "nombre": "liliana o pablo",
+  "apellido": "picarelli",
+  "email": "jalbsanchez@gmail.com",
+  "telefono": "1539091100",
+  "items": [
+    {
+      "producto": "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA YUTE/NEGRO/BLANCO DTF UV",
+      "cantidad": 6,
+      "precioUnitario": 20479
+    },
+    {
+      "producto": "BOLSA MATERA PUFFER PRINT",
+      "cantidad": 6,
+      "precioUnitario": 11974
+    }
+  ],
+  "total": 194718
+}

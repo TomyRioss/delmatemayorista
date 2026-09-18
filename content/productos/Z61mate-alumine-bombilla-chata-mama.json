@@ -1,12 +1,14 @@
 {
   "name": "MATE ALUMINE + BOMBILLA CHATA MAMA",
-  "price": 4.564,
+  "price": 5900,
   "images": [
     "/productos/Z61mate-alumine-bombilla-chata-mama/images/0.png"
   ],
   "description": "COMPRA MINIMA 3 UNIDADES\nCONSULTAR GRABADOS DISPONIBLES",
   "category": "MATES",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 3

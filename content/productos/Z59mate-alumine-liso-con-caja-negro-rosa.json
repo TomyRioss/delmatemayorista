@@ -1,0 +1,17 @@
+{
+  "name": "MATE ALUMINE LISO CON CAJA (NEGRO-ROSA)",
+  "price": 3500,
+  "images": [
+    "/productos/Z59mate-alumine-liso-con-caja-negro-rosa/images/0.png",
+    "/productos/Z59mate-alumine-liso-con-caja-negro-rosa/images/1.jpg"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "MATES",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}

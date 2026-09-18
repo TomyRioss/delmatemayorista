@@ -1,14 +1,16 @@
 {
   "name": "BLISTER BOMBILLA CHATA DE ACERO GRABADA",
-  "price": 14.432,
+  "price": 15941,
   "images": [
     "/productos/Z62blister-bombilla-chata-de-acero-grabada/images/0.jpg"
   ],
+  "description": "COMPRA MINIMA 12 UNIDADES",
   "category": "bombillas",
   "variantes": [],
   "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 12
   }
 }

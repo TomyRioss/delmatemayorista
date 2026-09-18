@@ -1,0 +1,17 @@
+{
+  "name": "VASO TIPO STARBUCKS GLITTER 400CC",
+  "price": 2.024,
+  "images": [
+    "/productos/Z72vaso-tipo-starbucks-glitter-400-cc/images/0.png",
+    "/productos/Z72vaso-tipo-starbucks-glitter-400-cc/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "vasos-tipo-starbucks",
+  "variantes": [],
+  "oferta": true,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}

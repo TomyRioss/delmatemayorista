@@ -7,9 +7,10 @@
     "/productos/Z70vaso-tipo-starbuck-grabado-diseno/images/2.png"
   ],
   "description": "CONSULTAR COLORES Y DISEÑOS DISPONIBLES\nCOMPRA MINIMA 3 UNIDADES",
-  "category": "vasos-starbucks",
+  "category": "vasos-tipo-starbucks",
   "variantes": [],
   "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 3
