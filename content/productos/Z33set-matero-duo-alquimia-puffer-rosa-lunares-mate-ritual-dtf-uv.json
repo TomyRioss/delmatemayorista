@@ -4,11 +4,13 @@
   "images": [
     "/productos/Z33set-matero-duo-alquimia-puffer-rosa-lunares-mate-ritual-dtf-uv/images/0.png"
   ],
-  "description": "COMPRA MINIMA 12 UNIDADES",
+  "description": "COMPRA MINIMA 6 UNIDADES",
   "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 12
+    "value": 6
   }
 }
