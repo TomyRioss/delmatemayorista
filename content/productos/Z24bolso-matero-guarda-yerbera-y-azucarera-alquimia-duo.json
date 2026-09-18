@@ -5,8 +5,10 @@
     "/productos/Z24bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo/images/0.jpg"
   ],
   "description": "COMPRA MINIMA 6 UNIDADES",
-  "category": "BOLSOS MATEROS",
+  "category": "set-matero",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
