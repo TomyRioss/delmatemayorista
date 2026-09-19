@@ -1,0 +1,16 @@
+{
+  "codigo": "PED-19092026-0650",
+  "fecha": "2026-09-19",
+  "nombre": "Tomas",
+  "apellido": "Rios",
+  "email": "tomyrios2006@gmail.com",
+  "telefono": "01134083140",
+  "items": [
+    {
+      "producto": "BOLSA MATERA PUFFER PRINT",
+      "cantidad": 6,
+      "precioUnitario": 11974
+    }
+  ],
+  "total": 71844
+}
