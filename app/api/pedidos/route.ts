@@ -85,7 +85,8 @@ export async function POST(request: Request) {
   const anio = baParts.year;
   const hora = baParts.hour === "24" ? "00" : baParts.hour;
   const minutos = baParts.minute;
-  const baseCodigo = `PED-${dia}${mes}${anio}-${hora}${minutos}`;
+  const anio2 = anio.slice(-2);
+  const baseCodigo = `pedido-${dia}-${mes}-${anio2}-C${hora}${minutos}`;
   const fecha = `${anio}-${mes}-${dia}`;
 
   const owner = "TomyRioss";
@@ -102,7 +103,7 @@ export async function POST(request: Request) {
     );
   }
 
-  // Evita pisar un pedido si dos entran en el mismo minuto: PED-...-2105, PED-...-2105-2, etc.
+  // Evita pisar un pedido si dos entran en el mismo minuto: pedido-...-C2105, pedido-...-C2105-2, etc.
   let codigo = baseCodigo;
   for (let intento = 2; intento <= 10; intento++) {
     const checkPath = `content/pedidos/${codigo.toLowerCase()}.json`;
