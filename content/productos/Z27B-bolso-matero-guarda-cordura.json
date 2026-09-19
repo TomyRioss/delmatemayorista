@@ -8,6 +8,8 @@
   "description": "COLORES COMBINABLES\nCOMPRA MINIMA 6 UNIDADES",
   "category": "BOLSOS MATEROS",
   "variantes": [],
+  "oferta": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
