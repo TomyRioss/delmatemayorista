@@ -14,6 +14,7 @@ export default async function Home() {
     slug: c.slug,
     label: c.entry.label,
     image: c.entry.image ?? "/categorias/placeholder.png",
+    imagenMobile: c.entry.imagenMobile ?? null,
   }));
 
   const products = await getProducts();

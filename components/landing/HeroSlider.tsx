@@ -11,6 +11,7 @@ type CategoryItem = {
   slug: string;
   label: string;
   image: string;
+  imagenMobile: string | null;
 };
 
 type Ventana = {
@@ -105,10 +106,17 @@ export default function HeroSlider({
                   >
                     <div className="relative flex h-28 items-center justify-center overflow-hidden rounded-sm sm:h-40">
                       <Image
+                        src={cat.imagenMobile ?? cat.image}
+                        alt={cat.label}
+                        fill
+                        className="object-cover sm:hidden"
+                        sizes="(max-width: 1024px) 25vw, 12vw"
+                      />
+                      <Image
                         src={cat.image}
                         alt={cat.label}
                         fill
-                        className="object-cover"
+                        className="hidden object-cover sm:block"
                         sizes="(max-width: 1024px) 25vw, 12vw"
                       />
                       <div className="absolute inset-0 bg-black/40" />

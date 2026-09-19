@@ -65,20 +65,31 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Datos de pedido incompletos." }, { status: 400 });
   }
 
-  const timestamp = Date.now();
-  const codigo = `PED-${timestamp}`;
-  const fecha = new Date(timestamp).toISOString().slice(0, 10);
+  const now = new Date();
+  const baParts = new Intl.DateTimeFormat("es-AR", {
+    timeZone: "America/Argentina/Buenos_Aires",
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  })
+    .formatToParts(now)
+    .reduce<Record<string, string>>((acc, p) => {
+      acc[p.type] = p.value;
+      return acc;
+    }, {});
+  const dia = baParts.day;
+  const mes = baParts.month;
+  const anio = baParts.year;
+  const hora = baParts.hour === "24" ? "00" : baParts.hour;
+  const minutos = baParts.minute;
+  const baseCodigo = `PED-${dia}${mes}${anio}-${hora}${minutos}`;
+  const fecha = `${anio}-${mes}-${dia}`;
 
-  const data = {
-    codigo,
-    fecha,
-    nombre: body.nombre.trim(),
-    apellido: body.apellido.trim(),
-    email: body.email.trim(),
-    telefono: body.telefono.trim(),
-    items: body.items,
-    total: body.total,
-  };
+  const owner = "TomyRioss";
+  const repo = "delmatemayorista";
 
   let token: string;
   try {
@@ -91,8 +102,36 @@ export async function POST(request: Request) {
     );
   }
 
-  const owner = "TomyRioss";
-  const repo = "delmatemayorista";
+  // Evita pisar un pedido si dos entran en el mismo minuto: PED-...-2105, PED-...-2105-2, etc.
+  let codigo = baseCodigo;
+  for (let intento = 2; intento <= 10; intento++) {
+    const checkPath = `content/pedidos/${codigo.toLowerCase()}.json`;
+    const check = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/contents/${checkPath}?ref=main`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      }
+    );
+    if (check.status === 404) break;
+    if (!check.ok) break;
+    codigo = `${baseCodigo}-${intento}`;
+  }
+
+  const data = {
+    codigo,
+    fecha,
+    nombre: body.nombre.trim(),
+    apellido: body.apellido.trim(),
+    email: body.email.trim(),
+    telefono: body.telefono.trim(),
+    items: body.items,
+    total: body.total,
+  };
+
   const filePath = `content/pedidos/${codigo.toLowerCase()}.json`;
   const content = Buffer.from(JSON.stringify(data, null, 2), "utf-8").toString("base64");
 

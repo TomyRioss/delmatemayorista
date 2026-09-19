@@ -161,8 +161,14 @@ export default config({
       schema: {
         label: fields.slug({ name: { label: 'Nombre' } }), // esto genera el slug automático (ej: "Mates" -> mates)
         image: fields.image({
-          label: 'Imagen',
-          description: 'Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          label: 'Imagen (desktop)',
+          description: 'Resolución recomendada: 800x360px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
+          directory: 'public/categorias',
+          publicPath: '/categorias/',
+        }),
+        imagenMobile: fields.image({
+          label: 'Imagen (celular)',
+          description: 'Resolución recomendada: 480x300px. Formatos aceptados: .jpg, .png, .webp (no subir .jfif)',
           directory: 'public/categorias',
           publicPath: '/categorias/',
         }),

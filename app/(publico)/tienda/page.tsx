@@ -10,6 +10,7 @@ export default async function TiendaPage() {
     slug: c.slug,
     label: c.entry.label,
     image: c.entry.image ?? "/categorias/placeholder.png",
+    imagenMobile: c.entry.imagenMobile ?? null,
   }));
 
   return (
@@ -27,10 +28,17 @@ export default async function TiendaPage() {
               className="group relative flex h-32 items-center justify-center overflow-hidden rounded-sm sm:h-40"
             >
               <Image
+                src={cat.imagenMobile ?? cat.image}
+                alt={cat.label}
+                fill
+                className="object-cover transition-transform group-hover:scale-105 sm:hidden"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+              <Image
                 src={cat.image}
                 alt={cat.label}
                 fill
-                className="object-cover transition-transform group-hover:scale-105"
+                className="hidden object-cover transition-transform group-hover:scale-105 sm:block"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40" />
