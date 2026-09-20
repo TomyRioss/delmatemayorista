@@ -15,6 +15,7 @@
     }
   ],
   "oferta": false,
+  "novedad": true,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
