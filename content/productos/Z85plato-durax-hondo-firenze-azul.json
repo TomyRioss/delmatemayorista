@@ -1,0 +1,17 @@
+{
+  "name": "PLATO DURAX hondo firenze azul",
+  "price": 1350,
+  "images": [
+    "/productos/Z85plato-durax-hondo-firenze-azul/images/0.png",
+    "/productos/Z85plato-durax-hondo-firenze-azul/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "durax",
+  "variantes": [],
+  "oferta": true,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
