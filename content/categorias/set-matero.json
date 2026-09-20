@@ -1,4 +1,5 @@
 {
   "label": "SET MATERO",
-  "image": "/categorias/set-matero/image.jpg"
+  "image": "/categorias/set-matero/image.webp",
+  "imagenMobile": "/categorias/set-matero/imagenMobile.webp"
 }
