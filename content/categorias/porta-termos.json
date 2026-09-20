@@ -1,4 +1,5 @@
 {
   "label": "PORTA TERMOS",
-  "image": "/categorias/porta-termos/image.jpg"
+  "image": "/categorias/porta-termos/image.webp",
+  "imagenMobile": "/categorias/porta-termos/imagenMobile.webp"
 }
