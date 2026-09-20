@@ -1,0 +1,15 @@
+{
+  "name": "ASADOR REDONDO CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)",
+  "price": 12043,
+  "images": [
+    "/productos/Z100asador-redondo-con-broche-incluye-plato-madera-pino-vaso-y-cubiertos-de-acero/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
