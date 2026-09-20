@@ -1,16 +1,16 @@
 {
   "name": "VASO TIPO STARBUCKS PASTEL TIPO GLITTER 400CC",
-  "price": 2024,
+  "price": 1479,
   "images": [
     "/productos/Z74vaso-tipo-starbucks-pastel-tipo-glitter-400-cc/images/0.png"
   ],
-  "description": "COMPRA MINIMA 3 UNIDADES",
-  "category": "vasos-starbucks",
+  "description": "COMPRA MINIMA BULTO X 24 UNIDADES",
+  "category": "vasos-tipo-starbucks",
   "variantes": [],
   "oferta": true,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 3
+    "value": 24
   }
 }
