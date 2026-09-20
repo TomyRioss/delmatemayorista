@@ -1,0 +1,17 @@
+{
+  "name": "ASADOR RECTANGULAR ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA",
+  "price": 12608,
+  "images": [
+    "/productos/Z103asador-rectangular-estuche-pelota-vaso-y-cubiertos-de-acero-plato-de-madera/images/0.png",
+    "/productos/Z103asador-rectangular-estuche-pelota-vaso-y-cubiertos-de-acero-plato-de-madera/images/1.png"
+  ],
+  "description": "CONSULTAR COLORES DISPONIBLES",
+  "category": "para-el-asador",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
