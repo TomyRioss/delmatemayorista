@@ -1,0 +1,17 @@
+{
+  "name": "PLATO DURAXhondo gema plus",
+  "price": 1350,
+  "images": [
+    "/productos/hondo-gema-plus/images/0.png",
+    "/productos/hondo-gema-plus/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "durax",
+  "variantes": [],
+  "oferta": true,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
