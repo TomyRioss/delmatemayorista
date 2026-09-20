@@ -1,0 +1,16 @@
+{
+  "name": "BOMBILLA CHATA DE ACERO",
+  "price": 947,
+  "images": [
+    "/productos/Z65bombilla-chata-de-acero/images/0.png"
+  ],
+  "description": "MATERIAL: ACERO\nCOMPRA MINIMA: BULTO X 100 UNIDADES",
+  "category": "bombillas",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 100
+  }
+}
