@@ -1,0 +1,17 @@
+{
+  "name": "ASADOR REDONDO ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA",
+  "price": 13524,
+  "images": [
+    "/productos/Z102asador-redondo-estuche-pelota-vaso-y-cubiertos-de-acero-plato-de-madera/images/0.png",
+    "/productos/Z102asador-redondo-estuche-pelota-vaso-y-cubiertos-de-acero-plato-de-madera/images/1.png"
+  ],
+  "description": "CONSULTAR COLORES DISPONIBLES",
+  "category": "para-el-asador",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
