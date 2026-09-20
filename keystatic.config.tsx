@@ -235,6 +235,11 @@ export default config({
           description: 'Si está activo, muestra el sello OFERTA en la card y el detalle.',
           defaultValue: false,
         }),
+        novedad: fields.checkbox({
+          label: 'Novedad',
+          description: 'Si está activo, el producto aparece en Ofertas y novedades y muestra el sello NOVEDAD.',
+          defaultValue: false,
+        }),
         pausado: fields.checkbox({
           label: 'Pausado',
           description: 'Si está activo, el producto no aparece en la lista.',

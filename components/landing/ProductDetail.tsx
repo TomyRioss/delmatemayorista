@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import type { Product } from "@/lib/products";
 import OfertaBadge from "./OfertaBadge";
+import NovedadBadge from "./NovedadBadge";
 
 export default function ProductDetail({ product }: { product: Product }) {
   const { slug, note, minQty, variants } = product;
@@ -62,6 +63,11 @@ export default function ProductDetail({ product }: { product: Product }) {
           {product.oferta && (
             <div className="absolute top-4 right-4 z-10">
               <OfertaBadge size="lg" />
+            </div>
+          )}
+          {product.novedad && (
+            <div className={`absolute z-10 ${product.oferta ? "top-4 left-4" : "top-4 right-4"}`}>
+              <NovedadBadge size="lg" />
             </div>
           )}
 

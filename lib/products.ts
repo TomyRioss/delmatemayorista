@@ -21,6 +21,7 @@ export type Product = {
   category: string | null;
   minQty: number;
   oferta: boolean;
+  novedad: boolean;
   pausado: boolean;
   variants: ProductVariant[];
 };
@@ -68,6 +69,7 @@ export async function getProducts(): Promise<Product[]> {
       category: entry.category ?? fallbackCategory,
       minQty,
       oferta: entry.oferta ?? false,
+      novedad: entry.novedad ?? false,
       pausado: entry.pausado ?? false,
       variants,
     };
