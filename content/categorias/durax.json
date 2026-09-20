@@ -1,4 +1,5 @@
 {
   "label": "DURAX",
-  "image": "/categorias/durax/image.jpg"
+  "image": "/categorias/durax/image.webp",
+  "imagenMobile": "/categorias/durax/imagenMobile.webp"
 }
