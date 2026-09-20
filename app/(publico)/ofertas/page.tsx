@@ -4,7 +4,7 @@ import ProductGrid from "@/components/landing/ProductGrid";
 export const revalidate = 60;
 
 export default async function OfertasPage() {
-  const products = await getProducts();
+  const products = (await getProducts()).filter((p) => p.oferta);
 
   return (
     <div className="flex flex-1 flex-col bg-white">
