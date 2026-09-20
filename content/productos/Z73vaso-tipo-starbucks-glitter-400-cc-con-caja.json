@@ -7,7 +7,7 @@
   "description": "COMPRA MINIMA BULTO X 24 UNIDADES",
   "category": "vasos-tipo-starbucks",
   "variantes": [],
-  "oferta": false,
+  "oferta": true,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
