@@ -1,4 +1,5 @@
 {
   "label": "BOMBILLAS",
-  "image": "/categorias/bombillas/image.jpg"
+  "image": "/categorias/bombillas/image.webp",
+  "imagenMobile": "/categorias/bombillas/imagenMobile.webp"
 }
