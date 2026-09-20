@@ -5,11 +5,12 @@
     "/productos/Z92plato-postre-gold/images/0.jpg"
   ],
   "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "durax",
   "variantes": [],
   "oferta": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 6
   }
 }
