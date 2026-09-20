@@ -1,0 +1,17 @@
+{
+  "name": "BOMBILLA CHATA ACERO GRABADA",
+  "price": 1211,
+  "images": [
+    "/productos/Z65bombilla-chata-acero-grabada/images/0.png",
+    "/productos/Z65bombilla-chata-acero-grabada/images/1.png"
+  ],
+  "description": "MATERIAL: ACERO\nCOMPRA MINIMA: BULTO X 100 UNIDADES",
+  "category": "bombillas",
+  "variantes": [],
+  "oferta": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 100
+  }
+}
