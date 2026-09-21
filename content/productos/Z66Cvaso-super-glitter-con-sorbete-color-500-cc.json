@@ -1,0 +1,15 @@
+{
+  "name": "VASO SUPER GLITTER CON SORBETE COLOR 500CC",
+  "price": 900,
+  "images": [
+    "/productos/Z66Cvaso-super-glitter-con-sorbete-color-500-cc/images/0.png"
+  ],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
