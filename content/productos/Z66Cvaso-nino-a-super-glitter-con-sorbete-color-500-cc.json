@@ -4,12 +4,14 @@
   "images": [
     "/productos/Z66Cvaso-nino-a-super-glitter-con-sorbete-color-500-cc/images/0.png"
   ],
+  "description": "CONSULTAR COLORES DISPONIBLES\nCOMPRA MINIMA BULTO X 80 UNIDADES",
+  "category": "ninas-y-ninos",
   "variantes": [],
-  "oferta": false,
+  "oferta": true,
   "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 80
   }
 }
