@@ -9,6 +9,8 @@
   "category": "bombillas",
   "variantes": [],
   "oferta": false,
+  "novedad": true,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
