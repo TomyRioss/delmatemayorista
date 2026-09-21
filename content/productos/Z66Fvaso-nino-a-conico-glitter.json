@@ -1,0 +1,17 @@
+{
+  "name": "VASO NIÑO/A CONICO GLITTER",
+  "price": 521,
+  "images": [
+    "/productos/Z66Fvaso-nino-a-conico-glitter/images/0.jpg"
+  ],
+  "description": "COMPRA MINIMA BULTO X 100 UNIDADES",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": true,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 100
+  }
+}
