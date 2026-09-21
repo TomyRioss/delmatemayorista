@@ -1,0 +1,17 @@
+{
+  "name": "COMBO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE ACERO + BOMBILLA CHATA",
+  "price": 16800,
+  "images": [
+    "/productos/Z23Ccombo-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-acero-bombilla-chata/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "COMBOS MATEROS",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
