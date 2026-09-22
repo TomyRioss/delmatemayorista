@@ -1,0 +1,17 @@
+{
+  "name": "TAZA CHOCOLATERA 350 ML",
+  "price": 3600,
+  "images": [
+    "/productos/Z77taza-chocolatera-350-ml/images/0.png"
+  ],
+  "description": "COMPRA MINIMA BULTO CERRADO POR 6 UNIDADES",
+  "category": "tazas",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
