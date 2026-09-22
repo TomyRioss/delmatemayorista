@@ -1,3 +1,5 @@
 {
-  "label": "TAZAS"
+  "label": "TAZAS",
+  "image": "/categorias/tazas/image.jpg",
+  "imagenMobile": "/categorias/tazas/imagenMobile.jpg"
 }
