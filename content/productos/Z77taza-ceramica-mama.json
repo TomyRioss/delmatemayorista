@@ -1,0 +1,17 @@
+{
+  "name": "TAZA CERAMICA MAMÁ",
+  "price": 3000,
+  "images": [
+    "/productos/Z77taza-ceramica-mama/images/0.jpg"
+  ],
+  "description": "compra minima bulto cerrado por 18 unidades",
+  "category": "tazas",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 18
+  }
+}
