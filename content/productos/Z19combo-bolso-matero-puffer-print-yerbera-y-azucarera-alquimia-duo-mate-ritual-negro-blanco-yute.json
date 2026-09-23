@@ -1,6 +1,6 @@
 {
   "name": "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO/BLANCO/YUTE",
-  "price": 23.279,
+  "price": 26500,
   "images": [
     "/productos/Z19combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-blanco-yute/images/0.png",
     "/productos/Z19combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-blanco-yute/images/1.png",
@@ -10,6 +10,8 @@
   "category": "COMBOS MATEROS",
   "variantes": [],
   "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
