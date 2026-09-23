@@ -1,6 +1,6 @@
 {
   "name": "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA DTF UV",
-  "price": 26500,
+  "price": 25500,
   "images": [
     "/productos/Z21combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra-dtf-uv/images/0.png"
   ],
@@ -8,6 +8,7 @@
   "category": "COMBOS MATEROS",
   "variantes": [],
   "oferta": false,
+  "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
