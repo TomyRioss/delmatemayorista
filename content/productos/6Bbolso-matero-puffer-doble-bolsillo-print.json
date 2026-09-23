@@ -1,0 +1,17 @@
+{
+  "name": "BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT",
+  "price": 9500,
+  "images": [
+    "/productos/6Bbolso-matero-puffer-doble-bolsillo-print/images/0.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "BOLSOS MATEROS",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
