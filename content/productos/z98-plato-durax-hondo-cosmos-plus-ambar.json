@@ -1,0 +1,17 @@
+{
+  "name": "PLATO DURAX HONDO COSMOS PLUS AMBAR",
+  "price": 1350,
+  "images": [
+    "/productos/z98-plato-durax-hondo-cosmos-plus-ambar/images/0.jpeg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "durax",
+  "variantes": [],
+  "oferta": true,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
