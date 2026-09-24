@@ -1,7 +1,9 @@
 {
-  "name": "PLATO DURAX HONDOGEMA PLUS VERDE",
+  "name": "PLATO DURAX HONDO GEMA PLUS VERDE",
   "price": 1350,
-  "images": [],
+  "images": [
+    "/productos/z99plato-durax-hondo-gema-plus-verde/images/0.webp"
+  ],
   "description": "COMPRA MINIMA 6 UNIDADES",
   "category": "durax",
   "variantes": [],
