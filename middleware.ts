@@ -23,5 +23,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/keystatic/:path*", "/api/keystatic/:path*", "/admin/subir-imagen", "/api/admin/upload"],
+  matcher: ["/keystatic/:path*", "/api/keystatic/:path*", "/admin/subir-imagen", "/admin/visits", "/api/admin/upload"],
 };
