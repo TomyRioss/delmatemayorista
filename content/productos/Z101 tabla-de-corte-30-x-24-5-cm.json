@@ -1,0 +1,19 @@
+{
+  "name": "TABLA DE CORTE 30 X 24,5CM",
+  "price": 2743,
+  "images": [
+    "/productos/Z101 tabla-de-corte-30-x-24-5-cm/images/0.jpg",
+    "/productos/Z101 tabla-de-corte-30-x-24-5-cm/images/1.jpg",
+    "/productos/Z101 tabla-de-corte-30-x-24-5-cm/images/2.jpg",
+    "/productos/Z101 tabla-de-corte-30-x-24-5-cm/images/3.jpg"
+  ],
+  "description": "MATERIAL: PLASTICO\nBULTO X 28 UNIDADES",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 28
+  }
+}
