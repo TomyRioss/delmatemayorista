@@ -1,0 +1,17 @@
+{
+  "name": "PLATO DURAX HONDO GEMA PLUS MALBEC",
+  "price": 1350,
+  "images": [
+    "/productos/Z99Eplato-durax-hondo-gema-plus-malbec/images/0.jpeg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "durax",
+  "variantes": [],
+  "oferta": true,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
