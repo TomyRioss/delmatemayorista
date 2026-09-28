@@ -1,0 +1,12 @@
+{
+  "name": "VASO NIÑOS CON SORBETE GRABADO",
+  "images": [],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
