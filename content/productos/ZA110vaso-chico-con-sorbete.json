@@ -1,0 +1,17 @@
+{
+  "name": "VASO CHICO CON SORBETE",
+  "price": 1.388,
+  "images": [
+    "/productos/ZA110vaso-chico-con-sorbete/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
