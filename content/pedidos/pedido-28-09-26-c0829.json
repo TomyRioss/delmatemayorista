@@ -1,0 +1,21 @@
+{
+  "codigo": "pedido-28-09-26-C0829",
+  "fecha": "2026-09-28",
+  "nombre": "pablo",
+  "apellido": "pirulo",
+  "email": "bazarmayoristadelmate@gmail.com",
+  "telefono": "1539091100",
+  "items": [
+    {
+      "producto": "VASO NIÑO/A GLITTER CON TAPA Y SORBETE 500CC",
+      "cantidad": 80,
+      "precioUnitario": 900
+    },
+    {
+      "producto": "VASO NIÑO/A SUPER GLITTER CON SORBETE COLOR 500CC",
+      "cantidad": 80,
+      "precioUnitario": 900
+    }
+  ],
+  "total": 144000
+}
