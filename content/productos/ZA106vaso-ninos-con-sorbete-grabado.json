@@ -1,12 +1,18 @@
 {
   "name": "VASO NIÑOS CON SORBETE GRABADO",
-  "images": [],
+  "price": 1.455,
+  "images": [
+    "/productos/ZA106vaso-ninos-con-sorbete-grabado/images/0.png",
+    "/productos/ZA106vaso-ninos-con-sorbete-grabado/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "ninas-y-ninos",
   "variantes": [],
   "oferta": false,
   "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 3
   }
 }
