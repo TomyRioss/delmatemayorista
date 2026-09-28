@@ -1,0 +1,18 @@
+{
+  "name": "VASO SORBITO CON TETINA",
+  "price": 1.914,
+  "images": [
+    "/productos/ZA108vaso-sorbito-con-tetina/images/0.png",
+    "/productos/ZA108vaso-sorbito-con-tetina/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
