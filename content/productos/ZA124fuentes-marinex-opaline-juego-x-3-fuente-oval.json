@@ -1,0 +1,16 @@
+{
+  "name": "FUENTES MARINEX OPALINE JUEGO X 3 FUENTE OVAL",
+  "price": 19.909,
+  "images": [
+    "/productos/ZA124fuentes-marinex-opaline-juego-x-3-fuente-oval/images/0.webp"
+  ],
+  "category": "fuentes-marinex",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
