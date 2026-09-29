@@ -1,0 +1,17 @@
+{
+  "name": "Molde MARINEX filet grande 28x25 cm 1,6lt",
+  "price": 6.259,
+  "images": [
+    "/productos/ZA119molde-marinex-filet-grande-28x25-cm-1-6lt/images/0.jpeg"
+  ],
+  "description": "MATERIAL: VIDRIO TERMICO",
+  "category": "fuentes-marinex",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
