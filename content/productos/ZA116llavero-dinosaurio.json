@@ -1,0 +1,17 @@
+{
+  "name": "LLAVERO DINOSAURIO",
+  "price": 2.417,
+  "images": [
+    "/productos/ZA116llavero-dinosaurio/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
