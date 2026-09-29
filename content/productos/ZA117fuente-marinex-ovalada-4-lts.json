@@ -1,0 +1,16 @@
+{
+  "name": "FUENTE MARINEX OVALADA 4LTS",
+  "price": 12.521,
+  "images": [
+    "/productos/ZA117fuente-marinex-ovalada-4-lts/images/0.jpeg"
+  ],
+  "description": "MATERIAL: VIDRIO TERMICO",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
