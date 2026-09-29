@@ -1,0 +1,16 @@
+{
+  "name": "FUENTE MARINEX recta Lasagna 40x24 5 lt",
+  "price": 14020,
+  "images": [
+    "/productos/ZA118fuente-marinex-recta-lasagna-40x24-5-lt/images/0.jpeg"
+  ],
+  "category": "fuentes-marinex",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
