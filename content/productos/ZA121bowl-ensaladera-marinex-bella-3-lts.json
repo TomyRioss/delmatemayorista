@@ -1,0 +1,16 @@
+{
+  "name": "BOWL ENSALADERA MARINEX BELLA 3LTS",
+  "price": 6650,
+  "images": [
+    "/productos/ZA121bowl-ensaladera-marinex-bella-3-lts/images/0.png"
+  ],
+  "category": "fuentes-marinex",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
