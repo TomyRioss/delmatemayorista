@@ -1,0 +1,16 @@
+{
+  "name": "FUENTE MARINEX RECTANGULAR GRANDE 39X23CM",
+  "price": 11.202,
+  "images": [
+    "/productos/ZA123fuente-marinex-rectangular-grande-39-x23-cm/images/0.png"
+  ],
+  "category": "fuentes-marinex",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
