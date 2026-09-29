@@ -1,0 +1,18 @@
+{
+  "name": "COMBO INFANTIL CON TAZA",
+  "price": 2.419,
+  "images": [
+    "/productos/ZA112combo-infantil-con-taza/images/0.png",
+    "/productos/ZA112combo-infantil-con-taza/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
