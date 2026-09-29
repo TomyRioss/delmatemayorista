@@ -1,0 +1,17 @@
+{
+  "name": "VASO PELOTA CON SORBETE GLITTER 350ML",
+  "price": 3067,
+  "images": [
+    "/productos/ZA115vaso-pelota-con-sorbete-glitter-350-ml/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES\n",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
