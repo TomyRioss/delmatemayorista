@@ -1,0 +1,16 @@
+{
+  "name": "FUENTE MARINEX CUADRADA MED. 25X22CM",
+  "price": 7.788,
+  "images": [
+    "/productos/ZA122fuente-marinex-cuadrada-med-25-x22-cm/images/0.png"
+  ],
+  "category": "fuentes-marinex",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
