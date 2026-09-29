@@ -1,0 +1,18 @@
+{
+  "name": "VASO OREJITAS CON SORBETE GLITTER 350ML",
+  "price": 3067,
+  "images": [
+    "/productos/ZA114vaso-orejitas-con-sorbete-glitter-350-ml/images/0.png",
+    "/productos/ZA114vaso-orejitas-con-sorbete-glitter-350-ml/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 3 UNIDADES",
+  "category": "ninas-y-ninos",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
