@@ -1,3 +1,5 @@
 {
-  "label": "MATES"
+  "label": "MATES",
+  "image": "/categorias/MATES/image.png",
+  "imagenMobile": "/categorias/MATES/imagenMobile.png"
 }
