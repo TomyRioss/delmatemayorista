@@ -8,17 +8,17 @@ const number = new Intl.NumberFormat("es-AR");
 const date = new Intl.DateTimeFormat("es-AR", { day: "2-digit", month: "2-digit" });
 
 export default async function VisitsPage() {
-  let rows: Awaited<ReturnType<typeof getVisits>> = [];
+  let rows: Awaited<ReturnType<typeof getVisits>>["rows"] = [];
+  let totals = { pageviews: 0, visitors: 0 };
   let error = "";
 
   try {
-    rows = await getVisits();
+    const result = await getVisits();
+    rows = result.rows;
+    totals = result.totals;
   } catch (cause) {
     error = cause instanceof Error ? cause.message : "No se pudieron cargar las visitas.";
   }
-
-  const pageviews = rows.reduce((total, row) => total + row.pageviews, 0);
-  const visitors = rows.reduce((total, row) => total + row.visitors, 0);
 
   return (
     <main className="min-h-screen bg-[#f7f5f2] px-5 py-8 text-black sm:px-10">
@@ -40,8 +40,8 @@ export default async function VisitsPage() {
         ) : (
           <>
             <div className="mb-8 grid gap-4 sm:grid-cols-2">
-              <Metric label="Visitas" value={pageviews} />
-              <Metric label="Visitantes" value={visitors} />
+              <Metric label="Visitas" value={totals.pageviews} />
+              <Metric label="Visitantes únicos" value={totals.visitors} />
             </div>
             <div className="overflow-hidden rounded-sm border-2 border-black/10 bg-white">
               <div className="grid grid-cols-3 border-b-2 border-black/10 px-5 py-3 text-xs font-bold uppercase tracking-wide text-black/50">

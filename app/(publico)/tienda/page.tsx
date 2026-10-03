@@ -42,7 +42,7 @@ export default async function TiendaPage() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40" />
-              <span className="relative text-center text-sm font-black uppercase tracking-wide text-white sm:text-base">
+              <span className="relative text-center text-sm font-black uppercase tracking-wide text-[#7B8794] sm:text-base">
                 {cat.label}
               </span>
             </Link>
