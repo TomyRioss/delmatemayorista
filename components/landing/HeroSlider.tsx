@@ -121,8 +121,8 @@ export default function HeroSlider({
                       />
                       <div className="absolute inset-0 bg-black/40" />
                       <span
-                        className="relative text-center text-lg font-semibold uppercase tracking-wide text-white sm:text-xl"
-                        style={{ WebkitTextStroke: "1.5px black", paintOrder: "stroke fill" }}
+                        className="relative text-center text-lg font-semibold uppercase tracking-wide text-black sm:text-xl"
+                        style={{ WebkitTextStroke: "1.5px white", paintOrder: "stroke fill" }}
                       >
                         {cat.label}
                       </span>
