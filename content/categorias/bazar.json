@@ -1,4 +1,5 @@
 {
   "label": "BAZAR",
-  "image": "/categorias/bazar/image.png"
+  "image": "/categorias/bazar/image.webp",
+  "imagenMobile": "/categorias/bazar/imagenMobile.webp"
 }
