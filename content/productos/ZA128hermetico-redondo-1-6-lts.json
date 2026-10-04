@@ -1,0 +1,17 @@
+{
+  "name": "HERMETICO REDONDO 1.6LTS",
+  "price": 1.513,
+  "images": [
+    "/productos/ZA128hermetico-redondo-1-6-lts/images/0.jpg"
+  ],
+  "description": "CONSULTAR COLORES DE TAPA DISPONIBLES\nCOMPRA MINIMA 6 UNIDADES",
+  "category": "hermeticos-de-plastico",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
