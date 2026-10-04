@@ -1,0 +1,17 @@
+{
+  "name": "HERMETICO RECTANGULAR 14LTS.",
+  "price": 5580,
+  "images": [
+    "/productos/ZA133hermetico-rectangular-14-lts/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "hermeticos-de-plastico",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
