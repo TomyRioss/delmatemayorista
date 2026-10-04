@@ -1,0 +1,17 @@
+{
+  "name": "HERMETICO RECTANGULAR 1.5LTS",
+  "price": 1.407,
+  "images": [
+    "/productos/ZA126hermetico-rectangular-1-5-lts/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "hermeticos-de-plastico",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
