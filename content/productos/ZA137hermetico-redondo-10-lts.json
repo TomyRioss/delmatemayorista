@@ -1,0 +1,17 @@
+{
+  "name": "HERMETICO REDONDO 10LTS",
+  "price": 4.987,
+  "images": [
+    "/productos/ZA137hermetico-redondo-10-lts/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "hermeticos-de-plastico",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
