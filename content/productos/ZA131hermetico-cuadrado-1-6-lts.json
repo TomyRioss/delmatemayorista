@@ -1,0 +1,17 @@
+{
+  "name": "HERMETICO CUADRADO 1,6 LTS.",
+  "price": 1.359,
+  "images": [
+    "/productos/ZA131hermetico-cuadrado-1-6-lts/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "hermeticos-de-plastico",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
