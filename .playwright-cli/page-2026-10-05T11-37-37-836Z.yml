@@ -1,0 +1,149 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: COMPRA MÍNIMA $50.000
+      - generic [ref=e8]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e11]: COMPRA MÍNIMA $50.000
+      - generic [ref=e14]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e17]: COMPRA MÍNIMA $50.000
+      - generic [ref=e20]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e23]: COMPRA MÍNIMA $50.000
+      - generic [ref=e26]: ENVÍOS A TODO EL PAÍS
+    - generic [ref=e29]:
+      - generic [ref=e30]: COMPRA MÍNIMA $50.000
+      - generic [ref=e33]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e36]: COMPRA MÍNIMA $50.000
+      - generic [ref=e39]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e42]: COMPRA MÍNIMA $50.000
+      - generic [ref=e45]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e48]: COMPRA MÍNIMA $50.000
+      - generic [ref=e51]: ENVÍOS A TODO EL PAÍS
+  - banner [ref=e54]:
+    - generic [ref=e56]:
+      - link [ref=e57] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=e59]
+      - search [ref=e60]:
+        - generic [ref=e61]: Buscar productos
+        - searchbox "Buscar productos" [ref=e62]
+        - button "Buscar" [ref=e63]
+      - generic [ref=e67]:
+        - link "Quienes somos" [ref=e68] [cursor=pointer]:
+          - /url: /quienes-somos
+        - link "Contacto" [ref=e75] [cursor=pointer]:
+          - /url: /contacto
+        - button "Carrito Mi carrito" [ref=e80]:
+          - img "Carrito" [ref=e81]
+          - generic [ref=e82]: Mi carrito
+    - navigation [ref=e83]:
+      - generic [ref=e84]:
+        - link "Todos los productos" [ref=e85] [cursor=pointer]:
+          - /url: /#productos
+        - link "Categorias" [ref=e86] [cursor=pointer]:
+          - /url: /tienda
+        - link "Ofertas y novedades" [ref=e87] [cursor=pointer]:
+          - /url: /ofertas
+  - main [ref=e201]:
+    - generic [ref=e203]:
+      - heading "BAZAR" [level=2] [ref=e204]
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - link "Ver detalles de LUZ LED PARA BOMBILLA" [ref=e208] [cursor=pointer]:
+            - /url: /tienda/bazar/Z66Aluz-led-para-bombilla
+            - img "LUZ LED PARA BOMBILLA" [ref=e209]
+          - generic [ref=e210]:
+            - heading "LUZ LED PARA BOMBILLA" [level=3] [ref=e211]
+            - paragraph [ref=e212]: $3,564
+            - paragraph [ref=e213]
+            - button "Agregar al carrito" [ref=e215]
+        - generic [ref=e221]:
+          - link "Ver detalles de VASO FACETADO PLASTICO 400CC" [ref=e223] [cursor=pointer]:
+            - /url: /tienda/bazar/Z76B vaso-facetado-plastico-400-cc
+            - img "VASO FACETADO PLASTICO 400CC" [ref=e224]
+          - generic [ref=e225]:
+            - heading "VASO FACETADO PLASTICO 400CC" [level=3] [ref=e226]
+            - paragraph [ref=e227]: $587
+            - paragraph [ref=e228]
+            - button "Agregar al carrito" [ref=e230]
+        - generic [ref=e236]:
+          - link "Ver detalles de TABLA DE CORTE 30 X 24,5CM" [ref=e238] [cursor=pointer]:
+            - /url: /tienda/bazar/ZA100tabla-de-corte-30-x-24-5-cm
+            - img "TABLA DE CORTE 30 X 24,5CM" [ref=e239]
+          - generic [ref=e240]:
+            - heading "TABLA DE CORTE 30 X 24,5CM" [level=3] [ref=e241]
+            - paragraph [ref=e242]: $2,743
+            - paragraph [ref=e243]
+            - button "Agregar al carrito" [ref=e245]
+        - generic [ref=e251]:
+          - link "Ver detalles de ASADOR REDONDO CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)" [ref=e253] [cursor=pointer]:
+            - /url: /tienda/bazar/ZA101asador-redondo-con-broche-incluye-plato-madera-pino-vaso-y-cubiertos-de-acero
+            - img "ASADOR REDONDO CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)" [ref=e254]
+          - generic [ref=e255]:
+            - heading "ASADOR REDONDO CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)" [level=3] [ref=e256]
+            - paragraph [ref=e257]: $12,043
+            - paragraph [ref=e258]
+            - button "Agregar al carrito" [ref=e260]
+        - generic [ref=e266]:
+          - link "Ver detalles de ASADOR RECTANGULAR ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA" [ref=e268] [cursor=pointer]:
+            - /url: /tienda/bazar/ZA102asador-rectangular-estuche-pelota-vaso-y-cubiertos-de-acero-plato-de-madera
+            - img "ASADOR RECTANGULAR ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA" [ref=e269]
+          - generic [ref=e270]:
+            - heading "ASADOR RECTANGULAR ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA" [level=3] [ref=e271]
+            - paragraph [ref=e272]: $12,608
+            - paragraph [ref=e273]
+            - button "Agregar al carrito" [ref=e275]
+        - generic [ref=e281]:
+          - link "Ver detalles de ASADOR REDONDO ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA" [ref=e283] [cursor=pointer]:
+            - /url: /tienda/bazar/ZA103asador-redondo-estuche-pelota-vaso-y-cubiertos-de-acero-plato-de-madera
+            - img "ASADOR REDONDO ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA" [ref=e284]
+          - generic [ref=e285]:
+            - heading "ASADOR REDONDO ESTUCHE PELOTA + VASO Y CUBIERTOS DE ACERO PLATO DE MADERA" [level=3] [ref=e286]
+            - paragraph [ref=e287]: $13,524
+            - paragraph [ref=e288]
+            - button "Agregar al carrito" [ref=e290]
+        - generic [ref=e296]:
+          - link "Ver detalles de ASADOR RECTANGULAR CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)" [ref=e298] [cursor=pointer]:
+            - /url: /tienda/bazar/ZA104asador-rectangular-con-broche-incluye-plato-madera-pino-vaso-y-cubiertos-de-acero
+            - img "ASADOR RECTANGULAR CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)" [ref=e299]
+          - generic [ref=e300]:
+            - heading "ASADOR RECTANGULAR CON BROCHE (INCLUYE PLATO MADERA PINO, VASO Y CUBIERTOS DE ACERO)" [level=3] [ref=e301]
+            - paragraph [ref=e302]: $11,720
+            - paragraph [ref=e303]
+            - button "Agregar al carrito" [ref=e305]
+        - generic [ref=e311]:
+          - link "Ver detalles de VASO SORBITO C/TAPA" [ref=e313] [cursor=pointer]:
+            - /url: /tienda/bazar/ZA107vaso-sorbito-c-tapa
+            - img "VASO SORBITO C/TAPA" [ref=e314]
+          - generic [ref=e315]:
+            - heading "VASO SORBITO C/TAPA" [level=3] [ref=e316]
+            - paragraph [ref=e317]: $926
+            - paragraph [ref=e318]
+            - button "Agregar al carrito" [ref=e320]
+  - contentinfo [ref=e148]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - heading "Visitá nuestras redes sociales" [level=3] [ref=e151]
+        - generic [ref=e152]:
+          - link "@delmatemayorista" [ref=e153] [cursor=pointer]:
+            - /url: https://instagram.com/delmatemayorista
+          - link "@Delmate Mayorista" [ref=e157] [cursor=pointer]:
+            - /url: https://facebook.com/DelmateMayorista
+          - link "@delmate_oficial" [ref=e161] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@delmate_oficial
+      - generic [ref=e165]:
+        - paragraph [ref=e169]: Envíos atodo el país
+        - link "bazarmayoristadelmate@gmail.com" [ref=e170] [cursor=pointer]:
+          - /url: mailto:bazarmayoristadelmate@gmail.com
+        - link "(011) 1565358444" [ref=e174] [cursor=pointer]:
+          - /url: https://wa.me/5491165358444
+        - generic [ref=e178]: Gazeta de Buenos Aires 3705, Ciudadela, Buenos Aires
+      - link [ref=e182] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=e184]
+    - link "Admin" [ref=e186] [cursor=pointer]:
+      - /url: /admin/login
+  - link "Comunicate con nosotros por WhatsApp" [ref=e187] [cursor=pointer]:
+    - /url: https://wa.me/5491165358444
+    - generic [ref=e190]: Comunicate con nosotros
+  - button "Open Next.js Dev Tools" [ref=e196] [cursor=pointer]
+  - alert [ref=e326]

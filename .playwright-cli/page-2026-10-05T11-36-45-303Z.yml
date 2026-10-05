@@ -1,0 +1,132 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - generic [ref=f1e5]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e8]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=f1e11]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e14]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=f1e17]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e20]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=f1e23]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e26]: ENVÍOS A TODO EL PAÍS
+    - generic [ref=f1e29]:
+      - generic [ref=f1e30]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e33]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=f1e36]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e39]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=f1e42]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e45]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=f1e48]: COMPRA MÍNIMA $50.000
+      - generic [ref=f1e51]: ENVÍOS A TODO EL PAÍS
+  - banner [ref=f1e54]:
+    - generic [ref=f1e56]:
+      - link [ref=f1e57] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=f1e59]
+      - search [ref=f1e60]:
+        - generic [ref=f1e61]: Buscar productos
+        - searchbox "Buscar productos" [ref=f1e62]
+        - button "Buscar" [ref=f1e63]
+      - generic [ref=f1e67]:
+        - link "Quienes somos" [ref=f1e68] [cursor=pointer]:
+          - /url: /quienes-somos
+        - link "Contacto" [ref=f1e75] [cursor=pointer]:
+          - /url: /contacto
+        - button "Carrito Mi carrito" [ref=f1e80]:
+          - img "Carrito" [ref=f1e81]
+          - generic [ref=f1e82]: Mi carrito
+    - navigation [ref=f1e83]:
+      - generic [ref=f1e84]:
+        - link "Todos los productos" [ref=f1e85] [cursor=pointer]:
+          - /url: /#productos
+        - link "Categorias" [ref=f1e86] [cursor=pointer]:
+          - /url: /tienda
+        - link "Ofertas y novedades" [ref=f1e87] [cursor=pointer]:
+          - /url: /ofertas
+  - main [ref=f1e89]:
+    - heading "Categorías" [level=1] [ref=f1e90]
+    - generic [ref=f1e91]:
+      - link "BAZAR BAZAR" [ref=f1e92] [cursor=pointer]:
+        - /url: /tienda/bazar
+        - img "BAZAR" [ref=f1e93]
+        - generic [ref=f1e95]: BAZAR
+      - link "BOLSOS MATEROS BOLSOS MATEROS" [ref=f1e96] [cursor=pointer]:
+        - /url: /tienda/BOLSOS MATEROS
+        - img "BOLSOS MATEROS" [ref=f1e97]
+        - generic [ref=f1e99]: BOLSOS MATEROS
+      - link "BOMBILLAS BOMBILLAS" [ref=f1e100] [cursor=pointer]:
+        - /url: /tienda/bombillas
+        - img "BOMBILLAS" [ref=f1e101]
+        - generic [ref=f1e103]: BOMBILLAS
+      - link "COMBOS MATEROS COMBOS MATEROS" [ref=f1e104] [cursor=pointer]:
+        - /url: /tienda/COMBOS MATEROS
+        - img "COMBOS MATEROS" [ref=f1e105]
+        - generic [ref=f1e107]: COMBOS MATEROS
+      - link "DURAX DURAX" [ref=f1e108] [cursor=pointer]:
+        - /url: /tienda/durax
+        - img "DURAX" [ref=f1e109]
+        - generic [ref=f1e111]: DURAX
+      - link "FUENTES MARINEX FUENTES MARINEX" [ref=f1e112] [cursor=pointer]:
+        - /url: /tienda/fuentes-marinex
+        - img "FUENTES MARINEX" [ref=f1e113]
+        - generic [ref=f1e115]: FUENTES MARINEX
+      - link "HERMETICOS DE PLASTICO HERMETICOS DE PLASTICO" [ref=f1e116] [cursor=pointer]:
+        - /url: /tienda/hermeticos-de-plastico
+        - img "HERMETICOS DE PLASTICO" [ref=f1e117]
+        - generic [ref=f1e119]: HERMETICOS DE PLASTICO
+      - link "MATES MATES" [ref=f1e120] [cursor=pointer]:
+        - /url: /tienda/MATES
+        - img "MATES" [ref=f1e121]
+        - generic [ref=f1e123]: MATES
+      - link "NIÑAS Y NIÑOS NIÑAS Y NIÑOS" [ref=f1e124] [cursor=pointer]:
+        - /url: /tienda/ninas-y-ninos
+        - img "NIÑAS Y NIÑOS" [ref=f1e125]
+        - generic [ref=f1e127]: NIÑAS Y NIÑOS
+      - link "PORTA TERMOS PORTA TERMOS" [ref=f1e128] [cursor=pointer]:
+        - /url: /tienda/porta-termos
+        - img "PORTA TERMOS" [ref=f1e129]
+        - generic [ref=f1e131]: PORTA TERMOS
+      - link "SET MATERO SET MATERO" [ref=f1e132] [cursor=pointer]:
+        - /url: /tienda/set-matero
+        - img "SET MATERO" [ref=f1e133]
+        - generic [ref=f1e135]: SET MATERO
+      - link "TAZAS TAZAS" [ref=f1e136] [cursor=pointer]:
+        - /url: /tienda/tazas
+        - img "TAZAS" [ref=f1e137]
+        - generic [ref=f1e139]: TAZAS
+      - link "VASOS TIPO STARBUCKS VASOS TIPO STARBUCKS" [ref=f1e140] [cursor=pointer]:
+        - /url: /tienda/vasos-tipo-starbucks
+        - img "VASOS TIPO STARBUCKS" [ref=f1e141]
+        - generic [ref=f1e143]: VASOS TIPO STARBUCKS
+      - link "YERBERAS Y AZUCARERAS YERBERAS Y AZUCARERAS" [ref=f1e144] [cursor=pointer]:
+        - /url: /tienda/YERBERAS Y AZUCARERAS
+        - img "YERBERAS Y AZUCARERAS" [ref=f1e145]
+        - generic [ref=f1e147]: YERBERAS Y AZUCARERAS
+  - contentinfo [ref=f1e148]:
+    - generic [ref=f1e149]:
+      - generic [ref=f1e150]:
+        - heading "Visitá nuestras redes sociales" [level=3] [ref=f1e151]
+        - generic [ref=f1e152]:
+          - link "@delmatemayorista" [ref=f1e153] [cursor=pointer]:
+            - /url: https://instagram.com/delmatemayorista
+          - link "@Delmate Mayorista" [ref=f1e157] [cursor=pointer]:
+            - /url: https://facebook.com/DelmateMayorista
+          - link "@delmate_oficial" [ref=f1e161] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@delmate_oficial
+      - generic [ref=f1e165]:
+        - paragraph [ref=f1e169]: Envíos atodo el país
+        - link "bazarmayoristadelmate@gmail.com" [ref=f1e170] [cursor=pointer]:
+          - /url: mailto:bazarmayoristadelmate@gmail.com
+        - link "(011) 1565358444" [ref=f1e174] [cursor=pointer]:
+          - /url: https://wa.me/5491165358444
+        - generic [ref=f1e178]: Gazeta de Buenos Aires 3705, Ciudadela, Buenos Aires
+      - link [ref=f1e182] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=f1e184]
+    - link "Admin" [ref=f1e186] [cursor=pointer]:
+      - /url: /admin/login
+  - link "Comunicate con nosotros por WhatsApp" [ref=f1e187] [cursor=pointer]:
+    - /url: https://wa.me/5491165358444
+    - generic [ref=f1e190]: Comunicate con nosotros
+  - button "Open Next.js Dev Tools" [ref=f1e196] [cursor=pointer]
+  - alert [ref=f1e200]

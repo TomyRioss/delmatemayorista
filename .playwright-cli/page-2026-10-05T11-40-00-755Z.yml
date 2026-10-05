@@ -1,0 +1,137 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: COMPRA MÍNIMA $50.000
+      - generic [ref=e8]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e11]: COMPRA MÍNIMA $50.000
+      - generic [ref=e14]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e17]: COMPRA MÍNIMA $50.000
+      - generic [ref=e20]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e23]: COMPRA MÍNIMA $50.000
+      - generic [ref=e26]: ENVÍOS A TODO EL PAÍS
+    - generic [ref=e29]:
+      - generic [ref=e30]: COMPRA MÍNIMA $50.000
+      - generic [ref=e33]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e36]: COMPRA MÍNIMA $50.000
+      - generic [ref=e39]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e42]: COMPRA MÍNIMA $50.000
+      - generic [ref=e45]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e48]: COMPRA MÍNIMA $50.000
+      - generic [ref=e51]: ENVÍOS A TODO EL PAÍS
+  - banner [ref=e54]:
+    - generic [ref=e56]:
+      - link [ref=e57] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=e59]
+      - search [ref=e60]:
+        - generic [ref=e61]: Buscar productos
+        - searchbox "Buscar productos" [ref=e62]
+        - button "Buscar" [ref=e63]
+      - generic [ref=e67]:
+        - link "Quienes somos" [ref=e68] [cursor=pointer]:
+          - /url: /quienes-somos
+        - link "Contacto" [ref=e75] [cursor=pointer]:
+          - /url: /contacto
+        - button "Carrito Mi carrito" [ref=e80]:
+          - img "Carrito" [ref=e81]
+          - generic [ref=e82]: Mi carrito
+    - navigation [ref=e83]:
+      - generic [ref=e84]:
+        - link "Todos los productos" [ref=e85] [cursor=pointer]:
+          - /url: /#productos
+        - link "Categorias" [ref=e86] [cursor=pointer]:
+          - /url: /tienda
+        - link "Ofertas y novedades" [ref=e87] [cursor=pointer]:
+          - /url: /ofertas
+  - main [ref=e89]:
+    - heading "Categorías" [level=1] [ref=e90]
+    - generic [ref=e91]:
+      - link "BAZAR BAZAR" [ref=e92] [cursor=pointer]:
+        - /url: /tienda/bazar
+        - img "BAZAR" [ref=e93]
+        - generic [ref=e95]: BAZAR
+      - link "BOLSOS MATEROS BOLSOS MATEROS" [ref=e96] [cursor=pointer]:
+        - /url: /tienda/BOLSOS MATEROS
+        - img "BOLSOS MATEROS" [ref=e97]
+        - generic [ref=e99]: BOLSOS MATEROS
+      - link "BOMBILLAS BOMBILLAS" [ref=e100] [cursor=pointer]:
+        - /url: /tienda/bombillas
+        - img "BOMBILLAS" [ref=e101]
+        - generic [ref=e103]: BOMBILLAS
+      - link "COMBOS MATEROS COMBOS MATEROS" [ref=e104] [cursor=pointer]:
+        - /url: /tienda/COMBOS MATEROS
+        - img "COMBOS MATEROS" [ref=e105]
+        - generic [ref=e107]: COMBOS MATEROS
+      - link "DURAX DURAX" [ref=e108] [cursor=pointer]:
+        - /url: /tienda/durax
+        - img "DURAX" [ref=e109]
+        - generic [ref=e111]: DURAX
+      - link "FUENTES MARINEX FUENTES MARINEX" [ref=e112] [cursor=pointer]:
+        - /url: /tienda/fuentes-marinex
+        - img "FUENTES MARINEX" [ref=e113]
+        - generic [ref=e115]: FUENTES MARINEX
+      - link "HERMETICOS DE PLASTICO HERMETICOS DE PLASTICO" [ref=e116] [cursor=pointer]:
+        - /url: /tienda/hermeticos-de-plastico
+        - img "HERMETICOS DE PLASTICO" [ref=e117]
+        - generic [ref=e119]: HERMETICOS DE PLASTICO
+      - link "MATES MATES" [ref=e120] [cursor=pointer]:
+        - /url: /tienda/MATES
+        - img "MATES" [ref=e121]
+        - generic [ref=e123]: MATES
+      - link "NIÑAS Y NIÑOS NIÑAS Y NIÑOS" [ref=e124] [cursor=pointer]:
+        - /url: /tienda/ninas-y-ninos
+        - img "NIÑAS Y NIÑOS" [ref=e125]
+        - generic [ref=e127]: NIÑAS Y NIÑOS
+      - link "PORTA TERMOS PORTA TERMOS" [ref=e128] [cursor=pointer]:
+        - /url: /tienda/porta-termos
+        - img "PORTA TERMOS" [ref=e129]
+        - generic [ref=e131]: PORTA TERMOS
+      - link "SET MATERO SET MATERO" [ref=e132] [cursor=pointer]:
+        - /url: /tienda/set-matero
+        - img "SET MATERO" [ref=e133]
+        - generic [ref=e135]: SET MATERO
+      - link "TAZAS TAZAS" [ref=e136] [cursor=pointer]:
+        - /url: /tienda/tazas
+        - img "TAZAS" [ref=e137]
+        - generic [ref=e139]: TAZAS
+      - link "VASOS TIPO STARBUCKS VASOS TIPO STARBUCKS" [ref=e140] [cursor=pointer]:
+        - /url: /tienda/vasos-tipo-starbucks
+        - img "VASOS TIPO STARBUCKS" [ref=e141]
+        - generic [ref=e143]: VASOS TIPO STARBUCKS
+      - link "YERBERAS Y AZUCARERAS YERBERAS Y AZUCARERAS" [ref=e144] [cursor=pointer]:
+        - /url: /tienda/YERBERAS Y AZUCARERAS
+        - img "YERBERAS Y AZUCARERAS" [ref=e145]
+        - generic [ref=e147]: YERBERAS Y AZUCARERAS
+  - contentinfo [ref=e148]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - heading "Visitá nuestras redes sociales" [level=3] [ref=e151]
+        - generic [ref=e152]:
+          - link "@delmatemayorista" [ref=e153] [cursor=pointer]:
+            - /url: https://instagram.com/delmatemayorista
+          - link "@Delmate Mayorista" [ref=e157] [cursor=pointer]:
+            - /url: https://facebook.com/DelmateMayorista
+          - link "@delmate_oficial" [ref=e161] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@delmate_oficial
+      - generic [ref=e165]:
+        - paragraph [ref=e169]: Envíos atodo el país
+        - link "bazarmayoristadelmate@gmail.com" [ref=e170] [cursor=pointer]:
+          - /url: mailto:bazarmayoristadelmate@gmail.com
+        - link "(011) 1565358444" [ref=e174] [cursor=pointer]:
+          - /url: https://wa.me/5491165358444
+        - generic [ref=e178]: Gazeta de Buenos Aires 3705, Ciudadela, Buenos Aires
+      - link [ref=e182] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=e184]
+    - link "Admin" [ref=e186] [cursor=pointer]:
+      - /url: /admin/login
+  - link "Comunicate con nosotros por WhatsApp" [ref=e187] [cursor=pointer]:
+    - /url: https://wa.me/5491165358444
+    - generic [ref=e190]: Comunicate con nosotros
+  - button "Open Next.js Dev Tools" [ref=e196] [cursor=pointer]:
+    - generic [ref=e199]:
+      - text: Compiling
+      - generic [ref=e200]:
+        - generic [ref=e201]: .
+        - generic [ref=e202]: .
+        - generic [ref=e203]: .
