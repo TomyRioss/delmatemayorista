@@ -1,6 +1,6 @@
 {
   "name": "MATE RITUAL GRABADO C/CAJA",
-  "price": 7417,
+  "price": 8500,
   "images": [
     "/productos/Z44mate-ritual-grabado-c-caja/images/0.png",
     "/productos/Z44mate-ritual-grabado-c-caja/images/1.jpg",
@@ -9,6 +9,9 @@
   "description": "MATE CLÁSICO DE PVC CON PACKAGING Y BOMBILLA DE ACERO\n𝗖𝗢𝗠𝗣𝗥𝗔 𝗠𝗜𝗡𝗜𝗠𝗔 6 UNIDADES",
   "category": "MATES",
   "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
