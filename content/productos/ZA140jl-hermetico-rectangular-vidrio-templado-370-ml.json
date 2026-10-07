@@ -1,0 +1,16 @@
+{
+  "name": "JL HERMETICO RECTANGULAR VIDRIO TEMPLADO 370ML",
+  "price": 3920,
+  "images": [
+    "/productos/ZA140jl-hermetico-rectangular-vidrio-templado-370-ml/images/0.jpg"
+  ],
+  "category": "hermeticos-de-vidrio",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
