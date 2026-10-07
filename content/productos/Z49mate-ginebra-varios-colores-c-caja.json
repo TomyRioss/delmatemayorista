@@ -1,6 +1,6 @@
 {
   "name": "MATE GINEBRA (VARIOS COLORES) C/CAJA",
-  "price": 5.643,
+  "price": 7000,
   "images": [
     "/productos/Z49mate-ginebra-varios-colores-c-caja/images/0.png",
     "/productos/Z49mate-ginebra-varios-colores-c-caja/images/1.png"
@@ -8,6 +8,9 @@
   "description": "MATE DE PVC CLÁSICO CON BOMBILLA Y PACKAGING\n𝗖𝗢𝗠𝗣𝗥𝗔 𝗠𝗜𝗡𝗜𝗠𝗔 BULTO X 24 UNIDADES",
   "category": "MATES",
   "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 24
