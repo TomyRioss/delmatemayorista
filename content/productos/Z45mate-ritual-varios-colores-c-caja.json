@@ -1,6 +1,6 @@
 {
   "name": "MATE RITUAL (VARIOS COLORES) C/CAJA",
-  "price": 6.503,
+  "price": 7950,
   "images": [
     "/productos/Z45mate-ritual-varios-colores-c-caja/images/0.png",
     "/productos/Z45mate-ritual-varios-colores-c-caja/images/1.jpg"
@@ -8,6 +8,9 @@
   "description": "MATE CLÁSICO DE PVC CON PACKAGING Y BOMBILLA DE ACERO\n𝗖𝗢𝗠𝗣𝗥𝗔 𝗠𝗜𝗡𝗜𝗠𝗔 BULTO X 18 UNIDADES",
   "category": "MATES",
   "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 18
