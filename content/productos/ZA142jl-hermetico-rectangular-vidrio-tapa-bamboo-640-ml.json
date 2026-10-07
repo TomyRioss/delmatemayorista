@@ -1,0 +1,18 @@
+{
+  "name": "JL HERMETICO RECTANGULAR VIDRIO TAPA BAMBOO 640ML",
+  "price": 6600,
+  "images": [
+    "/productos/ZA142jl-hermetico-rectangular-vidrio-tapa-bamboo-640-ml/images/0.jpg",
+    "/productos/ZA142jl-hermetico-rectangular-vidrio-tapa-bamboo-640-ml/images/1.jpg"
+  ],
+  "description": "MEDIDAS: 17x12,5x6cm",
+  "category": "hermeticos-de-vidrio",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
