@@ -1,6 +1,6 @@
 {
   "name": "MATE RITUAL DTF UV CON CAJA ROSA/BLANCO/NEGRO",
-  "price": 7307,
+  "price": 7000,
   "images": [
     "/productos/Z43mate-ritual-dtf-uv-con-caja-rosa-blanco-negro/images/0.png",
     "/productos/Z43mate-ritual-dtf-uv-con-caja-rosa-blanco-negro/images/1.png"
@@ -8,6 +8,9 @@
   "description": "MATE CLÁSICO DE PVC CON PACKAGING Y BOMBILLA DE ACERO\n𝗖𝗢𝗠𝗣𝗥𝗔 𝗠𝗜𝗡𝗜𝗠𝗔 6 UNIDADES",
   "category": "MATES",
   "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
