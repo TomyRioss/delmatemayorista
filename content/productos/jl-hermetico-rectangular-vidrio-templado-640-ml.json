@@ -1,0 +1,15 @@
+{
+  "name": "JL HERMETICO RECTANGULAR VIDRIO TEMPLADO 640ML",
+  "price": 5.247,
+  "images": [
+    "/productos/jl-hermetico-rectangular-vidrio-templado-640-ml/images/0.jpg"
+  ],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
