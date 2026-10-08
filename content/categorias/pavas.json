@@ -1,3 +1,5 @@
 {
-  "label": "PAVAS"
+  "label": "PAVAS",
+  "image": "/categorias/pavas/image.png",
+  "imagenMobile": "/categorias/pavas/imagenMobile.png"
 }
