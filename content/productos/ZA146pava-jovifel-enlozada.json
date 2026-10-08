@@ -1,0 +1,16 @@
+{
+  "name": "PAVA JOVIFEL ENLOZADA",
+  "price": 28.835,
+  "images": [
+    "/productos/ZA146pava-jovifel-enlozada/images/0.jpeg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
