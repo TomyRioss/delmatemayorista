@@ -1,0 +1,18 @@
+{
+  "name": "MICRO PAVA GRABADA + MATE RITUAL",
+  "price": 16.995,
+  "images": [
+    "/productos/ZA149micro-pava-grabada-mate-ritual/images/0.jpg",
+    "/productos/ZA149micro-pava-grabada-mate-ritual/images/1.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "pavas",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
