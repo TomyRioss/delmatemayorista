@@ -1,0 +1,17 @@
+{
+  "name": "PAVA MICRO GRABADA+MATE GINEBRA",
+  "price": 1.456,
+  "images": [
+    "/productos/ZA151pava-micro-grabada-mate-ginebra/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "pavas",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
