@@ -2,9 +2,10 @@
   "name": "KIT CERVEZA ESPECIALES",
   "price": 22.74,
   "images": [
-    "/productos/ZA151kit-cerveza-especiales/images/0.webp",
-    "/productos/ZA151kit-cerveza-especiales/images/1.png"
+    "/productos/ZA152kit-cerveza-especiales/images/0.webp",
+    "/productos/ZA152kit-cerveza-especiales/images/1.png"
   ],
+  "category": "vidrio-platos-vasos-copas-y-jarras",
   "variantes": [],
   "oferta": false,
   "novedad": false,
