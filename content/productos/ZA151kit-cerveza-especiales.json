@@ -1,0 +1,16 @@
+{
+  "name": "KIT CERVEZA ESPECIALES",
+  "price": 22.74,
+  "images": [
+    "/productos/ZA151kit-cerveza-especiales/images/0.webp",
+    "/productos/ZA151kit-cerveza-especiales/images/1.png"
+  ],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
