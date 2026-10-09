@@ -10,7 +10,7 @@
   "variantes": [],
   "oferta": false,
   "novedad": false,
-  "pausado": false,
+  "pausado": true,
   "minPurchase": {
     "discriminant": "packs",
     "value": 1
