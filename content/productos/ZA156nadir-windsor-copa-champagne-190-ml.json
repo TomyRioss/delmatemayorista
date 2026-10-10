@@ -1,0 +1,17 @@
+{
+  "name": "NADIR WINDSOR COPA CHAMPAGNE 190 ML",
+  "price": 1.618,
+  "images": [
+    "/productos/ZA156nadir-windsor-copa-champagne-190-ml/images/0.jpeg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
