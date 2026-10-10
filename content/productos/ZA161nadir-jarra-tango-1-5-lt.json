@@ -1,0 +1,17 @@
+{
+  "name": "NADIR JARRA TANGO 1.5 LT",
+  "price": 6.033,
+  "images": [
+    "/productos/ZA161nadir-jarra-tango-1-5-lt/images/0.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
