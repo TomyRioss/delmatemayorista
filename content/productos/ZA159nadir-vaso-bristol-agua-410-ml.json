@@ -1,0 +1,17 @@
+{
+  "name": "NADIR VASO BRISTOL AGUA 410ML",
+  "price": 1.166,
+  "images": [
+    "/productos/ZA159nadir-vaso-bristol-agua-410-ml/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
