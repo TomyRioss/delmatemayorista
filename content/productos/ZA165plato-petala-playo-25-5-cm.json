@@ -1,0 +1,17 @@
+{
+  "name": "PLATO PETALA PLAYO 25,5 CM",
+  "price": 3.485,
+  "images": [
+    "/productos/ZA165plato-petala-playo-25-5-cm/images/0.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
