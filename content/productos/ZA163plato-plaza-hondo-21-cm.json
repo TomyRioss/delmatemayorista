@@ -1,0 +1,17 @@
+{
+  "name": "PLATO PLAZA HONDO 21 CM",
+  "price": 3.982,
+  "images": [
+    "/productos/ZA163plato-plaza-hondo-21-cm/images/0.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
