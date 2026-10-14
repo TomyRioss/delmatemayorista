@@ -1,0 +1,17 @@
+{
+  "name": "PLATO PLAZA POSTRE 19 CM",
+  "price": 2.675,
+  "images": [
+    "/productos/ZA164plato-plaza-postre-19-cm/images/0.jpg"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
