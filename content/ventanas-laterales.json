@@ -1,8 +1,7 @@
 {
   "ventanaIzquierda": {
     "archivo": {
-      "discriminant": "video",
-      "value": "/ventanas-laterales/ventanaIzquierda/archivo/value.mp4"
+      "discriminant": "video"
     }
   },
   "ventanaDerecha": {
