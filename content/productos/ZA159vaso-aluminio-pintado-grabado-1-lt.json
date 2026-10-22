@@ -1,0 +1,18 @@
+{
+  "name": "VASO ALUMINIO PINTADO GRABADO 1LT",
+  "price": 3.889,
+  "images": [
+    "/productos/ZA159vaso-aluminio-pintado-grabado-1-lt/images/0.png",
+    "/productos/ZA159vaso-aluminio-pintado-grabado-1-lt/images/1.png"
+  ],
+  "description": "COMPRA MINIMA 6 UNIDADES",
+  "category": "vidrio-platos-vasos-copas-y-jarras",
+  "variantes": [],
+  "oferta": true,
+  "novedad": true,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
