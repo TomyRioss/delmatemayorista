@@ -1,6 +1,6 @@
 {
   "name": "BOLSA MATERA PUFFER ROSA LUNARES",
-  "price": 11.974,
+  "price": 11900,
   "images": [
     "/productos/Z10bolsa-matera-puffer-rosa-lunares/images/0.png"
   ],
@@ -8,6 +8,8 @@
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 6
