@@ -1,6 +1,6 @@
 {
   "name": "BOLSO MATERO GUARDA CORDURA",
-  "price": 9.209,
+  "price": 9.2,
   "images": [
     "/productos/Z27B-bolso-matero-guarda-cordura/images/0.png",
     "/productos/Z27B-bolso-matero-guarda-cordura/images/1.jpg"
@@ -9,6 +9,7 @@
   "category": "BOLSOS MATEROS",
   "variantes": [],
   "oferta": false,
+  "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
