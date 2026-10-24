@@ -1,6 +1,6 @@
 {
   "name": "BOMBILLA ACERO REDONDA RESORTE",
-  "price": 657,
+  "price": 650,
   "images": [
     "/productos/Z25bombilla-acero-redonda-resorte/images/0.jpg"
   ],
@@ -8,6 +8,7 @@
   "category": "bombillas",
   "variantes": [],
   "oferta": false,
+  "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
