@@ -1,6 +1,6 @@
 {
   "name": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER PRINT C/CAJA",
-  "price": 4.947,
+  "price": 4950,
   "images": [
     "/productos/Z37yerbera-y-azucarera-duo-alquimia-puffer-print-c-caja/images/0.png",
     "/productos/Z37yerbera-y-azucarera-duo-alquimia-puffer-print-c-caja/images/1.png"
@@ -8,6 +8,9 @@
   "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER PRINT CON PACKAGING\nCOMPRA MINIMA 12 UNIDADES",
   "category": "YERBERAS Y AZUCARERAS",
   "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
     "value": 12
