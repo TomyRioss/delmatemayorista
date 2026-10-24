@@ -1,14 +1,15 @@
 {
   "name": "SET MATERO YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER ROSA LUNARES CON CAJA",
-  "price": 4.947,
+  "price": 4950,
   "images": [
-    "/productos/Z29yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-c-caja/images/0.png",
-    "/productos/Z29yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-c-caja/images/1.png"
+    "/productos/Z29set-matero-yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-con-caja/images/0.png",
+    "/productos/Z29set-matero-yerbera-y-azucarera-duo-alquimia-puffer-rosa-lunares-con-caja/images/1.png"
   ],
   "description": "YERBERA Y AZUCARERA DUO ALQUIMIA PUFFER CON PACKAGING\nCOMPRA MINIMA 12 UNIDADES",
   "category": "set-matero",
   "variantes": [],
   "oferta": false,
+  "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
