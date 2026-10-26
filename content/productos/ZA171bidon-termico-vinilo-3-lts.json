@@ -1,13 +1,18 @@
 {
   "name": "Bidon termico VINILO 3LTS",
   "price": 6900,
-  "images": [],
+  "images": [
+    "/productos/ZA171bidon-termico-vinilo-3-lts/images/0.png",
+    "/productos/ZA171bidon-termico-vinilo-3-lts/images/1.png"
+  ],
+  "description": "Compra Mínima 3 unidades\nconsultar colores disponibles",
+  "category": "verano",
   "variantes": [],
   "oferta": false,
   "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 3
   }
 }
