@@ -1,0 +1,13 @@
+{
+  "name": "Bidon termico VINILO 3LTS",
+  "price": 6900,
+  "images": [],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
