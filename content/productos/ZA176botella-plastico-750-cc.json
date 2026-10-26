@@ -1,0 +1,17 @@
+{
+  "name": "BOTELLA PLASTICO 750CC",
+  "price": 650,
+  "images": [
+    "/productos/ZA176botella-plastico-750-cc/images/0.jpg"
+  ],
+  "description": "Compra Mínima 6 unidades\nconsultar colores disponibles",
+  "category": "verano",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
