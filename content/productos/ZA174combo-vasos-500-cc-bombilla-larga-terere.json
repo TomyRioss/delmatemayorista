@@ -1,0 +1,18 @@
+{
+  "name": "COMBO VASOS 500CC + BOMBILLA LARGA TERERE",
+  "price": 3000,
+  "images": [
+    "/productos/ZA174combo-vasos-500-cc-bombilla-larga-terere/images/0.png",
+    "/productos/ZA174combo-vasos-500-cc-bombilla-larga-terere/images/1.png"
+  ],
+  "description": "Compra Mínima 3 unidades\nconsultar colores disponibles",
+  "category": "verano",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
