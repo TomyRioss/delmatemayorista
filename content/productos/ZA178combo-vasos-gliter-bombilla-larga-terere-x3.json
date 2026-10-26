@@ -1,0 +1,17 @@
+{
+  "name": "COMBO VASOS GLITER + BOMBILLA LARGA TERERE X3",
+  "price": 3000,
+  "images": [
+    "/productos/ZA178combo-vasos-gliter-bombilla-larga-terere-x3/images/0.png"
+  ],
+  "description": "Compra Mínima 6 unidades",
+  "category": "verano",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
