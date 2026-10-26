@@ -2,37 +2,46 @@ import BannerHeroCarousel from "@/components/landing/BannerHeroCarousel";
 import HeroSlider from "@/components/landing/HeroSlider";
 import PromoBanner from "@/components/landing/PromoBanner";
 import ProductGrid from "@/components/landing/ProductGrid";
-import { reader } from "@/lib/keystatic";
-import { getProducts } from "@/lib/products";
+import { getBannerHero, getBannerSimple, getVentanas, pbFileUrl } from "@/lib/pb";
+import { getProducts, getCategoriasView } from "@/lib/products";
 
 export const revalidate = 60;
 
 export default async function Home() {
+  const [categorias, products, bannerHeroRaw, banner, comoComprar, ventanasRaw] =
+    await Promise.all([
+      getCategoriasView(),
+      getProducts(),
+      getBannerHero(),
+      getBannerSimple("personalizado"),
+      getBannerSimple("como_comprar"),
+      getVentanas(),
+    ]);
 
-  const categoriasRaw = await reader.collections.categorias.all();
-  const categorias = categoriasRaw.map((c) => ({
-    slug: c.slug,
-    label: c.entry.label,
-    image: c.entry.image ?? "/categorias/placeholder.png",
-    imagenMobile: c.entry.imagenMobile ?? null,
-  }));
-
-  const products = await getProducts();
-  const banner = await reader.singletons.bannerPersonalizado.read();
-  const comoComprar = await reader.singletons.bannerComoComprar.read();
-  const ventanas = await reader.singletons.ventanasLaterales.read();
-  type VentanaEntry = NonNullable<typeof ventanas>["ventanaIzquierda"];
-  const mapVentana = (v: VentanaEntry | null | undefined) => ({
-    imagen: v?.archivo.discriminant === "imagen" ? (v.archivo.value ?? null) : null,
-    video: v?.archivo.discriminant === "video" ? (v.archivo.value ?? null) : null,
-    link: v?.link ?? "",
-  });
-  const bannerHeroRaw = await reader.collections.bannerHero.all();
   const heroSlides = bannerHeroRaw
-    .map((s) => ({ imagenDesktop: s.entry.imagenDesktop, imagenMobile: s.entry.imagenMobile, link: s.entry.link }))
-    .filter((s): s is { imagenDesktop: string; imagenMobile: string | null; link: string } =>
-      Boolean(s.imagenDesktop)
+    .map((s) => ({
+      imagenDesktop: pbFileUrl("banner_hero", s.id, s.imagen_desktop),
+      imagenMobile: pbFileUrl("banner_hero", s.id, s.imagen_mobile),
+      link: s.link || "",
+    }))
+    .filter(
+      (
+        s,
+      ): s is {
+        imagenDesktop: string;
+        imagenMobile: string | null;
+        link: string;
+      } => Boolean(s.imagenDesktop),
     );
+
+  const mapVentana = (key: "izquierda" | "derecha") => {
+    const v = ventanasRaw.find((w) => w.key === key);
+    return {
+      imagen: v && v.tipo === "imagen" ? pbFileUrl("ventanas_laterales", v.id, v.archivo) : null,
+      video: v && v.tipo === "video" ? pbFileUrl("ventanas_laterales", v.id, v.archivo) : null,
+      link: v?.link ?? "",
+    };
+  };
 
   return (
     <div className="flex flex-1 flex-col bg-white">
@@ -40,14 +49,22 @@ export default async function Home() {
         <BannerHeroCarousel slides={heroSlides} />
         <HeroSlider
           categories={categorias}
-          ventanaIzquierda={mapVentana(ventanas?.ventanaIzquierda)}
-          ventanaDerecha={mapVentana(ventanas?.ventanaDerecha)}
+          ventanaIzquierda={mapVentana("izquierda")}
+          ventanaDerecha={mapVentana("derecha")}
         />
         <PromoBanner
-          imagenDesktop={banner?.imagenDesktop}
-          imagenMobile={banner?.imagenMobile}
-          comoComprarDesktop={comoComprar?.imagenDesktop}
-          comoComprarMobile={comoComprar?.imagenMobile}
+          imagenDesktop={pbFileUrl("banners_simples", banner?.id ?? "", banner?.imagen_desktop)}
+          imagenMobile={pbFileUrl("banners_simples", banner?.id ?? "", banner?.imagen_mobile)}
+          comoComprarDesktop={pbFileUrl(
+            "banners_simples",
+            comoComprar?.id ?? "",
+            comoComprar?.imagen_desktop,
+          )}
+          comoComprarMobile={pbFileUrl(
+            "banners_simples",
+            comoComprar?.id ?? "",
+            comoComprar?.imagen_mobile,
+          )}
           comoComprarLink={comoComprar?.link}
         />
         <ProductGrid products={products} title="Todos los productos" />

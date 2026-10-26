@@ -31,7 +31,7 @@ export default function AdminLoginPage() {
         const data = await res.json().catch(() => null);
         throw new Error(data?.error || "No se pudo iniciar sesión.");
       }
-      router.push("/keystatic");
+      router.push("/admin");
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error inesperado.");

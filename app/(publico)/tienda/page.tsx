@@ -1,17 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { reader } from "@/lib/keystatic";
+import { getCategoriasView } from "@/lib/products";
 
 export const revalidate = 60;
 
 export default async function TiendaPage() {
-  const categoriasRaw = await reader.collections.categorias.all();
-  const categorias = categoriasRaw.map((c) => ({
-    slug: c.slug,
-    label: c.entry.label,
-    image: c.entry.image ?? "/categorias/placeholder.png",
-    imagenMobile: c.entry.imagenMobile ?? null,
-  }));
+  const categorias = await getCategoriasView();
 
   return (
     <div className="flex flex-1 flex-col bg-white">

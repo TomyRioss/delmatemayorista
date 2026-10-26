@@ -3,6 +3,11 @@ import type { NextRequest } from "next/server";
 import { SESSION_COOKIE, getSessionToken } from "@/lib/admin-auth";
 
 export async function middleware(request: NextRequest) {
+  // La pagina de login debe ser accesible sin sesion (evita loop de redirects).
+  if (request.nextUrl.pathname.startsWith("/admin/login")) {
+    return NextResponse.next();
+  }
+
   const cookieToken = request.cookies.get(SESSION_COOKIE)?.value;
   const expectedToken = await getSessionToken();
 
@@ -23,5 +28,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/keystatic/:path*", "/api/keystatic/:path*", "/admin/subir-imagen", "/admin/visits", "/api/admin/upload"],
+  matcher: ["/admin/:path*", "/admin/subir-imagen", "/admin/visits"],
 };
