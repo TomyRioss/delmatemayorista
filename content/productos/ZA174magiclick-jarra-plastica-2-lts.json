@@ -1,0 +1,17 @@
+{
+  "name": "MAGICLICK JARRA PLASTICA 2LTS.",
+  "price": 1500,
+  "images": [
+    "/productos/ZA174magiclick-jarra-plastica-2-lts/images/0.png"
+  ],
+  "description": "Compra Mínima 6 unidades\nconsultar colores disponibles",
+  "category": "verano",
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 6
+  }
+}
