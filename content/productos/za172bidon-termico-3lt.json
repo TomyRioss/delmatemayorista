@@ -1,0 +1,13 @@
+{
+  "name": "Bidon termico 3lt",
+  "price": 6000,
+  "images": [],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
