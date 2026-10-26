@@ -1,13 +1,19 @@
 {
   "name": "BIDON 2LT MAGICLICK",
   "price": 5000,
-  "images": [],
+  "images": [
+    "/productos/ZA170bidon-2-lt-magiclick/images/0.jpg",
+    "/productos/ZA170bidon-2-lt-magiclick/images/1.jpg",
+    "/productos/ZA170bidon-2-lt-magiclick/images/2.jpg"
+  ],
+  "description": "Compra Mínima 3 unidades\nCONSULTAR COLORES DISPONIBLES",
+  "category": "verano",
   "variantes": [],
   "oferta": false,
   "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 3
   }
 }
