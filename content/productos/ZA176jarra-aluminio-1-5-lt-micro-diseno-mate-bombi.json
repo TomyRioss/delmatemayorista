@@ -1,0 +1,17 @@
+{
+  "name": "JARRA ALUMINIO 1,5 LT MICRO DISEÑO +MATE+BOMBI",
+  "price": 9500,
+  "images": [
+    "/productos/ZA176jarra-aluminio-1-5-lt-micro-diseno-mate-bombi/images/0.jpg"
+  ],
+  "description": "Compra Mínima 3 unidades\nconsultar colores disponibles",
+  "category": "verano",
+  "variantes": [],
+  "oferta": false,
+  "novedad": true,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 3
+  }
+}
