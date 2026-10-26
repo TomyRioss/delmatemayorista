@@ -1,3 +1,5 @@
 {
-  "label": "VERANO"
+  "label": "VERANO",
+  "image": "/categorias/verano/image.png",
+  "imagenMobile": "/categorias/verano/imagenMobile.png"
 }
