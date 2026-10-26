@@ -1,0 +1,13 @@
+{
+  "name": "BIDON 2LT MAGICLICK",
+  "price": 5000,
+  "images": [],
+  "variantes": [],
+  "oferta": false,
+  "novedad": false,
+  "pausado": false,
+  "minPurchase": {
+    "discriminant": "packs",
+    "value": 1
+  }
+}
