@@ -1,13 +1,18 @@
 {
   "name": "Bidon termico 3lt",
   "price": 6000,
-  "images": [],
+  "images": [
+    "/productos/za172bidon-termico-3lt/images/0.png",
+    "/productos/za172bidon-termico-3lt/images/1.png"
+  ],
+  "description": "Compra Mínima 3 unidades\nconsultar colores disponibles",
+  "category": "verano",
   "variantes": [],
   "oferta": false,
   "novedad": false,
   "pausado": false,
   "minPurchase": {
     "discriminant": "packs",
-    "value": 1
+    "value": 3
   }
 }
