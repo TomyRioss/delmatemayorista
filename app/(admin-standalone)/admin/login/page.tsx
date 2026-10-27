@@ -58,6 +58,7 @@ export default function AdminLoginPage() {
               <Image
                 src="/logo.png"
                 alt=""
+                unoptimized
                 width={80}
                 height={80}
                 className="h-11 w-11 object-contain sm:h-14 sm:w-14"

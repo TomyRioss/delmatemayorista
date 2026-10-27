@@ -11,11 +11,13 @@ import {
   createBannerHero,
   updateBannerHero,
   deleteBannerHero,
+  reorderBannerHeroes,
   updateBannerSimple,
   updateVentana,
   slugify,
   type ProductWrite,
 } from "@/lib/admin-pb";
+import { getBannerHero } from "@/lib/pb";
 
 // ---------- helpers de FormData ----------
 
@@ -115,7 +117,7 @@ function heroDataFrom(fd: FormData) {
     data: {
       nombre: str(fd, "nombre"),
       link: str(fd, "link"),
-      orden: num(fd, "orden") ?? 0,
+      orden: num(fd, "orden"),
     },
     files: { desktop: file(fd, "imagenDesktop"), mobile: file(fd, "imagenMobile") },
   };
@@ -123,6 +125,11 @@ function heroDataFrom(fd: FormData) {
 
 export async function actionCreateBannerHero(fd: FormData) {
   const { data, files } = heroDataFrom(fd);
+  if (data.orden == null) {
+    // el nuevo flyer va al final del carrusel
+    const actual = await getBannerHero();
+    data.orden = actual.length ? Math.max(...actual.map((h) => h.orden ?? 0)) + 1 : 1;
+  }
   await createBannerHero(data, files);
   redirect("/admin/banners");
 }
@@ -132,6 +139,10 @@ export async function actionUpdateBannerHero(fd: FormData) {
   const { data, files } = heroDataFrom(fd);
   await updateBannerHero(id, data, files);
   redirect("/admin/banners");
+}
+
+export async function actionReorderBannerHeroes(ids: string[]) {
+  if (Array.isArray(ids) && ids.length) await reorderBannerHeroes(ids.map(String));
 }
 
 export async function actionDeleteBannerHero(fd: FormData) {

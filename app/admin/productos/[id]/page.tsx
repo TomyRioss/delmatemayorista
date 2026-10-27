@@ -160,7 +160,7 @@ export default async function ProductoEditPage({
             <div className="flex flex-wrap gap-3">
               {images.map((src, i) => (
                 <div key={i} className="relative h-20 w-20 overflow-hidden rounded-sm border border-black/10 bg-zinc-100">
-                  <Image src={src} alt="" fill className="object-cover" sizes="80px" unoptimized />
+                  <Image src={src} alt="" fill className="object-cover" sizes="80px" />
                 </div>
               ))}
             </div>

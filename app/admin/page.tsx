@@ -1,22 +1,22 @@
 import Link from "next/link";
-import { pbList } from "@/lib/pb";
-import { Box, Layers, Image as ImageIcon, ShoppingCart } from "lucide-react";
+import { pbCount } from "@/lib/pb";
+import { Box, Layers, Image as ImageIcon, PanelRight } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminHome() {
   const [productos, categorias, banners, ventanas] = await Promise.all([
-    pbList("productos", { perPage: 1 }).then((r) => (r as unknown as { length: number }).length).catch(() => -1),
-    pbList("categorias").catch(() => []),
-    pbList("banner_hero").catch(() => []),
-    pbList("ventanas_laterales").catch(() => []),
+    pbCount("productos").catch(() => -1),
+    pbCount("categorias").catch(() => -1),
+    pbCount("banner_hero").catch(() => -1),
+    pbCount("ventanas_laterales").catch(() => -1),
   ]);
 
   const stats = [
     { href: "/admin/productos", label: "Productos", icon: Box, count: productos },
-    { href: "/admin/categorias", label: "Categorías", icon: Layers, count: (categorias as unknown[]).length },
-    { href: "/admin/banners", label: "Banners", icon: ImageIcon, count: (banners as unknown[]).length },
-    { href: "/admin/pedidos", label: "Ventanas", icon: ShoppingCart, count: (ventanas as unknown[]).length },
+    { href: "/admin/categorias", label: "Categorías", icon: Layers, count: categorias },
+    { href: "/admin/banners", label: "Banners", icon: ImageIcon, count: banners },
+    { href: "/admin/banners", label: "Ventanas", icon: PanelRight, count: ventanas },
   ];
 
   return (

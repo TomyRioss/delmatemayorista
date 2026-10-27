@@ -17,28 +17,6 @@ export function pbFileUrl(
   return thumb ? `${base}?thumb=${thumb}` : base;
 }
 
-/**
- * Loader para next/image: en vez de pasar por el optimizer de Next (que por
- * tunel SSH re-descarga el original en cada variant), pide a PB el thumb del
- * tamano pedido. PB genera y cachea el thumb en el VPS.
- */
-export const pbImageLoader = ({
-  src,
-  width,
-  quality,
-}: {
-  src: string;
-  width: number;
-  quality?: number;
-}): string => {
-  // Solo reescribe urls de files de PB
-  if (!src.includes("/api/files/")) return src;
-  const sep = src.includes("?") ? "&" : "?";
-  // PB exige un tamano fijo WxH; cuadrado normalizado con crop centrado.
-  const w = Math.max(32, Math.min(2048, Math.round(width)));
-  return `${src}${sep}thumb=${w}x${w}` + (quality && quality < 100 ? `f` : "");
-};
-
 export type PbRecord = {
   id: string;
   collectionId: string;
@@ -65,6 +43,21 @@ export async function pbList<T = PbRecord>(
   }
   const data = (await res.json()) as { items: T[] };
   return data.items;
+}
+
+/** Cantidad real de records de una coleccion (totalItems), sin bajar los registros. */
+export async function pbCount(collection: string): Promise<number> {
+  const res = await fetch(
+    `${PB_URL}/api/collections/${collection}/records?perPage=1`,
+    { next: { revalidate: 60 } },
+  );
+  if (!res.ok) {
+    throw new Error(
+      `PocketBase: COUNT ${collection} -> ${res.status} ${await res.text()}`,
+    );
+  }
+  const data = (await res.json()) as { totalItems: number };
+  return data.totalItems;
 }
 
 // Los campos autogenerados (created/updated) no son ordenables cuando la

@@ -51,7 +51,7 @@ export default async function AdminProductosPage() {
                     >
                       <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-sm bg-zinc-100">
                         {img && (
-                          <Image src={img} alt="" fill className="object-cover" sizes="40px" unoptimized />
+                          <Image src={img} alt="" fill className="object-cover" sizes="40px" />
                         )}
                       </span>
                       <span className="line-clamp-1 max-w-[300px]">{p.name}</span>

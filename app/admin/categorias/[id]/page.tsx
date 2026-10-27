@@ -68,7 +68,7 @@ export default async function CategoriaEditPage({
               <FileBox name="image" label="Subir imagen" hint="800x360 recomendado" />
               {img && (
                 <span className="relative mt-2 block h-20 w-32 overflow-hidden rounded-sm border border-black/10 bg-zinc-100">
-                  <Image src={img} alt="" fill className="object-cover" sizes="128px" unoptimized />
+                  <Image src={img} alt="" fill className="object-cover" sizes="128px" />
                 </span>
               )}
             </label>
@@ -77,7 +77,7 @@ export default async function CategoriaEditPage({
               <FileBox name="imagenMobile" label="Subir imagen" hint="480x300 recomendado" />
               {imgMob && (
                 <span className="relative mt-2 block h-20 w-32 overflow-hidden rounded-sm border border-black/10 bg-zinc-100">
-                  <Image src={imgMob} alt="" fill className="object-cover" sizes="128px" unoptimized />
+                  <Image src={imgMob} alt="" fill className="object-cover" sizes="128px" />
                 </span>
               )}
             </label>

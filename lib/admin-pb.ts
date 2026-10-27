@@ -143,23 +143,23 @@ export async function deleteCategoria(id: string) {
 
 // ---------- banner hero ----------
 
-export function createBannerHero(data: { nombre: string; link: string; orden: number }, files: { desktop?: File; mobile?: File }) {
+export function createBannerHero(data: { nombre: string; link: string; orden: number | null }, files: { desktop?: File; mobile?: File }) {
   return bannerHeroUpsert(null, data, files);
 }
 
-export function updateBannerHero(id: string, data: { nombre: string; link: string; orden: number }, files: { desktop?: File; mobile?: File }) {
+export function updateBannerHero(id: string, data: { nombre: string; link: string; orden: number | null }, files: { desktop?: File; mobile?: File }) {
   return bannerHeroUpsert(id, data, files);
 }
 
 async function bannerHeroUpsert(
   id: string | null,
-  data: { nombre: string; link: string; orden: number },
+  data: { nombre: string; link: string; orden: number | null },
   files: { desktop?: File; mobile?: File },
 ) {
   const fd = new FormData();
   fd.set("nombre", data.nombre);
   fd.set("link", data.link);
-  fd.set("orden", String(data.orden));
+  if (data.orden != null) fd.set("orden", String(data.orden));
   if (files.desktop) fd.append("imagen_desktop", files.desktop, files.desktop.name);
   if (files.mobile) fd.append("imagen_mobile", files.mobile, files.mobile.name);
 
@@ -174,6 +174,16 @@ async function bannerHeroUpsert(
 export async function deleteBannerHero(id: string) {
   await pb("DELETE", `/api/collections/banner_hero/records/${id}`);
   revalidatePath("/", "layout");
+}
+
+// Recibe los ids en el orden visual deseado y reescribe orden = 1..n.
+// Secuencial: los PATCH llegan en orden al backend sin importar la red.
+export async function reorderBannerHeroes(ids: string[]) {
+  for (let i = 0; i < ids.length; i++) {
+    await pb("PATCH", `/api/collections/banner_hero/records/${ids[i]}`, { orden: i + 1 });
+  }
+  revalidatePath("/", "layout");
+  revalidatePath("/admin/banners");
 }
 
 // ---------- banners simples ----------
