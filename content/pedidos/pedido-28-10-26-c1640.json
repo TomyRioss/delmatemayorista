@@ -1,0 +1,16 @@
+{
+  "codigo": "pedido-28-10-26-C1640",
+  "fecha": "2026-10-28",
+  "nombre": "angela gabriela",
+  "apellido": "pompili",
+  "email": "materialescienciassociales@gmail.com",
+  "telefono": "2995229390",
+  "items": [
+    {
+      "producto": "MATE ALUMINE LISO CON CAJA (NEGRO-ROSA)",
+      "cantidad": 115,
+      "precioUnitario": 3500
+    }
+  ],
+  "total": 402500
+}
