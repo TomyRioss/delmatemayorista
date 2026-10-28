@@ -1,0 +1,16 @@
+{
+  "codigo": "pedido-28-10-26-C1636",
+  "fecha": "2026-10-28",
+  "nombre": "angela gabriela",
+  "apellido": "pompili",
+  "email": "materialescienciassociales@gmail.com",
+  "telefono": "2995229390",
+  "items": [
+    {
+      "producto": "MATE GINEBRA (VARIOS COLORES) C/CAJA",
+      "cantidad": 110,
+      "precioUnitario": 7000
+    }
+  ],
+  "total": 770000
+}
