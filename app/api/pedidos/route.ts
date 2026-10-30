@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
-import { getInstallationToken } from "@/lib/github-app";
+
+const PB_URL = (
+  process.env.POCKETBASE_URL ?? "http://127.0.0.1:8096"
+).replace(/\/$/, "");
 
 type PedidoItem = {
   producto: string;
@@ -86,79 +89,33 @@ export async function POST(request: Request) {
   const hora = baParts.hour === "24" ? "00" : baParts.hour;
   const minutos = baParts.minute;
   const anio2 = anio.slice(-2);
-  const baseCodigo = `pedido-${dia}-${mes}-${anio2}-C${hora}${minutos}`;
+  // Codigo legible + sufijo corto de unicidad (PB id != legible, no hay colision
+  // real porque el id autogenerado de PB es unico; el codigo es display).
+  const codigo = `pedido-${dia}-${mes}-${anio2}-C${hora}${minutos}`;
   const fecha = `${anio}-${mes}-${dia}`;
 
-  const owner = "TomyRioss";
-  const repo = "delmatemayorista";
+  const res = await fetch(`${PB_URL}/api/collections/pedidos/records`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      codigo,
+      fecha,
+      nombre: body.nombre.trim(),
+      apellido: body.apellido.trim(),
+      email: body.email.trim(),
+      telefono: body.telefono.trim(),
+      items: body.items,
+      total: body.total,
+    }),
+    cache: "no-store",
+  });
 
-  let token: string;
-  try {
-    token = await getInstallationToken();
-  } catch (err) {
-    console.error("Error al obtener installation token de GitHub App:", err);
+  if (!res.ok) {
+    const errorBody = await res.text();
+    console.error("Error al guardar pedido en PocketBase:", res.status, errorBody);
     return NextResponse.json(
       { error: "No se pudo registrar el pedido. Contactanos por WhatsApp." },
-      { status: 500 }
-    );
-  }
-
-  // Evita pisar un pedido si dos entran en el mismo minuto: pedido-...-C2105, pedido-...-C2105-2, etc.
-  let codigo = baseCodigo;
-  for (let intento = 2; intento <= 10; intento++) {
-    const checkPath = `content/pedidos/${codigo.toLowerCase()}.json`;
-    const check = await fetch(
-      `https://api.github.com/repos/${owner}/${repo}/contents/${checkPath}?ref=main`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "application/vnd.github+json",
-          "X-GitHub-Api-Version": "2022-11-28",
-        },
-      }
-    );
-    if (check.status === 404) break;
-    if (!check.ok) break;
-    codigo = `${baseCodigo}-${intento}`;
-  }
-
-  const data = {
-    codigo,
-    fecha,
-    nombre: body.nombre.trim(),
-    apellido: body.apellido.trim(),
-    email: body.email.trim(),
-    telefono: body.telefono.trim(),
-    items: body.items,
-    total: body.total,
-  };
-
-  const filePath = `content/pedidos/${codigo.toLowerCase()}.json`;
-  const content = Buffer.from(JSON.stringify(data, null, 2), "utf-8").toString("base64");
-
-  const ghResponse = await fetch(
-    `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
-    {
-      method: "PUT",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
-      body: JSON.stringify({
-        message: `Nuevo pedido ${codigo}`,
-        content,
-        branch: "main",
-      }),
-    }
-  );
-
-  if (!ghResponse.ok) {
-    const errorBody = await ghResponse.text();
-    console.error("Error al commitear pedido en GitHub:", ghResponse.status, errorBody);
-    return NextResponse.json(
-      { error: "No se pudo registrar el pedido. Contactanos por WhatsApp." },
-      { status: 500 }
+      { status: 500 },
     );
   }
 

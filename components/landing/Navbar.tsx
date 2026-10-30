@@ -42,6 +42,7 @@ export default function Navbar() {
                 height={112}
                 className="h-full w-full object-contain"
                 priority
+                unoptimized
               />
             </div>
           </Link>
@@ -105,7 +106,7 @@ export default function Navbar() {
               onClick={openCart}
               className="relative flex flex-col items-center gap-1.5 hover:opacity-80"
             >
-              <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-16 w-16 object-contain sm:h-28 sm:w-28" />
+              <Image src="/carrito.png" alt="Carrito" width={112} height={112} className="h-16 w-16 object-contain sm:h-28 sm:w-28" unoptimized />
               {totalCount > 0 && (
                 <span className="absolute top-0 right-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F4C845] px-1 text-[11px] font-black text-black">
                   {totalCount}

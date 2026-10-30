@@ -1,4 +1,7 @@
-import { reader } from "@/lib/keystatic";
+// Datos de productos desde PocketBase (reemplaza Keystatic).
+// Mantiene el shape de Product para no tocar los componentes.
+
+import { pbList, pbFileUrl, getCategorias, type CategoriaPb } from "@/lib/pb";
 import { formatPrice, normalizePrice } from "@/lib/format";
 
 export type ProductVariant = {
@@ -23,55 +26,134 @@ export type Product = {
   oferta: boolean;
   novedad: boolean;
   pausado: boolean;
+  ordenInicio: number;
+  ordenDestacados: number;
   variants: ProductVariant[];
 };
 
-export async function getProducts(): Promise<Product[]> {
-  const [entries, categorias] = await Promise.all([
-    reader.collections.productos.all(),
-    reader.collections.categorias.all(),
+export type ProductOrder = "inicio" | "destacados";
+
+type ProductoPb = {
+  id: string;
+  slug: string;
+  name: string;
+  price: number | null;
+  images: string[];
+  description: string | null;
+  categoria: string | null;
+  variantes: {
+    nombre?: string;
+    precio?: number | null;
+    imagenes?: string[];
+    descripcion?: string | null;
+  }[];
+  oferta: boolean;
+  novedad: boolean;
+  pausado: boolean;
+  min_packs: number | null;
+  min_price: number | null;
+  orden_inicio: number;
+  orden_destacados: number;
+};
+
+function toUrl(
+  collection: "productos" | "categorias",
+  id: string,
+  filename: string | null | undefined,
+): string | null {
+  return pbFileUrl(collection, id, filename);
+}
+
+export async function getProducts(orderBy: ProductOrder = "inicio"): Promise<Product[]> {
+  const [items, categorias] = await Promise.all([
+    pbList<ProductoPb>("productos"),
+    getCategorias(),
   ]);
+
+  const catSlugById = new Map<string, string>();
+  for (const c of categorias) catSlugById.set(c.id, c.slug);
+  // los produtos sin categoria (3) usaban fallback en Keystatic: primera categoria
   const fallbackCategory = categorias[0]?.slug ?? null;
 
-  return entries
-    .filter(({ entry }) => !(entry.pausado ?? false))
-    .map(({ slug, entry }) => {
-    const priceValue = normalizePrice(entry.price ?? 0);
-    const minQty =
-      entry.minPurchase.discriminant === "packs"
-        ? Math.max(1, entry.minPurchase.value ?? 1)
-        : priceValue > 0
-          ? Math.max(1, Math.ceil(normalizePrice(entry.minPurchase.value ?? 0) / priceValue))
-          : 1;
-    const images = entry.images.filter((img): img is string => !!img);
+  return items
+    .filter((p) => !p.pausado)
+    .map((p) => {
+      const priceValue = normalizePrice(p.price ?? 0);
+      // En PB el minimo ya viene separado: min_packs directo,
+      // min_price convierte a unidades equivalentes como hacia Keystatic.
+      const minQty =
+        p.min_packs != null
+          ? Math.max(1, p.min_packs)
+          : p.min_price != null && priceValue > 0
+            ? Math.max(1, Math.ceil(normalizePrice(p.min_price) / priceValue))
+            : 1;
 
-    const variants: ProductVariant[] = entry.variantes.map((v, i) => {
-      const variantPriceValue = normalizePrice(v.precio ?? priceValue);
-      const variantImages = v.imagenes.filter((img): img is string => !!img);
+      const images = (p.images ?? [])
+        .map((f) => toUrl("productos", p.id, f))
+        .filter((u): u is string => !!u);
+
+      const variants: ProductVariant[] = (p.variantes ?? []).map((v, i) => {
+        const variantPriceValue = normalizePrice(v.precio ?? priceValue);
+        const variantImages = (v.imagenes ?? [])
+          .map((f) => toUrl("productos", p.id, f))
+          .filter((u): u is string => !!u);
+        return {
+          id: `v${i}`,
+          name: v.nombre || `Variante ${i + 1}`,
+          price: formatPrice(variantPriceValue),
+          priceValue: variantPriceValue,
+          images: variantImages.length > 0 ? variantImages : images,
+          description: v.descripcion || p.description || undefined,
+        };
+      });
+
+      const note = minQty > 1 ? `Mínimo ${minQty} unidades` : undefined;
 
       return {
-        id: `v${i}`,
-        name: v.nombre || `Variante ${i + 1}`,
-        price: formatPrice(variantPriceValue),
-        priceValue: variantPriceValue,
-        images: variantImages.length > 0 ? variantImages : images,
-        description: v.descripcion || entry.description || undefined,
+        slug: p.slug,
+        name: p.name,
+        price: formatPrice(priceValue),
+        priceValue,
+        images,
+        note,
+        description: p.description || undefined,
+        category: p.categoria
+          ? catSlugById.get(p.categoria) ?? fallbackCategory
+          : fallbackCategory,
+        minQty,
+        oferta: !!p.oferta,
+        novedad: !!p.novedad,
+        pausado: !!p.pausado,
+        ordenInicio: p.orden_inicio ?? 0,
+        ordenDestacados: p.orden_destacados ?? 0,
+        variants,
       };
-    });
+    })
+    .map((product, index) => ({ product, index }))
+    .sort((a, b) => {
+      const aOrder = orderBy === "inicio" ? a.product.ordenInicio : a.product.ordenDestacados;
+      const bOrder = orderBy === "inicio" ? b.product.ordenInicio : b.product.ordenDestacados;
+      const aPriority = aOrder > 0 ? aOrder : Number.POSITIVE_INFINITY;
+      const bPriority = bOrder > 0 ? bOrder : Number.POSITIVE_INFINITY;
+      return aPriority - bPriority || a.index - b.index;
+    })
+    .map(({ product }) => product);
+}
 
-    return {
-      slug,
-      name: entry.name,
-      price: formatPrice(priceValue),
-      priceValue,
-      images,
-      description: entry.description || undefined,
-      category: entry.category ?? fallbackCategory,
-      minQty,
-      oferta: entry.oferta ?? false,
-      novedad: entry.novedad ?? false,
-      pausado: entry.pausado ?? false,
-      variants,
-    };
-  });
+export type CategoriaView = {
+  slug: string;
+  label: string;
+  image: string;
+  imagenMobile: string | null;
+};
+
+export async function getCategoriasView(): Promise<CategoriaView[]> {
+  const categorias = await getCategorias();
+  return categorias.map((c: CategoriaPb) => ({
+    slug: c.slug,
+    label: c.label,
+    image:
+      pbFileUrl("categorias", c.id, c.image) ?? "/categorias/placeholder.png",
+    imagenMobile: toUrl("categorias", c.id, c.imagen_mobile),
+  }));
 }

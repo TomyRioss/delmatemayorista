@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { reader } from "@/lib/keystatic";
 import { getProducts } from "@/lib/products";
+import { getCategoriaBySlug } from "@/lib/pb";
 import ProductGrid from "@/components/landing/ProductGrid";
 
 export const revalidate = 60;
@@ -12,7 +12,7 @@ export default async function CategoriaPage({
 }) {
   const categoria = decodeURIComponent((await params).categoria);
 
-  const entry = await reader.collections.categorias.read(categoria);
+  const entry = await getCategoriaBySlug(categoria);
   if (!entry) notFound();
 
   const products = (await getProducts()).filter((p) => p.category === categoria);

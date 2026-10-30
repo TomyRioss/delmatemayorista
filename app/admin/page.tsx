@@ -1,0 +1,46 @@
+import Link from "next/link";
+import { pbCount } from "@/lib/pb";
+import { Box, Layers, Image as ImageIcon, PanelRight } from "lucide-react";
+
+export const dynamic = "force-dynamic";
+
+export default async function AdminHome() {
+  const [productos, categorias, banners, ventanas] = await Promise.all([
+    pbCount("productos").catch(() => -1),
+    pbCount("categorias").catch(() => -1),
+    pbCount("banner_hero").catch(() => -1),
+    pbCount("ventanas_laterales").catch(() => -1),
+  ]);
+
+  const stats = [
+    { href: "/admin/productos", label: "Productos", icon: Box, count: productos },
+    { href: "/admin/categorias", label: "Categorías", icon: Layers, count: categorias },
+    { href: "/admin/banners", label: "Banners", icon: ImageIcon, count: banners },
+    { href: "/admin/banners", label: "Ventanas", icon: PanelRight, count: ventanas },
+  ];
+
+  return (
+    <div>
+      <h1 className="text-3xl font-black uppercase">Panel</h1>
+      <p className="mt-1 text-sm text-black/60">
+        Contenido del sitio, servido desde PocketBase.
+      </p>
+
+      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {stats.map((s) => (
+          <Link
+            key={s.href}
+            href={s.href}
+            className="flex flex-col gap-2 rounded-sm border-2 border-black/10 bg-white p-5 transition-colors hover:border-black"
+          >
+            <s.icon className="h-5 w-5 text-[#FF3412]" strokeWidth={2.5} />
+            <span className="text-3xl font-black">{s.count >= 0 ? s.count : "—"}</span>
+            <span className="text-xs font-bold uppercase tracking-wide text-black/60">
+              {s.label}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
