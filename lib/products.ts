@@ -26,8 +26,12 @@ export type Product = {
   oferta: boolean;
   novedad: boolean;
   pausado: boolean;
+  ordenInicio: number;
+  ordenDestacados: number;
   variants: ProductVariant[];
 };
+
+export type ProductOrder = "inicio" | "destacados";
 
 type ProductoPb = {
   id: string;
@@ -48,6 +52,8 @@ type ProductoPb = {
   pausado: boolean;
   min_packs: number | null;
   min_price: number | null;
+  orden_inicio: number;
+  orden_destacados: number;
 };
 
 function toUrl(
@@ -58,7 +64,7 @@ function toUrl(
   return pbFileUrl(collection, id, filename);
 }
 
-export async function getProducts(): Promise<Product[]> {
+export async function getProducts(orderBy: ProductOrder = "inicio"): Promise<Product[]> {
   const [items, categorias] = await Promise.all([
     pbList<ProductoPb>("productos"),
     getCategorias(),
@@ -118,9 +124,20 @@ export async function getProducts(): Promise<Product[]> {
         oferta: !!p.oferta,
         novedad: !!p.novedad,
         pausado: !!p.pausado,
+        ordenInicio: p.orden_inicio ?? 0,
+        ordenDestacados: p.orden_destacados ?? 0,
         variants,
       };
-    });
+    })
+    .map((product, index) => ({ product, index }))
+    .sort((a, b) => {
+      const aOrder = orderBy === "inicio" ? a.product.ordenInicio : a.product.ordenDestacados;
+      const bOrder = orderBy === "inicio" ? b.product.ordenInicio : b.product.ordenDestacados;
+      const aPriority = aOrder > 0 ? aOrder : Number.POSITIVE_INFINITY;
+      const bPriority = bOrder > 0 ? bOrder : Number.POSITIVE_INFINITY;
+      return aPriority - bPriority || a.index - b.index;
+    })
+    .map(({ product }) => product);
 }
 
 export type CategoriaView = {

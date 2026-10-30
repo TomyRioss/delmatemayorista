@@ -60,6 +60,8 @@ export type ProductWrite = {
   pausado: boolean;
   min_packs: number | null;
   min_price: number | null;
+  orden_inicio: number;
+  orden_destacados: number;
   variantes?: object[];
 };
 
@@ -86,6 +88,8 @@ async function productUpsert(
   fd.set("pausado", String(data.pausado));
   if (data.min_packs != null) fd.set("min_packs", String(data.min_packs));
   if (data.min_price != null) fd.set("min_price", String(data.min_price));
+  fd.set("orden_inicio", String(data.orden_inicio));
+  fd.set("orden_destacados", String(data.orden_destacados));
   fd.set("variantes", JSON.stringify(data.variantes ?? []));
   for (const f of images) fd.append("images", f, f.name);
 

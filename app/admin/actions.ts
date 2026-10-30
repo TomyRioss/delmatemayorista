@@ -36,6 +36,10 @@ function num(fd: FormData, key: string): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
+function orderNum(fd: FormData, key: string): number {
+  return Math.max(0, Math.trunc(num(fd, key) ?? 0));
+}
+
 function file(fd: FormData, key: string): File | undefined {
   const f = fd.get(key);
   if (f instanceof File && f.size > 0) return f;
@@ -56,6 +60,8 @@ function productDataFrom(fd: FormData): { data: ProductWrite; images: File[] } {
     pausado: bool(fd, "pausado"),
     min_packs: num(fd, "min_packs"),
     min_price: num(fd, "min_price"),
+    orden_inicio: orderNum(fd, "orden_inicio"),
+    orden_destacados: orderNum(fd, "orden_destacados"),
     variantes: [],
   };
   const images = (["image0", "image1", "image2", "image3"]

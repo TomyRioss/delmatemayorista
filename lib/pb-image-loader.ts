@@ -47,23 +47,28 @@ export default function pbImageLoader({
   width: number;
   quality?: number;
 }): string {
+  const addWidth = (url: string) => {
+    const separator = url.includes("?") ? "&" : "?";
+    return `${url}${separator}width=${width}`;
+  };
+
   let path: URL | null = null;
   try {
     path = new URL(src, "http://placeholder.local");
   } catch {
-    return src;
+    return addWidth(src);
   }
   const isPbFile =
     path.pathname.includes("/api/files/") &&
     PB_HOSTS.includes(path.host) ||
     (path.host === "placeholder.local" && path.pathname.includes("/api/files/"));
-  if (!isPbFile) return src;
+  if (!isPbFile) return addWidth(src);
 
-  const lower = src.toLowerCase();
-  if (lower.endsWith(".png") || lower.endsWith(".gif")) return src;
+  const lower = path.pathname.toLowerCase();
+  if (lower.endsWith(".png") || lower.endsWith(".gif")) return addWidth(src);
 
   const w = pbThumbWidth(width);
-  if (w === null) return src;
+  if (w === null) return addWidth(src);
 
   // PB exige WxH: variante cuadrada declarada, modo "f" (fit: imagen entera).
   // El CSS de <Image> mantiene el encuadre con object-fit.

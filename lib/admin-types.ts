@@ -14,5 +14,7 @@ export type ProductoPbShape = {
   pausado: boolean;
   min_packs: number | null;
   min_price: number | null;
+  orden_inicio: number;
+  orden_destacados: number;
   variantes: object[];
 };

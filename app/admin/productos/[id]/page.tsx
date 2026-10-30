@@ -151,6 +151,35 @@ export default async function ProductoEditPage({
               </label>
             ))}
           </div>
+
+          <div className="grid grid-cols-1 gap-4 border-t border-black/10 pt-4 sm:grid-cols-2">
+            <label className={labelCls}>
+              Orden en el inicio
+              <input
+                name="orden_inicio"
+                type="number"
+                min="1"
+                step="1"
+                defaultValue={p?.orden_inicio || ""}
+                className={inputCls}
+                placeholder="Automático"
+              />
+              <span className="text-xs font-normal text-black/55">Menor número aparece primero.</span>
+            </label>
+            <label className={labelCls}>
+              Orden en ofertas y novedades
+              <input
+                name="orden_destacados"
+                type="number"
+                min="1"
+                step="1"
+                defaultValue={p?.orden_destacados || ""}
+                className={inputCls}
+                placeholder="Automático"
+              />
+              <span className="text-xs font-normal text-black/55">Menor número aparece primero.</span>
+            </label>
+          </div>
         </div>
 
         {/* Imágenes existentes + nuevas */}
