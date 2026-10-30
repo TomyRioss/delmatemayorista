@@ -108,7 +108,9 @@ export type BannerSimplePb = {
   link: string;
 };
 
-export async function getBannerSimple(key: "como_comprar" | "personalizado") {
+export async function getBannerSimple(
+  key: "como_comprar" | "personalizado",
+): Promise<BannerSimplePb | null> {
   const items = await pbList<BannerSimplePb>("banners_simples", {
     filter: `key="${key}"`,
     perPage: 1,

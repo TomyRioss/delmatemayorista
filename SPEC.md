@@ -26,3 +26,4 @@ id|date|cause|fix
 B1|2026-09-24|lint fails in pre-existing files|external repo debt
 B2|2026-09-24|build requires network for existing Google Fonts|external build environment
 B3|2026-09-24|session cookie secure flag followed NODE_ENV on local HTTP|V1
+B4|2026-10-30|getBannerSimple inferred non-null despite missing record fallback|explicit nullable return type
