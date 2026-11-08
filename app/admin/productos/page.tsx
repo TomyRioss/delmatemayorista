@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 import { pbList, pbFileUrl } from "@/lib/pb";
 import { getCategorias } from "@/lib/pb";
 import type { CategoriaPb } from "@/lib/pb";
 import type { ProductoPbShape } from "@/lib/admin-types";
 import { Plus } from "lucide-react";
+import ProductosTable, { type ProductoTableItem } from "@/components/admin/ProductosTable";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +14,18 @@ export default async function AdminProductosPage() {
     getCategorias(),
   ]);
   const catById = new Map<string, CategoriaPb>(categorias.map((c) => [c.id, c]));
+  const tableItems: ProductoTableItem[] = items.map((product) => ({
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    created: product.created ?? "",
+    category: product.categoria ? catById.get(product.categoria)?.label ?? null : null,
+    min_packs: product.min_packs,
+    image: product.images?.[0] ? pbFileUrl("productos", product.id, product.images[0]) : null,
+    oferta: product.oferta,
+    novedad: product.novedad,
+    pausado: product.pausado,
+  }));
 
   return (
     <div>
@@ -27,52 +39,7 @@ export default async function AdminProductosPage() {
         </Link>
       </div>
 
-      <div className="mt-8 overflow-x-auto">
-        <table className="w-full min-w-[720px] border-collapse bg-white text-sm">
-          <thead>
-            <tr className="border-b-2 border-black/10 text-left text-xs font-bold uppercase tracking-wide text-black/50">
-              <th className="px-3 py-3">Producto</th>
-              <th className="px-3 py-3">Categoría</th>
-              <th className="px-3 py-3">Precio</th>
-              <th className="px-3 py-3">Mínimo</th>
-              <th className="px-3 py-3">Flags</th>
-            </tr>
-          </thead>
-          <tbody>
-            {items.map((p) => {
-              const cat = p.categoria ? catById.get(p.categoria) : null;
-              const img = p.images?.[0] ? pbFileUrl("productos", p.id, p.images[0]) : null;
-              return (
-                <tr key={p.id} className="border-b border-black/5 hover:bg-black/[0.02]">
-                  <td className="px-3 py-2">
-                    <Link
-                      href={`/admin/productos/${p.id}`}
-                      className="flex items-center gap-3 font-bold hover:text-[#FF3412]"
-                    >
-                      <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-sm bg-zinc-100">
-                        {img && (
-                          <Image src={img} alt="" fill className="object-cover" sizes="40px" />
-                        )}
-                      </span>
-                      <span className="line-clamp-1 max-w-[300px]">{p.name}</span>
-                    </Link>
-                  </td>
-                  <td className="px-3 py-2 text-black/60">{cat?.label ?? "—"}</td>
-                  <td className="px-3 py-2">${p.price ?? "—"}</td>
-                  <td className="px-3 py-2">{p.min_packs ?? "—"}</td>
-                  <td className="px-3 py-2">
-                    <div className="flex flex-wrap gap-1">
-                      {p.oferta && <span className="rounded-sm bg-[#FF3412]/10 px-1.5 py-0.5 text-[10px] font-bold text-[#FF3412]">OFERTA</span>}
-                      {p.novedad && <span className="rounded-sm bg-blue-500/10 px-1.5 py-0.5 text-[10px] font-bold text-blue-600">NOVEDAD</span>}
-                      {p.pausado && <span className="rounded-sm bg-black/10 px-1.5 py-0.5 text-[10px] font-bold text-black/60">PAUSADO</span>}
-                    </div>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+      <ProductosTable items={tableItems} />
     </div>
   );
 }

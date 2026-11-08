@@ -3,6 +3,7 @@
 
 export type ProductoPbShape = {
   id: string;
+  created?: string;
   slug: string;
   name: string;
   price: number | null;
