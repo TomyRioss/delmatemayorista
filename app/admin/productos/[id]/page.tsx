@@ -18,11 +18,15 @@ const labelCls = "flex flex-col gap-1.5 text-sm font-bold text-black";
 
 export default async function ProductoEditPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ error?: string | string[] }>;
 }) {
   const { id } = await params;
+  const { error } = await searchParams;
   const isNew = id === "nuevo";
+  const saveError = Array.isArray(error) ? error[0] : error;
 
   const [categorias, existing] = await Promise.all([
     getCategorias(),
@@ -53,6 +57,14 @@ export default async function ProductoEditPage({
       <h1 className="text-3xl font-black uppercase">
         {isNew ? "Nuevo producto" : p?.name ?? "Producto"}
       </h1>
+
+      {saveError && (
+        <p role="alert" className="mt-4 rounded-sm border-2 border-[#FF3412]/30 bg-[#FF3412]/5 px-4 py-3 text-sm font-semibold text-[#B3210B]">
+          {saveError === "name"
+            ? "Ingresá un nombre con letras o números para generar la URL del producto."
+            : "No se pudo guardar el producto. Revisá los datos e intentá de nuevo."}
+        </p>
+      )}
 
       <form
         action={isNew ? actionCreateProduct : actionUpdateProduct}

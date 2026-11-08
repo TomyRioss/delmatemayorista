@@ -1,6 +1,6 @@
 // Cliente PocketBase para delmatemayorista.
 // Lee desde la instancia PB del VPS (:8096). En dev se accede por tunel SSH;
-// en prod apunta al PB publico configurado en POCKETBASE_URL.
+// Los archivos se entregan via rewrite same-origin para evitar mixed content.
 
 const PB_URL = (
   process.env.POCKETBASE_URL ?? "http://127.0.0.1:8096"
@@ -13,7 +13,7 @@ export function pbFileUrl(
   thumb?: string,
 ): string | null {
   if (!filename || !recordId) return null;
-  const base = `${PB_URL}/api/files/${collection}/${recordId}/${filename}`;
+  const base = `/api/pb-files/${collection}/${recordId}/${filename}`;
   return thumb ? `${base}?thumb=${thumb}` : base;
 }
 

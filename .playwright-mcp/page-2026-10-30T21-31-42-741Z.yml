@@ -1,0 +1,510 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: COMPRA MÍNIMA $50.000
+      - generic [ref=e8]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e11]: COMPRA MÍNIMA $50.000
+      - generic [ref=e14]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e17]: COMPRA MÍNIMA $50.000
+      - generic [ref=e20]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e23]: COMPRA MÍNIMA $50.000
+      - generic [ref=e26]: ENVÍOS A TODO EL PAÍS
+    - generic [ref=e29]:
+      - generic [ref=e30]: COMPRA MÍNIMA $50.000
+      - generic [ref=e33]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e36]: COMPRA MÍNIMA $50.000
+      - generic [ref=e39]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e42]: COMPRA MÍNIMA $50.000
+      - generic [ref=e45]: ENVÍOS A TODO EL PAÍS
+      - generic [ref=e48]: COMPRA MÍNIMA $50.000
+      - generic [ref=e51]: ENVÍOS A TODO EL PAÍS
+  - banner [ref=e54]:
+    - generic [ref=e56]:
+      - link [ref=e57] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=e59]
+      - search [ref=e60]:
+        - generic [ref=e61]: Buscar productos
+        - searchbox "Buscar productos" [ref=e62]
+        - button "Buscar" [ref=e63]
+      - generic [ref=e67]:
+        - link "Quienes somos" [ref=e68] [cursor=pointer]:
+          - /url: /quienes-somos
+        - link "Contacto" [ref=e75] [cursor=pointer]:
+          - /url: /contacto
+        - button "Carrito Mi carrito" [ref=e80]:
+          - img "Carrito" [ref=e81]
+          - generic [ref=e82]: Mi carrito
+    - navigation [ref=e83]:
+      - generic [ref=e84]:
+        - link "Todos los productos" [ref=e85] [cursor=pointer]:
+          - /url: /#productos
+        - link "Categorias" [ref=e86] [cursor=pointer]:
+          - /url: /tienda
+        - link "Ofertas y novedades" [ref=e87] [cursor=pointer]:
+          - /url: /ofertas
+  - main [ref=e89]:
+    - region [ref=e91]:
+      - generic [ref=e93]:
+        - group [ref=e94]
+        - group [ref=e96]
+        - group [ref=e98]
+      - button "Previous slide" [ref=e100]
+      - button "Next slide" [ref=e102]
+    - region [ref=e110]:
+      - generic [ref=e112]:
+        - group [ref=e113]:
+          - link "BAZAR BAZAR" [ref=e114] [cursor=pointer]:
+            - /url: /tienda/bazar
+            - generic [ref=e115]:
+              - img "BAZAR" [ref=e116]
+              - generic [ref=e118]: BAZAR
+        - group [ref=e119]:
+          - link "BOLSOS MATEROS BOLSOS MATEROS" [ref=e120] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos
+            - generic [ref=e121]:
+              - img "BOLSOS MATEROS" [ref=e122]
+              - generic [ref=e124]: BOLSOS MATEROS
+        - group [ref=e125]:
+          - link "BOMBILLAS BOMBILLAS" [ref=e126] [cursor=pointer]:
+            - /url: /tienda/bombillas
+            - generic [ref=e127]:
+              - img "BOMBILLAS" [ref=e128]
+              - generic [ref=e130]: BOMBILLAS
+        - group [ref=e131]:
+          - link "COMBOS MATEROS COMBOS MATEROS" [ref=e132] [cursor=pointer]:
+            - /url: /tienda/combos-materos
+            - generic [ref=e133]:
+              - img "COMBOS MATEROS" [ref=e134]
+              - generic [ref=e136]: COMBOS MATEROS
+        - group [ref=e137]:
+          - link "DURAX DURAX" [ref=e138] [cursor=pointer]:
+            - /url: /tienda/durax
+            - generic [ref=e139]:
+              - img "DURAX" [ref=e140]
+              - generic [ref=e142]: DURAX
+        - group [ref=e143]:
+          - link "FUENTES MARINEX FUENTES MARINEX" [ref=e144] [cursor=pointer]:
+            - /url: /tienda/fuentes-marinex
+            - generic [ref=e145]:
+              - img "FUENTES MARINEX" [ref=e146]
+              - generic [ref=e148]: FUENTES MARINEX
+        - group [ref=e149]:
+          - link "HERMETICOS DE PLASTICO HERMETICOS DE PLASTICO" [ref=e150] [cursor=pointer]:
+            - /url: /tienda/hermeticos-de-plastico
+            - generic [ref=e151]:
+              - img "HERMETICOS DE PLASTICO" [ref=e152]
+              - generic [ref=e154]: HERMETICOS DE PLASTICO
+        - group [ref=e155]:
+          - link "HERMETICOS DE VIDRIO HERMETICOS DE VIDRIO" [ref=e156] [cursor=pointer]:
+            - /url: /tienda/hermeticos-de-vidrio
+            - generic [ref=e157]:
+              - img "HERMETICOS DE VIDRIO" [ref=e158]
+              - generic [ref=e160]: HERMETICOS DE VIDRIO
+        - group [ref=e161]:
+          - link "MATES MATES" [ref=e162] [cursor=pointer]:
+            - /url: /tienda/mates
+            - generic [ref=e163]:
+              - img "MATES" [ref=e164]
+              - generic [ref=e166]: MATES
+        - group [ref=e167]:
+          - link "NIÑAS Y NIÑOS NIÑAS Y NIÑOS" [ref=e168] [cursor=pointer]:
+            - /url: /tienda/ninas-y-ninos
+            - generic [ref=e169]:
+              - img "NIÑAS Y NIÑOS" [ref=e170]
+              - generic [ref=e172]: NIÑAS Y NIÑOS
+        - group [ref=e173]:
+          - link "PAVAS PAVAS" [ref=e174] [cursor=pointer]:
+            - /url: /tienda/pavas
+            - generic [ref=e175]:
+              - img "PAVAS" [ref=e176]
+              - generic [ref=e178]: PAVAS
+        - group [ref=e179]:
+          - link "PORTA TERMOS PORTA TERMOS" [ref=e180] [cursor=pointer]:
+            - /url: /tienda/porta-termos
+            - generic [ref=e181]:
+              - img "PORTA TERMOS" [ref=e182]
+              - generic [ref=e184]: PORTA TERMOS
+        - group [ref=e185]:
+          - link "SET MATERO SET MATERO" [ref=e186] [cursor=pointer]:
+            - /url: /tienda/set-matero
+            - generic [ref=e187]:
+              - img "SET MATERO" [ref=e188]
+              - generic [ref=e190]: SET MATERO
+        - group [ref=e191]:
+          - link "TAZAS TAZAS" [ref=e192] [cursor=pointer]:
+            - /url: /tienda/tazas
+            - generic [ref=e193]:
+              - img "TAZAS" [ref=e194]
+              - generic [ref=e196]: TAZAS
+        - group [ref=e197]:
+          - link "VASOS TIPO STARBUCKS VASOS TIPO STARBUCKS" [ref=e198] [cursor=pointer]:
+            - /url: /tienda/vasos-tipo-starbucks
+            - generic [ref=e199]:
+              - img "VASOS TIPO STARBUCKS" [ref=e200]
+              - generic [ref=e202]: VASOS TIPO STARBUCKS
+        - group [ref=e203]:
+          - link "VERANO VERANO" [ref=e204] [cursor=pointer]:
+            - /url: /tienda/verano
+            - generic [ref=e205]:
+              - img "VERANO" [ref=e206]
+              - generic [ref=e208]: VERANO
+        - group [ref=e209]:
+          - link "VIDRIO PLATOS-VASOS-COPAS Y JARRAS VIDRIO PLATOS-VASOS-COPAS Y JARRAS" [ref=e210] [cursor=pointer]:
+            - /url: /tienda/vidrio-platos-vasos-copas-y-jarras
+            - generic [ref=e211]:
+              - img "VIDRIO PLATOS-VASOS-COPAS Y JARRAS" [ref=e212]
+              - generic [ref=e214]: VIDRIO PLATOS-VASOS-COPAS Y JARRAS
+        - group [ref=e215]:
+          - link "YERBERAS Y AZUCARERAS YERBERAS Y AZUCARERAS" [ref=e216] [cursor=pointer]:
+            - /url: /tienda/yerberas-y-azucareras
+            - generic [ref=e217]:
+              - img "YERBERAS Y AZUCARERAS" [ref=e218]
+              - generic [ref=e220]: YERBERAS Y AZUCARERAS
+    - generic [ref=e224]:
+      - link [ref=e225] [cursor=pointer]:
+        - /url: /personalizados
+        - img "Personaliza tus productos en Mayorista Del Mate" [ref=e226]
+      - link [ref=e227] [cursor=pointer]:
+        - /url: /como-comprar
+        - img "Cómo hacer tu compra" [ref=e229]
+    - generic [ref=e231]:
+      - heading "Todos los productos" [level=2] [ref=e232]
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - link "Ver detalles de MATE DE VIDRIO NAVIDAD" [ref=e236] [cursor=pointer]:
+            - /url: /tienda/mates/01mate-de-vidrio-navidad
+            - img "MATE DE VIDRIO NAVIDAD" [ref=e237]
+          - generic [ref=e238]:
+            - heading "MATE DE VIDRIO NAVIDAD" [level=3] [ref=e239]
+            - paragraph [ref=e240]: $1,200
+            - paragraph [ref=e241]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e243]
+        - generic [ref=e249]:
+          - link "Ver detalles de SET MATERO PVC NAVIDAD CON MATE DE PLASTICO" [ref=e251] [cursor=pointer]:
+            - /url: /tienda/set-matero/01set-matero-pvc-navidad-con-mate-de-plastico
+            - img "SET MATERO PVC NAVIDAD CON MATE DE PLASTICO" [ref=e252]
+          - generic [ref=e253]:
+            - heading "SET MATERO PVC NAVIDAD CON MATE DE PLASTICO" [level=3] [ref=e254]
+            - paragraph [ref=e255]: $4,500
+            - paragraph [ref=e256]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e258]
+        - generic [ref=e264]:
+          - link "Ver detalles de BOLSA MATERA PUFFER PRINT" [ref=e266] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos/1bolsa-matera-puffer-print
+            - img "BOLSA MATERA PUFFER PRINT" [ref=e267]
+          - generic [ref=e268]:
+            - heading "BOLSA MATERA PUFFER PRINT" [level=3] [ref=e269]
+            - paragraph [ref=e270]: $12,000
+            - paragraph [ref=e271]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e273]
+        - generic [ref=e279]:
+          - link "Ver detalles de COMBO BOLSA MATERA PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA" [ref=e281] [cursor=pointer]:
+            - /url: /tienda/combos-materos/2combo-bolsa-matera-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra
+            - img "COMBO BOLSA MATERA PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA" [ref=e282]
+          - generic [ref=e283]:
+            - heading "COMBO BOLSA MATERA PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA" [level=3] [ref=e284]
+            - paragraph [ref=e285]: $23,000
+            - paragraph [ref=e286]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e288]
+        - generic [ref=e294]:
+          - link "Ver detalles de COMBO BOLSA MATERA PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL NEGRO/YUTE" [ref=e296] [cursor=pointer]:
+            - /url: /tienda/combos-materos/3combo-bolsa-matera-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-yute
+            - img "COMBO BOLSA MATERA PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL NEGRO/YUTE" [ref=e297]
+          - generic [ref=e298]:
+            - heading "COMBO BOLSA MATERA PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL NEGRO/YUTE" [level=3] [ref=e299]
+            - paragraph [ref=e300]: $23,500
+            - paragraph [ref=e301]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e303]
+        - generic [ref=e309]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA YUTE/NEGRO/BLANCO DTF UV" [ref=e311] [cursor=pointer]:
+            - /url: /tienda/combos-materos/4combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra-yute-negro-blanco-dtf-uv
+            - img "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA YUTE/NEGRO/BLANCO DTF UV" [ref=e312]
+          - generic [ref=e313]:
+            - heading "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA YUTE/NEGRO/BLANCO DTF UV" [level=3] [ref=e314]
+            - paragraph [ref=e315]: $24,000
+            - paragraph [ref=e316]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e318]
+        - generic [ref=e324]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV" [ref=e326] [cursor=pointer]:
+            - /url: /tienda/combos-materos/5combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-dtf-uv
+            - img "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV" [ref=e327]
+          - generic [ref=e328]:
+            - heading "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV" [level=3] [ref=e329]
+            - paragraph [ref=e330]: $24,500
+            - paragraph [ref=e331]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e333]
+        - generic [ref=e339]:
+          - link "Ver detalles de BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT" [ref=e341] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos/6Bbolso-matero-puffer-doble-bolsillo-print
+            - img "BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT" [ref=e342]
+          - generic [ref=e343]:
+            - heading "BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT" [level=3] [ref=e344]
+            - paragraph [ref=e345]: $9,500
+            - paragraph [ref=e346]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e348]
+        - generic [ref=e354]:
+          - link "Ver detalles de BOLSO MATERO PUFFER DOBLE BOLSILLO NEGRO/VERDE MILITAR" [ref=e356] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos/6bolso-matero-puffer-doble-bolsillo-negro-verde-militar
+            - img "BOLSO MATERO PUFFER DOBLE BOLSILLO NEGRO/VERDE MILITAR" [ref=e357]
+          - generic [ref=e358]:
+            - heading "BOLSO MATERO PUFFER DOBLE BOLSILLO NEGRO/VERDE MILITAR" [level=3] [ref=e359]
+            - paragraph [ref=e360]: $8,500
+            - paragraph [ref=e361]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e363]
+        - generic [ref=e369]:
+          - link "Ver detalles de COMBO MATERO PUFFER DOBLE BOLSILLO VERDE MILITAR/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [ref=e371] [cursor=pointer]:
+            - /url: /tienda/combos-materos/7Bcombo-matero-puffer-doble-bolsillo-verde-militar-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual
+            - img "COMBO MATERO PUFFER DOBLE BOLSILLO VERDE MILITAR/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [ref=e372]
+          - generic [ref=e373]:
+            - heading "COMBO MATERO PUFFER DOBLE BOLSILLO VERDE MILITAR/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [level=3] [ref=e374]
+            - paragraph [ref=e375]: $23,000
+            - paragraph [ref=e376]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e378]
+        - generic [ref=e384]:
+          - link "Ver detalles de COMBO MATERO PUFFER DOBLE BOLSILLO PRINT/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [ref=e386] [cursor=pointer]:
+            - /url: /tienda/combos-materos/7combo-matero-puffer-doble-bolsillo-print-negro-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-yute
+            - img "COMBO MATERO PUFFER DOBLE BOLSILLO PRINT/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [ref=e387]
+          - generic [ref=e388]:
+            - heading "COMBO MATERO PUFFER DOBLE BOLSILLO PRINT/NEGRO + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [level=3] [ref=e389]
+            - paragraph [ref=e390]: $24,000
+            - paragraph [ref=e391]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e393]
+        - generic [ref=e399]:
+          - link "Ver detalles de COMBO MATERO PUFFER DOBLE BOLSILLO PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA" [ref=e401] [cursor=pointer]:
+            - /url: /tienda/combos-materos/8combo-matero-puffer-doble-bolsillo-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra
+            - img "COMBO MATERO PUFFER DOBLE BOLSILLO PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA" [ref=e402]
+          - generic [ref=e403]:
+            - heading "COMBO MATERO PUFFER DOBLE BOLSILLO PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA" [level=3] [ref=e404]
+            - paragraph [ref=e405]: $22,000
+            - paragraph [ref=e406]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e408]
+        - generic [ref=e414]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV" [ref=e416] [cursor=pointer]:
+            - /url: /tienda/combos-materos/9combo-bolso-matero-puffer-doble-bolsillo-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-dtf-uv
+            - img "COMBO BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV" [ref=e417]
+          - generic [ref=e418]:
+            - heading "COMBO BOLSO MATERO PUFFER DOBLE BOLSILLO PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL DTF UV" [level=3] [ref=e419]
+            - paragraph [ref=e420]: $24,900
+            - paragraph [ref=e421]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e423]
+        - generic [ref=e429]:
+          - link "Ver detalles de BOLSA MATERA PUFFER ROSA LUNARES" [ref=e431] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos/Z10bolsa-matera-puffer-rosa-lunares
+            - img "BOLSA MATERA PUFFER ROSA LUNARES" [ref=e432]
+          - generic [ref=e433]:
+            - heading "BOLSA MATERA PUFFER ROSA LUNARES" [level=3] [ref=e434]
+            - paragraph [ref=e435]: $11,900
+            - paragraph [ref=e436]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e438]
+        - generic [ref=e444]:
+          - link "Ver detalles de COMBO BOLSA MATERA PUFFER ROSA LUNARES/PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [ref=e446] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z11combo-bolsa-matera-puffer-rosa-lunares-print-yerbera-y-azucarera-alquimia-duo-mate-ritual
+            - img "COMBO BOLSA MATERA PUFFER ROSA LUNARES/PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [ref=e447]
+          - generic [ref=e448]:
+            - heading "COMBO BOLSA MATERA PUFFER ROSA LUNARES/PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE RITUAL" [level=3] [ref=e449]
+            - paragraph [ref=e450]: $23,500
+            - paragraph [ref=e451]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e453]
+        - generic [ref=e459]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA BLANCO/ROSA" [ref=e461] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z12combo-bolso-matero-puffer-rosa-yerbera-y-azucarera-alquimia-duo-mate-ginebra-blanco-rosa
+            - img "COMBO BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA BLANCO/ROSA" [ref=e462]
+          - generic [ref=e463]:
+            - heading "COMBO BOLSO MATERO PUFFER ROSA + YERBERA Y AZUCARERA ALQUIMIA DUO+ MATE GINEBRA BLANCO/ROSA" [level=3] [ref=e464]
+            - paragraph [ref=e465]: $23,000
+            - paragraph [ref=e466]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e468]
+        - generic [ref=e474]:
+          - link "Ver detalles de BOLSO MATERO PUFFER NEGRO/AZUL" [ref=e476] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos/Z13bolso-matero-puffer-negro-azul
+            - img "BOLSO MATERO PUFFER NEGRO/AZUL" [ref=e477]
+          - generic [ref=e478]:
+            - heading "BOLSO MATERO PUFFER NEGRO/AZUL" [level=3] [ref=e479]
+            - paragraph [ref=e480]: $12,700
+            - paragraph [ref=e481]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e483]
+        - generic [ref=e489]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA AZUL" [ref=e491] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z14combo-bolso-matero-puffer-azul-yerbera-y-azucarera-alquimia-duo-mate-ginebra-azul
+            - img "COMBO BOLSO MATERO PUFFER AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA AZUL" [ref=e492]
+          - generic [ref=e493]:
+            - heading "COMBO BOLSO MATERO PUFFER AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA AZUL" [level=3] [ref=e494]
+            - paragraph [ref=e495]: $23,000
+            - paragraph [ref=e496]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e498]
+        - generic [ref=e504]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO" [ref=e506] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z15combo-bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ginebra-negro
+            - img "COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO" [ref=e507]
+          - generic [ref=e508]:
+            - heading "COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA NEGRO" [level=3] [ref=e509]
+            - paragraph [ref=e510]: $23,000
+            - paragraph [ref=e511]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e513]
+        - generic [ref=e519]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER NEGRO/AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO" [ref=e521] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z16combo-bolso-matero-puffer-negro-azul-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro
+            - img "COMBO BOLSO MATERO PUFFER NEGRO/AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO" [ref=e522]
+          - generic [ref=e523]:
+            - heading "COMBO BOLSO MATERO PUFFER NEGRO/AZUL + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO" [level=3] [ref=e524]
+            - paragraph [ref=e525]: $23,900
+            - paragraph [ref=e526]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e528]
+        - generic [ref=e534]:
+          - link "Ver detalles de BOLSO MATERO PUFFER PRINT ANIMAL" [ref=e536] [cursor=pointer]:
+            - /url: /tienda/bolsos-materos/Z18bolso-matero-puffer-print-animal
+            - img "BOLSO MATERO PUFFER PRINT ANIMAL" [ref=e537]
+          - generic [ref=e538]:
+            - heading "BOLSO MATERO PUFFER PRINT ANIMAL" [level=3] [ref=e539]
+            - paragraph [ref=e540]: $14,500
+            - paragraph [ref=e541]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e543]
+        - generic [ref=e549]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO/BLANCO/YUTE" [ref=e551] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z19combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-blanco-yute
+            - img "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO/BLANCO/YUTE" [ref=e552]
+          - generic [ref=e553]:
+            - heading "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO/BLANCO/YUTE" [level=3] [ref=e554]
+            - paragraph [ref=e555]: $26,500
+            - paragraph [ref=e556]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e558]
+        - generic [ref=e564]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO DTF UV" [ref=e566] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z20combo-bolso-matero-puffer-yerbera-y-azucarera-alquimia-duo-mate-ritual-negro-dtf-uv
+            - img "COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO DTF UV" [ref=e567]
+          - generic [ref=e568]:
+            - heading "COMBO BOLSO MATERO PUFFER + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE RITUAL NEGRO DTF UV" [level=3] [ref=e569]
+            - paragraph [ref=e570]: $25,000
+            - paragraph [ref=e571]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e573]
+        - generic [ref=e579]:
+          - link "Ver detalles de COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA DTF UV" [ref=e581] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z21combo-bolso-matero-puffer-print-yerbera-y-azucarera-alquimia-duo-mate-ginebra-dtf-uv
+            - img "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA DTF UV" [ref=e582]
+          - generic [ref=e583]:
+            - heading "COMBO BOLSO MATERO PUFFER PRINT + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA DTF UV" [level=3] [ref=e584]
+            - paragraph [ref=e585]: $25,500
+            - paragraph [ref=e586]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e588]
+        - generic [ref=e594]:
+          - link "Ver detalles de COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + ALUMINE CON BOMBILLA CHATA" [ref=e596] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z23Bcombo-bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-alumine-con-bombilla-chata
+            - img "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + ALUMINE CON BOMBILLA CHATA" [ref=e597]
+          - generic [ref=e598]:
+            - heading "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + ALUMINE CON BOMBILLA CHATA" [level=3] [ref=e599]
+            - paragraph [ref=e600]: $15,800
+            - paragraph [ref=e601]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e603]
+        - generic [ref=e609]:
+          - link "Ver detalles de COMBO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE ACERO + BOMBILLA CHATA" [ref=e611] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z23Ccombo-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-acero-bombilla-chata
+            - img "COMBO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE ACERO + BOMBILLA CHATA" [ref=e612]
+          - generic [ref=e613]:
+            - heading "COMBO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE ACERO + BOMBILLA CHATA" [level=3] [ref=e614]
+            - paragraph [ref=e615]: $16,800
+            - paragraph [ref=e616]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e618]
+        - generic [ref=e624]:
+          - link "Ver detalles de BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO" [ref=e626] [cursor=pointer]:
+            - /url: /tienda/set-matero/Z24bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo
+            - img "BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO" [ref=e627]
+          - generic [ref=e628]:
+            - heading "BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO" [level=3] [ref=e629]
+            - paragraph [ref=e630]: $12,500
+            - paragraph [ref=e631]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e633]
+        - generic [ref=e639]:
+          - link "Ver detalles de COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA" [ref=e641] [cursor=pointer]:
+            - /url: /tienda/combos-materos/Z25B-combo-bolso-matero-guarda-yerbera-y-azucarera-alquimia-duo-mate-ginebra
+            - img "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA" [ref=e642]
+          - generic [ref=e643]:
+            - heading "COMBO BOLSO MATERO GUARDA + YERBERA Y AZUCARERA ALQUIMIA DUO + MATE GINEBRA" [level=3] [ref=e644]
+            - paragraph [ref=e645]: $19,300
+            - paragraph [ref=e646]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e648]
+        - generic [ref=e654]:
+          - link "Ver detalles de BOMBILLA ACERO REDONDA RESORTE" [ref=e656] [cursor=pointer]:
+            - /url: /tienda/bombillas/Z25bombilla-acero-redonda-resorte
+            - img "BOMBILLA ACERO REDONDA RESORTE" [ref=e657]
+          - generic [ref=e658]:
+            - heading "BOMBILLA ACERO REDONDA RESORTE" [level=3] [ref=e659]
+            - paragraph [ref=e660]: $650
+            - paragraph [ref=e661]: Mínimo 100 unidades
+            - button "Agregar al carrito" [ref=e663]
+        - generic [ref=e669]:
+          - link "Ver detalles de CANASTA CON MANGO DE MADERA" [ref=e671] [cursor=pointer]:
+            - /url: /tienda/porta-termos/Z26Acanasta-con-mango-de-madera
+            - img "CANASTA CON MANGO DE MADERA" [ref=e672]
+          - generic [ref=e673]:
+            - heading "CANASTA CON MANGO DE MADERA" [level=3] [ref=e674]
+            - paragraph [ref=e675]: $9,500
+            - paragraph [ref=e676]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e678]
+        - generic [ref=e684]:
+          - link "Ver detalles de CANASTA MATERA MANGO FLEXIBLE" [ref=e686] [cursor=pointer]:
+            - /url: /tienda/porta-termos/Z26Bcanasta-matera-mango-flexible
+            - img "CANASTA MATERA MANGO FLEXIBLE" [ref=e687]
+          - generic [ref=e688]:
+            - heading "CANASTA MATERA MANGO FLEXIBLE" [level=3] [ref=e689]
+            - paragraph [ref=e690]: $9,000
+            - paragraph [ref=e691]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e693]
+        - generic [ref=e699]:
+          - link "Ver detalles de PORTA TERMO CARTERITA" [ref=e701] [cursor=pointer]:
+            - /url: /tienda/porta-termos/Z26Cporta-termo-carterita
+            - img "PORTA TERMO CARTERITA" [ref=e702]
+          - generic [ref=e703]:
+            - heading "PORTA TERMO CARTERITA" [level=3] [ref=e704]
+            - paragraph [ref=e705]: $9,300
+            - paragraph [ref=e706]: Mínimo 6 unidades
+            - button "Agregar al carrito" [ref=e708]
+      - navigation "pagination" [ref=e714]:
+        - list [ref=e715]:
+          - listitem [ref=e716]:
+            - button "Go to previous page" [ref=e717] [cursor=pointer]:
+              - generic [ref=e718]: Previous
+          - listitem [ref=e719]:
+            - button "1" [ref=e720] [cursor=pointer]
+          - listitem [ref=e721]:
+            - button "2" [ref=e722] [cursor=pointer]
+          - listitem [ref=e723]:
+            - button "3" [ref=e724] [cursor=pointer]
+          - listitem [ref=e725]:
+            - button "4" [ref=e726] [cursor=pointer]
+          - listitem [ref=e727]:
+            - button "5" [ref=e728] [cursor=pointer]
+          - listitem [ref=e729]:
+            - button "6" [ref=e730] [cursor=pointer]
+          - listitem [ref=e731]:
+            - button "7" [ref=e732] [cursor=pointer]
+          - listitem [ref=e733]:
+            - button "Go to next page" [ref=e734] [cursor=pointer]:
+              - generic [ref=e735]: Next
+  - contentinfo [ref=e736]:
+    - generic [ref=e737]:
+      - generic [ref=e738]:
+        - heading "Visitá nuestras redes sociales" [level=3] [ref=e739]
+        - generic [ref=e740]:
+          - link "@delmatemayorista" [ref=e741] [cursor=pointer]:
+            - /url: https://instagram.com/delmatemayorista
+          - link "@Delmate Mayorista" [ref=e745] [cursor=pointer]:
+            - /url: https://facebook.com/DelmateMayorista
+          - link "@delmate_oficial" [ref=e749] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@delmate_oficial
+      - generic [ref=e753]:
+        - paragraph [ref=e757]: Envíos atodo el país
+        - link "bazarmayoristadelmate@gmail.com" [ref=e758] [cursor=pointer]:
+          - /url: mailto:bazarmayoristadelmate@gmail.com
+        - link "(011) 1565358444" [ref=e762] [cursor=pointer]:
+          - /url: https://wa.me/5491165358444
+        - generic [ref=e766]: Gazeta de Buenos Aires 3705, Ciudadela, Buenos Aires
+      - link [ref=e770] [cursor=pointer]:
+        - /url: /
+        - img "Del Mate" [ref=e772]
+    - link "Admin" [ref=e774] [cursor=pointer]:
+      - /url: /admin/login
+  - link "Comunicate con nosotros por WhatsApp" [ref=e775] [cursor=pointer]:
+    - /url: https://wa.me/5491165358444
+    - generic [ref=e778]: Comunicate con nosotros
+  - alert [ref=e779]

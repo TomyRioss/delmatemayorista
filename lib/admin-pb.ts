@@ -80,6 +80,7 @@ async function productUpsert(
 ) {
   const fd = new FormData();
   fd.set("name", data.name);
+  if (!id) fd.set("slug", data.slug ?? slugify(data.name));
   fd.set("price", String(data.price ?? 0));
   fd.set("description", data.description);
   if (data.categoria) fd.set("categoria", data.categoria);

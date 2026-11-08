@@ -51,6 +51,7 @@ function file(fd: FormData, key: string): File | undefined {
 function productDataFrom(fd: FormData): { data: ProductWrite; images: File[] } {
   const name = str(fd, "name");
   const data: ProductWrite = {
+    slug: slugify(name),
     name,
     price: num(fd, "price"),
     description: str(fd, "description"),
@@ -72,14 +73,25 @@ function productDataFrom(fd: FormData): { data: ProductWrite; images: File[] } {
 
 export async function actionCreateProduct(fd: FormData) {
   const { data, images } = productDataFrom(fd);
-  await createProduct(data, images);
+  if (!data.slug) redirect("/admin/productos/nuevo?error=name");
+  try {
+    await createProduct(data, images);
+  } catch {
+    redirect("/admin/productos/nuevo?error=save");
+  }
   redirect("/admin/productos");
 }
 
 export async function actionUpdateProduct(fd: FormData) {
   const id = str(fd, "id");
   const { data, images } = productDataFrom(fd);
-  await updateProduct(id, data, images);
+  const editPath = `/admin/productos/${encodeURIComponent(id)}`;
+  if (!data.slug) redirect(`${editPath}?error=name`);
+  try {
+    await updateProduct(id, data, images);
+  } catch {
+    redirect(`${editPath}?error=save`);
+  }
   redirect("/admin/productos");
 }
 

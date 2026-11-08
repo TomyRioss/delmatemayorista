@@ -11,6 +11,20 @@ const pbHost = (() => {
 })();
 
 const nextConfig: NextConfig = {
+  async rewrites() {
+    const pocketBaseUrl = (
+      process.env.POCKETBASE_URL ??
+      process.env.NEXT_PUBLIC_POCKETBASE_URL ??
+      "http://127.0.0.1:8096"
+    ).replace(/\/$/, "");
+
+    return [
+      {
+        source: "/api/pb-files/:path*",
+        destination: `${pocketBaseUrl}/api/files/:path*`,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       { hostname: "images.pexels.com" },

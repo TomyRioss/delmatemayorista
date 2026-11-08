@@ -61,7 +61,8 @@ export default function pbImageLoader({
   const isPbFile =
     path.pathname.includes("/api/files/") &&
     PB_HOSTS.includes(path.host) ||
-    (path.host === "placeholder.local" && path.pathname.includes("/api/files/"));
+    (path.host === "placeholder.local" && path.pathname.includes("/api/files/")) ||
+    path.pathname.startsWith("/api/pb-files/");
   if (!isPbFile) return addWidth(src);
 
   const lower = path.pathname.toLowerCase();

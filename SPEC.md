@@ -14,6 +14,7 @@ env: `VERCEL_TOKEN`, `VERCEL_PROJECT_ID`, `VERCEL_TEAM_ID`? → Vercel Analytics
 V1: ∀ `/admin/visits` → admin session required
 V2: ∀ Vercel requests → token never exposed client-side
 V3: missing analytics env → actionable error, no crash
+V4: ∀ PocketBase file → browser URL same-origin `/api/pb-files/`; rewrite proxies to PocketBase
 
 §T
 id|status|task|cites
@@ -27,3 +28,4 @@ B1|2026-09-24|lint fails in pre-existing files|external repo debt
 B2|2026-09-24|build requires network for existing Google Fonts|external build environment
 B3|2026-09-24|session cookie secure flag followed NODE_ENV on local HTTP|V1
 B4|2026-10-30|getBannerSimple inferred non-null despite missing record fallback|explicit nullable return type
+B5|2026-10-30|PocketBase media URLs exposed HTTP IP; HTTPS browser blocked assets|V4
