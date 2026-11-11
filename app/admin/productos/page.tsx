@@ -3,6 +3,7 @@ import { pbList, pbFileUrl } from "@/lib/pb";
 import { getCategorias } from "@/lib/pb";
 import type { CategoriaPb } from "@/lib/pb";
 import type { ProductoPbShape } from "@/lib/admin-types";
+import { getProducts } from "@/lib/products";
 import { Plus } from "lucide-react";
 import ProductosTable, { type ProductoTableItem } from "@/components/admin/ProductosTable";
 
@@ -14,7 +15,15 @@ export default async function AdminProductosPage() {
     getCategorias(),
   ]);
   const catById = new Map<string, CategoriaPb>(categorias.map((c) => [c.id, c]));
+  // Puesto real en inicio/catalogo (mismo orden que ve el publico).
+  const posBySlug = new Map<string, number>();
+  try {
+    (await getProducts("inicio")).forEach((p, i) => posBySlug.set(p.slug, i + 1));
+  } catch (e) {
+    console.error("No se pudo calcular el puesto de los productos", e);
+  }
   const tableItems: ProductoTableItem[] = items.map((product) => ({
+    posicion: posBySlug.get(product.slug) ?? null,
     id: product.id,
     name: product.name,
     price: product.price,

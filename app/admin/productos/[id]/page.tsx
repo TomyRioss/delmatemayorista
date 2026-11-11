@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { pbFileUrl, getCategorias } from "@/lib/pb";
+import { getProducts } from "@/lib/products";
 import type { ProductoPbShape } from "@/lib/admin-types";
 import {
   actionCreateProduct,
@@ -44,6 +45,27 @@ export default async function ProductoEditPage({
         .map((f) => pbFileUrl("productos", p.id, f))
         .filter((u): u is string => !!u)
     : [];
+
+  // Posicion real hoy en cada pagina (null si esta pausado o no aparece).
+  let posInicio: string | null = null;
+  let posCatalogo: string | null = null;
+  let posOfertas: string | null = null;
+  if (p) {
+    try {
+      const [todos, destacados] = await Promise.all([getProducts("inicio"), getProducts("destacados")]);
+      const mine = todos.find((x) => x.slug === p.slug);
+      if (mine) {
+        posInicio = `${todos.indexOf(mine) + 1} de ${todos.length}`;
+        const cat = todos.filter((x) => x.category === mine.category);
+        posCatalogo = `${cat.indexOf(mine) + 1} de ${cat.length}`;
+      }
+      const ofertas = destacados.filter((x) => x.oferta || x.novedad);
+      const mineO = ofertas.find((x) => x.slug === p.slug);
+      if (mineO) posOfertas = `${ofertas.indexOf(mineO) + 1} de ${ofertas.length}`;
+    } catch (e) {
+      console.error("No se pudo calcular la posición actual del producto", e);
+    }
+  }
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -166,7 +188,7 @@ export default async function ProductoEditPage({
 
           <div className="grid grid-cols-1 gap-4 border-t border-black/10 pt-4 sm:grid-cols-2">
             <label className={labelCls}>
-              Orden en el inicio
+              Posición en inicio y catálogo
               <input
                 name="orden_inicio"
                 type="number"
@@ -174,12 +196,20 @@ export default async function ProductoEditPage({
                 step="1"
                 defaultValue={p?.orden_inicio || ""}
                 className={inputCls}
-                placeholder="Automático"
+                placeholder={posInicio ? `Hoy: puesto ${posInicio}` : "Automático"}
               />
-              <span className="text-xs font-normal text-black/55">Menor número aparece primero.</span>
+              <span className="text-xs font-normal text-black/55">
+                Puesto donde querés que aparezca (2 = segundo). Vacío = automático.
+                {posInicio && (
+                  <>
+                    {" "}Hoy: puesto <b>{posInicio}</b> en inicio
+                    {posCatalogo && <>, <b>{posCatalogo}</b> dentro de su categoría</>}.
+                  </>
+                )}
+              </span>
             </label>
             <label className={labelCls}>
-              Orden en ofertas y novedades
+              Posición en ofertas y novedades
               <input
                 name="orden_destacados"
                 type="number"
@@ -187,9 +217,12 @@ export default async function ProductoEditPage({
                 step="1"
                 defaultValue={p?.orden_destacados || ""}
                 className={inputCls}
-                placeholder="Automático"
+                placeholder={posOfertas ? `Hoy: puesto ${posOfertas}` : "Automático"}
               />
-              <span className="text-xs font-normal text-black/55">Menor número aparece primero.</span>
+              <span className="text-xs font-normal text-black/55">
+                Solo aplica a productos en oferta o novedad. Vacío = automático.
+                {posOfertas && <> Hoy: puesto <b>{posOfertas}</b>.</>}
+              </span>
             </label>
           </div>
         </div>

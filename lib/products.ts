@@ -75,7 +75,7 @@ export async function getProducts(orderBy: ProductOrder = "inicio"): Promise<Pro
   // los produtos sin categoria (3) usaban fallback en Keystatic: primera categoria
   const fallbackCategory = categorias[0]?.slug ?? null;
 
-  return items
+  const placed = items
     .filter((p) => !p.pausado)
     .map((p) => {
       const priceValue = normalizePrice(p.price ?? 0);
@@ -129,15 +129,22 @@ export async function getProducts(orderBy: ProductOrder = "inicio"): Promise<Pro
         variants,
       };
     })
-    .map((product, index) => ({ product, index }))
-    .sort((a, b) => {
-      const aOrder = orderBy === "inicio" ? a.product.ordenInicio : a.product.ordenDestacados;
-      const bOrder = orderBy === "inicio" ? b.product.ordenInicio : b.product.ordenDestacados;
-      const aPriority = aOrder > 0 ? aOrder : Number.POSITIVE_INFINITY;
-      const bPriority = bOrder > 0 ? bOrder : Number.POSITIVE_INFINITY;
-      return aPriority - bPriority || a.index - b.index;
-    })
-    .map(({ product }) => product);
+    .reduce<{ pos: Product[]; fixed: { product: Product; order: number }[] }>(
+      (acc, product) => {
+        const order = orderBy === "inicio" ? product.ordenInicio : product.ordenDestacados;
+        if (order > 0) acc.fixed.push({ product, order });
+        else acc.pos.push(product);
+        return acc;
+      },
+      { pos: [], fixed: [] },
+    );
+  // El numero es la posicion exacta: sin numero mantienen su orden natural
+  // y los numerados se insertan en su lugar (orden 2 => segundo).
+  const result = placed.pos;
+  placed.fixed
+    .sort((a, b) => a.order - b.order) // estable: empates por orden natural
+    .forEach(({ product, order }) => result.splice(Math.min(order - 1, result.length), 0, product));
+  return result;
 }
 
 export type CategoriaView = {

@@ -15,9 +15,10 @@ export type ProductoTableItem = {
   oferta: boolean;
   novedad: boolean;
   pausado: boolean;
+  posicion: number | null; // puesto en inicio/catalogo; null si esta pausado
 };
 
-type SortOption = "newest" | "oldest" | "name-asc" | "name-desc" | "price-asc" | "price-desc";
+type SortOption = "position" | "newest" | "oldest" | "name-asc" | "name-desc" | "price-asc" | "price-desc";
 
 function normalize(value: string) {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es-AR");
@@ -38,6 +39,8 @@ export default function ProductosTable({ items }: { items: ProductoTableItem[] }
 
     return filtered.sort((a, b) => {
       switch (sort) {
+        case "position":
+          return (a.posicion ?? Infinity) - (b.posicion ?? Infinity);
         case "oldest":
           return createdTime(a.created) - createdTime(b.created);
         case "name-asc":
@@ -80,6 +83,7 @@ export default function ProductosTable({ items }: { items: ProductoTableItem[] }
             onChange={(event) => setSort(event.target.value as SortOption)}
             className="h-11 min-w-52 rounded-sm border-2 border-black/15 bg-white px-3 text-sm text-black focus:border-black focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3412] focus-visible:ring-offset-2"
           >
+            <option value="position">Puesto en la web</option>
             <option value="newest">Fecha: más recientes</option>
             <option value="oldest">Fecha: más antiguas</option>
             <option value="name-asc">Nombre: A a Z</option>
@@ -98,6 +102,7 @@ export default function ProductosTable({ items }: { items: ProductoTableItem[] }
         <table className="w-full min-w-[720px] border-collapse bg-white text-sm">
           <thead>
             <tr className="border-b-2 border-black/10 text-left text-xs font-bold uppercase tracking-wide text-black/55">
+              <th className="px-3 py-3" title="Puesto en inicio y catálogo">Puesto</th>
               <th className="px-3 py-3">Producto</th>
               <th className="px-3 py-3">Categoría</th>
               <th className="px-3 py-3">Precio</th>
@@ -108,7 +113,7 @@ export default function ProductosTable({ items }: { items: ProductoTableItem[] }
           <tbody>
             {visibleItems.length === 0 ? (
               <tr>
-                <td colSpan={5} className="px-4 py-12 text-center">
+                <td colSpan={6}className="px-4 py-12 text-center">
                   <p className="font-semibold text-black">No encontramos productos para “{query}”.</p>
                   <button
                     type="button"
@@ -122,6 +127,7 @@ export default function ProductosTable({ items }: { items: ProductoTableItem[] }
             ) : (
               visibleItems.map((item) => (
                 <tr key={item.id} className="border-b border-black/5 hover:bg-black/[0.02]">
+                  <td className="px-3 py-2 font-black tabular-nums text-black/60">{item.posicion ?? "—"}</td>
                   <td className="px-3 py-2">
                     <Link
                       href={`/admin/productos/${item.id}`}
