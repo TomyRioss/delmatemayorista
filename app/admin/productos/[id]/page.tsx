@@ -4,12 +4,11 @@ import { pbFileUrl, getCategorias } from "@/lib/pb";
 import { getProducts } from "@/lib/products";
 import type { ProductoPbShape } from "@/lib/admin-types";
 import {
-  actionCreateProduct,
-  actionUpdateProduct,
   actionDeleteProduct,
 } from "@/app/admin/actions";
 import FileBox from "@/components/admin/FileBox";
-import { Save, Trash2, ArrowLeft } from "lucide-react";
+import ProductForm from "@/components/admin/ProductForm";
+import { Trash2, ArrowLeft } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
@@ -88,10 +87,7 @@ export default async function ProductoEditPage({
         </p>
       )}
 
-      <form
-        action={isNew ? actionCreateProduct : actionUpdateProduct}
-        className="mt-8 flex flex-col gap-6"
-      >
+      <ProductForm isNew={isNew}>
         {!isNew && <input type="hidden" name="id" value={id} />}
 
         <div className="flex flex-col gap-4 rounded-sm border-2 border-black/10 bg-white p-5">
@@ -251,20 +247,12 @@ export default async function ProductoEditPage({
             ))}
           </div>
           <p className="text-xs text-black/40">
-            Las imágenes nuevas se agregan al final. Para reemplazar una existente se borra y se vuelve a subir (sin pérdida de orden configurable todavía).
+            Podés seleccionar hasta 20 MB en total. Se optimizan antes de subir y se agregan al final.
+            Para reemplazar una existente, borrala y volvela a subir.
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <button
-            type="submit"
-            className="inline-flex items-center gap-2 rounded-sm bg-[#FF3412] px-6 py-3 text-sm font-bold uppercase text-white transition-colors hover:bg-black"
-          >
-            <Save className="h-4 w-4" strokeWidth={2.5} />
-            {isNew ? "Crear producto" : "Guardar cambios"}
-          </button>
-        </div>
-      </form>
+      </ProductForm>
 
       {!isNew && (
         <form action={actionDeleteProduct} className="mt-10 border-t-2 border-black/10 pt-6">

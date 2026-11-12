@@ -11,6 +11,11 @@ const pbHost = (() => {
 })();
 
 const nextConfig: NextConfig = {
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "10mb",
+    },
+  },
   async rewrites() {
     const pocketBaseUrl = (
       process.env.POCKETBASE_URL ??

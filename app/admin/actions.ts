@@ -66,8 +66,8 @@ function productDataFrom(fd: FormData): { data: ProductWrite; images: File[] } {
     variantes: [],
   };
   const images = (["image0", "image1", "image2", "image3"]
-    .map((k) => file(fd, k))
-    .filter((f): f is File => !!f));
+    .map((key) => file(fd, key))
+    .filter((image): image is File => !!image));
   return { data, images };
 }
 
@@ -76,7 +76,8 @@ export async function actionCreateProduct(fd: FormData) {
   if (!data.slug) redirect("/admin/productos/nuevo?error=name");
   try {
     await createProduct(data, images);
-  } catch {
+  } catch (error) {
+    console.error("No se pudo crear el producto:", error);
     redirect("/admin/productos/nuevo?error=save");
   }
   redirect("/admin/productos");
@@ -89,7 +90,8 @@ export async function actionUpdateProduct(fd: FormData) {
   if (!data.slug) redirect(`${editPath}?error=name`);
   try {
     await updateProduct(id, data, images);
-  } catch {
+  } catch (error) {
+    console.error("No se pudo actualizar el producto:", error);
     redirect(`${editPath}?error=save`);
   }
   redirect("/admin/productos");
