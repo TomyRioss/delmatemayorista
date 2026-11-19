@@ -69,7 +69,7 @@ export default function SubirImagenPage() {
   return (
     <div className="mx-auto flex min-h-screen w-full max-w-xl flex-col gap-6 bg-white px-6 py-10">
       <Link
-        href="/keystatic"
+        href="/admin"
         className="inline-flex w-fit items-center gap-2 text-sm font-bold uppercase text-black/60 hover:text-black"
       >
         <ArrowLeft className="h-4 w-4" strokeWidth={2.5} />

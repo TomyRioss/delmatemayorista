@@ -23,7 +23,7 @@ export default async function VisitsPage() {
   return (
     <main className="min-h-screen bg-[#f7f5f2] px-5 py-8 text-black sm:px-10">
       <div className="mx-auto max-w-5xl">
-        <Link href="/keystatic" className="mb-10 inline-flex items-center gap-2 text-sm font-bold hover:underline">
+        <Link href="/admin" className="mb-10 inline-flex items-center gap-2 text-sm font-bold hover:underline">
           <ArrowLeft className="h-4 w-4" /> Volver al admin
         </Link>
 
